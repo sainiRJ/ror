@@ -1,3 +1,14 @@
 Rails.application.routes.draw do
-  # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html
+  namespace :api do
+    post '/addUser', action: :addUser, controller: :users
+  end
+
+  namespace :api do
+    get '/avg', action: :avg, controller: :users
+  end
+
+  namespace :api do
+    post '/deleteUser', action: :deleteUser, controller: :users
+  end
+
 end
