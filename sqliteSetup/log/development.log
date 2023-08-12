@@ -1,0 +1,837 @@
+  [1m[35m (118.0ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL PRIMARY KEY)[0m
+  [1m[35m (97.6ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" varchar NOT NULL PRIMARY KEY, "value" varchar, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to CreateUsers (20230810134402)
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (1.1ms)[0m  [1m[35mCREATE TABLE "users" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "age" integer, "email" varchar, "address" varchar, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL)[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.4ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20230810134402"]]
+  [1m[36mTRANSACTION (135.1ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.2ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Create (0.5ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["key", "environment"], ["value", "development"], ["created_at", "2023-08-10 13:44:53.186967"], ["updated_at", "2023-08-10 13:44:53.186967"]]
+  [1m[36mTRANSACTION (257.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.6ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started GET "/" for ::1 at 2023-08-11 10:14:19 +0530
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /var/lib/gems/3.0.0/gems/railties-7.0.7/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /var/lib/gems/3.0.0/gems/railties-7.0.7/lib/rails/templates/rails/welcome/index.html.erb (Duration: 17.9ms | Allocations: 931)
+Completed 200 OK in 376ms (Views: 65.0ms | ActiveRecord: 0.0ms | Allocations: 10739)
+
+
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::InternalMetadata Load (11.5ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started POST "/addUser" for 127.0.0.1 at 2023-08-11 11:59:41 +0530
+  
+ActionController::RoutingError (No route matches [POST] "/addUser"):
+  
+Started POST "/addUser" for 127.0.0.1 at 2023-08-11 12:00:04 +0530
+  
+SyntaxError (/home/dev/Desktop/rajesh/liteProject/app/controllers/users_controller.rb:20: syntax error, unexpected `end', expecting end-of-input):
+  
+app/controllers/users_controller.rb:20: syntax error, unexpected `end', expecting end-of-input
+app/controllers/users_controller.rb:20: syntax error, unexpected `end', expecting end-of-input
+app/controllers/users_controller.rb:20: syntax error, unexpected `end', expecting end-of-input
+Started POST "/addUser" for 127.0.0.1 at 2023-08-11 12:00:30 +0530
+  
+SyntaxError (/home/dev/Desktop/rajesh/liteProject/app/controllers/users_controller.rb:20: syntax error, unexpected `end', expecting end-of-input):
+  
+app/controllers/users_controller.rb:20: syntax error, unexpected `end', expecting end-of-input
+app/controllers/users_controller.rb:20: syntax error, unexpected `end', expecting end-of-input
+app/controllers/users_controller.rb:20: syntax error, unexpected `end', expecting end-of-input
+Started POST "/addUser" for 127.0.0.1 at 2023-08-11 12:00:42 +0530
+Processing by UsersController#addUser as */*
+  Parameters: {"name"=>"rajesh", "age"=>"20", "email"=>"rajesh@test.com", "address"=>"delhi NCR"}
+Can't verify CSRF token authenticity.
+Completed 422 Unprocessable Entity in 4ms (ActiveRecord: 0.0ms | Allocations: 602)
+
+
+  
+ActionController::InvalidAuthenticityToken (Can't verify CSRF token authenticity.):
+  
+actionpack (7.0.7) lib/action_controller/metal/request_forgery_protection.rb:253:in `handle_unverified_request'
+actionpack (7.0.7) lib/action_controller/metal/request_forgery_protection.rb:286:in `handle_unverified_request'
+actionpack (7.0.7) lib/action_controller/metal/request_forgery_protection.rb:275:in `verify_authenticity_token'
+activesupport (7.0.7) lib/active_support/callbacks.rb:400:in `block in make_lambda'
+activesupport (7.0.7) lib/active_support/callbacks.rb:199:in `block (2 levels) in halting'
+actionpack (7.0.7) lib/abstract_controller/callbacks.rb:34:in `block (2 levels) in <module:Callbacks>'
+activesupport (7.0.7) lib/active_support/callbacks.rb:200:in `block in halting'
+activesupport (7.0.7) lib/active_support/callbacks.rb:595:in `block in invoke_before'
+activesupport (7.0.7) lib/active_support/callbacks.rb:595:in `each'
+activesupport (7.0.7) lib/active_support/callbacks.rb:595:in `invoke_before'
+activesupport (7.0.7) lib/active_support/callbacks.rb:116:in `block in run_callbacks'
+activesupport (7.0.7) lib/active_support/callbacks.rb:138:in `run_callbacks'
+actionpack (7.0.7) lib/abstract_controller/callbacks.rb:233:in `process_action'
+actionpack (7.0.7) lib/action_controller/metal/rescue.rb:23:in `process_action'
+actionpack (7.0.7) lib/action_controller/metal/instrumentation.rb:67:in `block in process_action'
+activesupport (7.0.7) lib/active_support/notifications.rb:206:in `block in instrument'
+activesupport (7.0.7) lib/active_support/notifications/instrumenter.rb:24:in `instrument'
+activesupport (7.0.7) lib/active_support/notifications.rb:206:in `instrument'
+actionpack (7.0.7) lib/action_controller/metal/instrumentation.rb:66:in `process_action'
+actionpack (7.0.7) lib/action_controller/metal/params_wrapper.rb:259:in `process_action'
+activerecord (7.0.7) lib/active_record/railties/controller_runtime.rb:27:in `process_action'
+actionpack (7.0.7) lib/abstract_controller/base.rb:151:in `process'
+actionview (7.0.7) lib/action_view/rendering.rb:39:in `process'
+actionpack (7.0.7) lib/action_controller/metal.rb:188:in `dispatch'
+actionpack (7.0.7) lib/action_controller/metal.rb:251:in `dispatch'
+actionpack (7.0.7) lib/action_dispatch/routing/route_set.rb:49:in `dispatch'
+actionpack (7.0.7) lib/action_dispatch/routing/route_set.rb:32:in `serve'
+actionpack (7.0.7) lib/action_dispatch/journey/router.rb:50:in `block in serve'
+actionpack (7.0.7) lib/action_dispatch/journey/router.rb:32:in `each'
+actionpack (7.0.7) lib/action_dispatch/journey/router.rb:32:in `serve'
+actionpack (7.0.7) lib/action_dispatch/routing/route_set.rb:852:in `call'
+rack (2.2.8) lib/rack/tempfile_reaper.rb:15:in `call'
+rack (2.2.8) lib/rack/etag.rb:27:in `call'
+rack (2.2.8) lib/rack/conditional_get.rb:40:in `call'
+rack (2.2.8) lib/rack/head.rb:12:in `call'
+actionpack (7.0.7) lib/action_dispatch/http/permissions_policy.rb:38:in `call'
+actionpack (7.0.7) lib/action_dispatch/http/content_security_policy.rb:36:in `call'
+rack (2.2.8) lib/rack/session/abstract/id.rb:266:in `context'
+rack (2.2.8) lib/rack/session/abstract/id.rb:260:in `call'
+actionpack (7.0.7) lib/action_dispatch/middleware/cookies.rb:704:in `call'
+activerecord (7.0.7) lib/active_record/migration.rb:603:in `call'
+actionpack (7.0.7) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (7.0.7) lib/active_support/callbacks.rb:99:in `run_callbacks'
+actionpack (7.0.7) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (7.0.7) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.0.7) lib/action_dispatch/middleware/actionable_exceptions.rb:17:in `call'
+actionpack (7.0.7) lib/action_dispatch/middleware/debug_exceptions.rb:28:in `call'
+web-console (4.2.0) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.2.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.2.0) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.2.0) lib/web_console/middleware.rb:17:in `call'
+actionpack (7.0.7) lib/action_dispatch/middleware/show_exceptions.rb:29:in `call'
+railties (7.0.7) lib/rails/rack/logger.rb:40:in `call_app'
+railties (7.0.7) lib/rails/rack/logger.rb:25:in `block in call'
+activesupport (7.0.7) lib/active_support/tagged_logging.rb:99:in `block in tagged'
+activesupport (7.0.7) lib/active_support/tagged_logging.rb:37:in `tagged'
+activesupport (7.0.7) lib/active_support/tagged_logging.rb:99:in `tagged'
+railties (7.0.7) lib/rails/rack/logger.rb:25:in `call'
+sprockets-rails (3.4.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (7.0.7) lib/action_dispatch/middleware/remote_ip.rb:93:in `call'
+actionpack (7.0.7) lib/action_dispatch/middleware/request_id.rb:26:in `call'
+rack (2.2.8) lib/rack/method_override.rb:24:in `call'
+rack (2.2.8) lib/rack/runtime.rb:22:in `call'
+activesupport (7.0.7) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (7.0.7) lib/action_dispatch/middleware/server_timing.rb:61:in `block in call'
+actionpack (7.0.7) lib/action_dispatch/middleware/server_timing.rb:26:in `collect_events'
+actionpack (7.0.7) lib/action_dispatch/middleware/server_timing.rb:60:in `call'
+actionpack (7.0.7) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.0.7) lib/action_dispatch/middleware/static.rb:23:in `call'
+rack (2.2.8) lib/rack/sendfile.rb:110:in `call'
+actionpack (7.0.7) lib/action_dispatch/middleware/host_authorization.rb:137:in `call'
+railties (7.0.7) lib/rails/engine.rb:530:in `call'
+puma (5.6.6) lib/puma/configuration.rb:252:in `call'
+puma (5.6.6) lib/puma/request.rb:77:in `block in handle_request'
+puma (5.6.6) lib/puma/thread_pool.rb:340:in `with_force_shutdown'
+puma (5.6.6) lib/puma/request.rb:76:in `handle_request'
+puma (5.6.6) lib/puma/server.rb:443:in `process_client'
+puma (5.6.6) lib/puma/thread_pool.rb:147:in `block in spawn_thread'
+Started POST "/addUser" for 127.0.0.1 at 2023-08-11 12:01:17 +0530
+Processing by UsersController#addUser as */*
+  Parameters: {"name"=>"rajesh", "age"=>"20", "email"=>"rajesh@test.com", "address"=>"delhi NCR"}
+Completed 400 Bad Request in 17ms (ActiveRecord: 0.0ms | Allocations: 1175)
+
+
+  
+ActionController::ParameterMissing (param is missing or the value is empty: user):
+  
+app/controllers/users_controller.rb:17:in `user_params'
+app/controllers/users_controller.rb:5:in `addUser'
+Started POST "/addUser" for 127.0.0.1 at 2023-08-11 12:02:40 +0530
+Processing by UsersController#addUser as */*
+  Parameters: {"name"=>"rajesh", "age"=>"20", "email"=>"rajesh@test.com", "address"=>"delhi NCR"}
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/users_controller.rb:6:in `addUser'
+  [1m[36mUser Create (37.3ms)[0m  [1m[32mINSERT INTO "users" ("name", "age", "email", "address", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "rajesh"], ["age", 20], ["email", "rajesh@test.com"], ["address", "delhi NCR"], ["created_at", "2023-08-11 06:32:40.996718"], ["updated_at", "2023-08-11 06:32:40.996718"]]
+  ↳ app/controllers/users_controller.rb:6:in `addUser'
+  [1m[36mTRANSACTION (108.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/users_controller.rb:6:in `addUser'
+Completed 200 OK in 207ms (Views: 0.7ms | ActiveRecord: 147.9ms | Allocations: 20843)
+
+
+Started POST "/addUser" for 127.0.0.1 at 2023-08-11 12:57:19 +0530
+Processing by UsersController#addUser as */*
+  Parameters: {"name"=>"saini", "age"=>"30", "email"=>"saini@test.com", "address"=>"noida 86"}
+Completed 400 Bad Request in 3ms (ActiveRecord: 0.0ms | Allocations: 1089)
+
+
+  
+ActionController::ParameterMissing (param is missing or the value is empty: user):
+  
+app/controllers/users_controller.rb:17:in `user_params'
+app/controllers/users_controller.rb:5:in `addUser'
+Started POST "/addUser" for 127.0.0.1 at 2023-08-11 13:00:24 +0530
+Processing by UsersController#addUser as */*
+  Parameters: {"query"=>"\n    query IntrospectionQuery {\n      __schema {\n        queryType { name }\n        mutationType { name }\n        subscriptionType { name }\n        types {\n          ...FullType\n        }\n        directives {\n          name\n          description\n          locations\n          args {\n            ...InputValue\n          }\n        }\n      }\n    }\n\n    fragment FullType on __Type {\n      kind\n      name\n      description\n      fields(includeDeprecated: true) {\n        name\n        description\n        args {\n          ...InputValue\n        }\n        type {\n          ...TypeRef\n        }\n        isDeprecated\n        deprecationReason\n      }\n      inputFields {\n        ...InputValue\n      }\n      interfaces {\n        ...TypeRef\n      }\n      enumValues(includeDeprecated: true) {\n        name\n        description\n        isDeprecated\n        deprecationReason\n      }\n      possibleTypes {\n        ...TypeRef\n      }\n    }\n\n    fragment InputValue on __InputValue {\n      name\n      description\n      type { ...TypeRef }\n      defaultValue\n    }\n\n    fragment TypeRef on __Type {\n      kind\n      name\n      ofType {\n        kind\n        name\n        ofType {\n          kind\n          name\n          ofType {\n            kind\n            name\n            ofType {\n              kind\n              name\n              ofType {\n                kind\n                name\n                ofType {\n                  kind\n                  name\n                  ofType {\n                    kind\n                    name\n                  }\n                }\n              }\n            }\n          }\n        }\n      }\n    }\n  ", "user"=>{}}
+Completed 400 Bad Request in 1ms (ActiveRecord: 0.4ms | Allocations: 533)
+
+
+  
+ActionController::ParameterMissing (param is missing or the value is empty: user):
+  
+app/controllers/users_controller.rb:17:in `user_params'
+app/controllers/users_controller.rb:5:in `addUser'
+Started POST "/addUser" for 127.0.0.1 at 2023-08-11 13:02:26 +0530
+Processing by UsersController#addUser as */*
+  Parameters: {"name"=>"rajesh saini", "age"=>40, "email"=>"rajesh123@gmail.com", "address"=>"prem nagar", "user"=>{"name"=>"rajesh saini", "age"=>40, "email"=>"rajesh123@gmail.com", "address"=>"prem nagar"}}
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/users_controller.rb:6:in `addUser'
+  [1m[36mUser Create (0.4ms)[0m  [1m[32mINSERT INTO "users" ("name", "age", "email", "address", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "rajesh saini"], ["age", 40], ["email", "rajesh123@gmail.com"], ["address", "prem nagar"], ["created_at", "2023-08-11 07:32:26.668313"], ["updated_at", "2023-08-11 07:32:26.668313"]]
+  ↳ app/controllers/users_controller.rb:6:in `addUser'
+  [1m[36mTRANSACTION (108.4ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/users_controller.rb:6:in `addUser'
+Completed 200 OK in 122ms (Views: 0.9ms | ActiveRecord: 109.0ms | Allocations: 3879)
+
+
+Started POST "/addUser" for 127.0.0.1 at 2023-08-11 13:03:29 +0530
+Processing by UsersController#addUser as */*
+  Parameters: {"name"=>"rajesh saini", "age"=>10, "email"=>"rajesh123@gmail.com", "address"=>"prem nagar", "user"=>{"name"=>"rajesh saini", "age"=>10, "email"=>"rajesh123@gmail.com", "address"=>"prem nagar"}}
+[31mUnpermitted parameter: :address. Context: { controller: UsersController, action: addUser, request: #<ActionDispatch::Request:0x00007fcb10119a30>, params: {"name"=>"rajesh saini", "age"=>10, "email"=>"rajesh123@gmail.com", "address"=>"prem nagar", "controller"=>"users", "action"=>"addUser", "user"=>{"name"=>"rajesh saini", "age"=>10, "email"=>"rajesh123@gmail.com", "address"=>"prem nagar"}} }[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/users_controller.rb:6:in `addUser'
+  [1m[36mUser Create (0.5ms)[0m  [1m[32mINSERT INTO "users" ("name", "age", "email", "address", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "rajesh saini"], ["age", 10], ["email", "rajesh123@gmail.com"], ["address", nil], ["created_at", "2023-08-11 07:33:29.194593"], ["updated_at", "2023-08-11 07:33:29.194593"]]
+  ↳ app/controllers/users_controller.rb:6:in `addUser'
+  [1m[36mTRANSACTION (105.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/users_controller.rb:6:in `addUser'
+Completed 200 OK in 121ms (Views: 0.8ms | ActiveRecord: 107.3ms | Allocations: 4575)
+
+
+Started POST "/addUser" for 127.0.0.1 at 2023-08-11 13:04:11 +0530
+Processing by UsersController#addUser as */*
+  Parameters: {"name"=>"rajesh saini", "age"=>10, "email"=>"rajesh123@gmail.com", "address"=>"prem nagar", "user"=>{"name"=>"rajesh saini", "age"=>10, "email"=>"rajesh123@gmail.com", "address"=>"prem nagar"}}
+Completed 500 Internal Server Error in 12ms (ActiveRecord: 0.7ms | Allocations: 3106)
+
+
+  
+NameError (undefined local variable or method `user_paramss' for #<UsersController:0x0000000002b6d8>
+Did you mean?  user_params):
+  
+app/controllers/users_controller.rb:5:in `addUser'
+Started POST "/addUser" for 127.0.0.1 at 2023-08-11 15:38:12 +0530
+  
+SyntaxError (/home/dev/Desktop/rajesh/liteProject/app/controllers/users_controller.rb:3: syntax error, unexpected symbol literal, expecting `do' or '{' or '('
+... validates :addUser, presence :true
+...                              ^
+):
+  
+app/controllers/users_controller.rb:3: syntax error, unexpected symbol literal, expecting `do' or '{' or '('
+app/controllers/users_controller.rb:3: syntax error, unexpected symbol literal, expecting `do' or '{' or '('
+app/controllers/users_controller.rb:3: syntax error, unexpected symbol literal, expecting `do' or '{' or '('
+Started POST "/addUser" for 127.0.0.1 at 2023-08-11 15:53:36 +0530
+  
+SyntaxError (/home/dev/Desktop/rajesh/liteProject/app/controllers/users_controller.rb:3: syntax error, unexpected symbol literal, expecting `do' or '{' or '('
+... validates :addUser, presence :true
+...                              ^
+):
+  
+app/controllers/users_controller.rb:3: syntax error, unexpected symbol literal, expecting `do' or '{' or '('
+app/controllers/users_controller.rb:3: syntax error, unexpected symbol literal, expecting `do' or '{' or '('
+app/controllers/users_controller.rb:3: syntax error, unexpected symbol literal, expecting `do' or '{' or '('
+Started POST "/addUser" for 127.0.0.1 at 2023-08-11 15:53:48 +0530
+Processing by UsersController#addUser as */*
+  Parameters: {"name"=>"rajesh pushpakar", "age"=>25, "email"=>"saini123@gmail.com", "address"=>"nangloi", "user"=>{"name"=>"rajesh pushpakar", "age"=>25, "email"=>"saini123@gmail.com", "address"=>"nangloi"}}
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/users_controller.rb:7:in `addUser'
+  [1m[36mUser Create (0.5ms)[0m  [1m[32mINSERT INTO "users" ("name", "age", "email", "address", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "rajesh pushpakar"], ["age", 25], ["email", "saini123@gmail.com"], ["address", "nangloi"], ["created_at", "2023-08-11 10:23:48.658559"], ["updated_at", "2023-08-11 10:23:48.658559"]]
+  ↳ app/controllers/users_controller.rb:7:in `addUser'
+  [1m[36mTRANSACTION (126.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/users_controller.rb:7:in `addUser'
+Completed 200 OK in 140ms (Views: 1.6ms | ActiveRecord: 127.4ms | Allocations: 4059)
+
+
+Started POST "/addUser" for 127.0.0.1 at 2023-08-11 15:53:50 +0530
+Processing by UsersController#addUser as */*
+  Parameters: {"name"=>"rajesh pushpakar", "age"=>25, "email"=>"saini123@gmail.com", "address"=>"nangloi", "user"=>{"name"=>"rajesh pushpakar", "age"=>25, "email"=>"saini123@gmail.com", "address"=>"nangloi"}}
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/users_controller.rb:7:in `addUser'
+  [1m[36mUser Create (0.6ms)[0m  [1m[32mINSERT INTO "users" ("name", "age", "email", "address", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "rajesh pushpakar"], ["age", 25], ["email", "saini123@gmail.com"], ["address", "nangloi"], ["created_at", "2023-08-11 10:23:50.838274"], ["updated_at", "2023-08-11 10:23:50.838274"]]
+  ↳ app/controllers/users_controller.rb:7:in `addUser'
+  [1m[36mTRANSACTION (114.9ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/users_controller.rb:7:in `addUser'
+Completed 200 OK in 123ms (Views: 0.6ms | ActiveRecord: 115.5ms | Allocations: 1973)
+
+
+Started POST "/addUser" for 127.0.0.1 at 2023-08-11 15:53:52 +0530
+Processing by UsersController#addUser as */*
+  Parameters: {"name"=>"rajesh pushpakar", "age"=>25, "email"=>"saini123@gmail.com", "address"=>"nangloi", "user"=>{"name"=>"rajesh pushpakar", "age"=>25, "email"=>"saini123@gmail.com", "address"=>"nangloi"}}
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/users_controller.rb:7:in `addUser'
+  [1m[36mUser Create (4.9ms)[0m  [1m[32mINSERT INTO "users" ("name", "age", "email", "address", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "rajesh pushpakar"], ["age", 25], ["email", "saini123@gmail.com"], ["address", "nangloi"], ["created_at", "2023-08-11 10:23:52.930855"], ["updated_at", "2023-08-11 10:23:52.930855"]]
+  ↳ app/controllers/users_controller.rb:7:in `addUser'
+  [1m[36mTRANSACTION (110.5ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/users_controller.rb:7:in `addUser'
+Completed 200 OK in 147ms (Views: 0.6ms | ActiveRecord: 115.5ms | Allocations: 1985)
+
+
+Started POST "/addUser" for 127.0.0.1 at 2023-08-11 15:58:26 +0530
+Processing by UsersController#addUser as */*
+  Parameters: {"name"=>"rajesh pushpakar", "age"=>25, "email"=>"saini123@gmail.com", "address"=>"nangloi", "user"=>{"name"=>"rajesh pushpakar", "age"=>25, "email"=>"saini123@gmail.com", "address"=>"nangloi"}}
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/users_controller.rb:7:in `addUser'
+  [1m[36mUser Create (13.0ms)[0m  [1m[32mINSERT INTO "users" ("name", "age", "email", "address", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "rajesh pushpakar"], ["age", 25], ["email", "saini123@gmail.com"], ["address", "nangloi"], ["created_at", "2023-08-11 10:28:26.852520"], ["updated_at", "2023-08-11 10:28:26.852520"]]
+  ↳ app/controllers/users_controller.rb:7:in `addUser'
+  [1m[36mTRANSACTION (92.5ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/users_controller.rb:7:in `addUser'
+Completed 200 OK in 141ms (Views: 1.0ms | ActiveRecord: 109.3ms | Allocations: 4027)
+
+
+Started POST "/addUser" for 127.0.0.1 at 2023-08-11 16:00:08 +0530
+Processing by UsersController#addUser as */*
+  Parameters: {"name"=>"rajesh pushpakar", "age"=>25, "email"=>"saini123@gmail.com", "address"=>"nangloi", "user"=>{"name"=>"rajesh pushpakar", "age"=>25, "email"=>"saini123@gmail.com", "address"=>"nangloi"}}
+Completed 500 Internal Server Error in 17ms (ActiveRecord: 1.7ms | Allocations: 4747)
+
+
+  
+NoMethodError (undefined method `validate' for #<UsersController:0x0000000003c280>):
+  
+app/controllers/users_controller.rb:7:in `addUser'
+Started POST "/addUser" for 127.0.0.1 at 2023-08-11 16:02:12 +0530
+Processing by UsersController#addUser as */*
+  Parameters: {"name"=>"rajesh pushpakar", "age"=>25, "email"=>"saini123@gmail.com", "address"=>"nangloi", "user"=>{"name"=>"rajesh pushpakar", "age"=>25, "email"=>"saini123@gmail.com", "address"=>"nangloi"}}
+Completed 500 Internal Server Error in 17ms (ActiveRecord: 1.3ms | Allocations: 4727)
+
+
+  
+NoMethodError (undefined method `validates' for #<UsersController:0x000000000406a0>):
+  
+app/controllers/users_controller.rb:7:in `addUser'
+Started POST "/addUser" for 127.0.0.1 at 2023-08-11 16:18:04 +0530
+  
+SyntaxError (/home/dev/Desktop/rajesh/liteProject/app/controllers/users_controller.rb:6: syntax error, unexpected symbol literal, expecting `do' or '{' or '('
+... validates :addUser, presence :true
+...                              ^
+):
+  
+app/controllers/users_controller.rb:6: syntax error, unexpected symbol literal, expecting `do' or '{' or '('
+app/controllers/users_controller.rb:6: syntax error, unexpected symbol literal, expecting `do' or '{' or '('
+app/controllers/users_controller.rb:6: syntax error, unexpected symbol literal, expecting `do' or '{' or '('
+Started POST "/addUser" for 127.0.0.1 at 2023-08-11 16:19:04 +0530
+Processing by UsersController#addUser as */*
+  Parameters: {"name"=>"rajesh pushpakar", "age"=>25, "email"=>"saini123@gmail.com", "address"=>"nangloi", "user"=>{"name"=>"rajesh pushpakar", "age"=>25, "email"=>"saini123@gmail.com", "address"=>"nangloi"}}
+Completed 500 Internal Server Error in 12ms (ActiveRecord: 0.3ms | Allocations: 2896)
+
+
+  
+NoMethodError (undefined method `validates' for #<UsersController:0x00000000049020>):
+  
+app/controllers/users_controller.rb:6:in `addUser'
+Started POST "/addUser" for 127.0.0.1 at 2023-08-11 16:19:58 +0530
+  
+NoMethodError (undefined method `validates' for UsersController:Class):
+  
+app/controllers/users_controller.rb:3:in `<class:UsersController>'
+app/controllers/users_controller.rb:1:in `<main>'
+Started POST "/addUser" for 127.0.0.1 at 2023-08-11 16:27:28 +0530
+Processing by UsersController#addUser as */*
+  Parameters: {"name"=>"rajesh pushpakar", "age"=>25, "email"=>"saini123@gmail.com", "address"=>"nangloi", "user"=>{"name"=>"rajesh pushpakar", "age"=>25, "email"=>"saini123@gmail.com", "address"=>"nangloi"}}
+Completed 500 Internal Server Error in 22ms (ActiveRecord: 1.5ms | Allocations: 5871)
+
+
+  
+NoMethodError (undefined method `addUser' for #<User id: nil, name: "rajesh pushpakar", age: 25, email: "saini123@gmail.com", address: "nangloi", created_at: nil, updated_at: nil>
+Did you mean?  address=):
+  
+app/controllers/users_controller.rb:6:in `addUser'
+Started POST "/addUser" for 127.0.0.1 at 2023-08-11 16:30:10 +0530
+Processing by UsersController#addUser as */*
+  Parameters: {"name"=>"rajesh pushpakar", "age"=>25, "email"=>"saini123@gmail.com", "address"=>"nangloi", "user"=>{"name"=>"rajesh pushpakar", "age"=>25, "email"=>"saini123@gmail.com", "address"=>"nangloi"}}
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/users_controller.rb:6:in `addUser'
+  [1m[36mUser Exists? (0.3ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "saini123@gmail.com"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:6:in `addUser'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/controllers/users_controller.rb:6:in `addUser'
+Completed 200 OK in 15ms (Views: 0.5ms | ActiveRecord: 1.5ms | Allocations: 6395)
+
+
+Started POST "/addUser" for 127.0.0.1 at 2023-08-11 16:31:21 +0530
+Processing by UsersController#addUser as */*
+  Parameters: {"name"=>"rajesh123", "age"=>35, "email"=>"saini304@gmail.com", "address"=>"nangloi", "user"=>{"name"=>"rajesh123", "age"=>35, "email"=>"saini304@gmail.com", "address"=>"nangloi"}}
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/users_controller.rb:6:in `addUser'
+  [1m[36mUser Exists? (0.3ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "saini304@gmail.com"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:6:in `addUser'
+  [1m[36mUser Create (5.5ms)[0m  [1m[32mINSERT INTO "users" ("name", "age", "email", "address", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "rajesh123"], ["age", 35], ["email", "saini304@gmail.com"], ["address", "nangloi"], ["created_at", "2023-08-11 11:01:21.114640"], ["updated_at", "2023-08-11 11:01:21.114640"]]
+  ↳ app/controllers/users_controller.rb:6:in `addUser'
+  [1m[36mTRANSACTION (82.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/users_controller.rb:6:in `addUser'
+Completed 200 OK in 103ms (Views: 0.7ms | ActiveRecord: 88.5ms | Allocations: 2842)
+
+
+Started GET "/" for 127.0.0.1 at 2023-08-11 16:35:38 +0530
+  
+ArgumentError (Missing :controller key on routes definition, please check your routes.):
+  
+config/routes.rb:8:in `block in <main>'
+config/routes.rb:1:in `<main>'
+Started GET "/" for 127.0.0.1 at 2023-08-11 16:36:18 +0530
+Processing by UsersController#allUser as */*
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:16:in `allUser'
+Completed 200 OK in 66ms (Views: 56.9ms | ActiveRecord: 2.4ms | Allocations: 5274)
+
+
+Started GET "/" for 127.0.0.1 at 2023-08-11 16:36:49 +0530
+Processing by UsersController#allUser as */*
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" ORDER BY "users"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:15:in `allUser'
+Completed 200 OK in 25ms (Views: 0.8ms | ActiveRecord: 2.9ms | Allocations: 4565)
+
+
+Started GET "/" for 127.0.0.1 at 2023-08-11 16:42:14 +0530
+  
+SyntaxError (/home/dev/Desktop/rajesh/liteProject/app/controllers/users_controller.rb:15: syntax error, unexpected integer literal, expecting '|'
+...        @user = User.find do |2|
+...                              ^
+):
+  
+app/controllers/users_controller.rb:15: syntax error, unexpected integer literal, expecting '|'
+app/controllers/users_controller.rb:15: syntax error, unexpected integer literal, expecting '|'
+app/controllers/users_controller.rb:15: syntax error, unexpected integer literal, expecting '|'
+Started GET "/" for 127.0.0.1 at 2023-08-11 16:43:05 +0530
+Processing by UsersController#allUser as */*
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."name" = ? LIMIT ?[0m  [["name", "rajesh"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:15:in `allUser'
+Completed 200 OK in 16ms (Views: 1.1ms | ActiveRecord: 2.0ms | Allocations: 4406)
+
+
+Started GET "/" for 127.0.0.1 at 2023-08-11 16:43:20 +0530
+Processing by UsersController#allUser as */*
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."name" = ? LIMIT ?[0m  [["name", "saini"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:15:in `allUser'
+Completed 200 OK in 27ms (Views: 1.6ms | ActiveRecord: 1.2ms | Allocations: 2427)
+
+
+Started GET "/" for 127.0.0.1 at 2023-08-11 16:44:47 +0530
+Processing by UsersController#allUser as */*
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."name" = ? LIMIT ?[0m  [["name", "saini"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:15:in `allUser'
+Completed 500 Internal Server Error in 8ms (Views: 0.4ms | ActiveRecord: 0.9ms | Allocations: 2849)
+
+
+  
+AbstractController::DoubleRenderError (Render and/or redirect were called multiple times in this action. Please note that you may only call render OR redirect, and at most once per action. Also note that neither redirect nor render terminate execution of the action, so if you want to exit an action after redirecting, you need to do something like "redirect_to(...) and return".):
+  
+app/controllers/users_controller.rb:19:in `allUser'
+Started GET "/" for 127.0.0.1 at 2023-08-11 16:46:31 +0530
+Processing by UsersController#allUser as */*
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."name" = ? LIMIT ?[0m  [["name", "saini"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:15:in `allUser'
+Completed 200 OK in 8ms (Views: 0.6ms | ActiveRecord: 0.9ms | Allocations: 2446)
+
+
+Started GET "/" for 127.0.0.1 at 2023-08-11 16:54:27 +0530
+Processing by UsersController#allUser as */*
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:16:in `allUser'
+Completed 200 OK in 16ms (Views: 11.0ms | ActiveRecord: 1.3ms | Allocations: 5009)
+
+
+Started GET "/3" for 127.0.0.1 at 2023-08-11 16:54:43 +0530
+  
+ActionController::RoutingError (No route matches [GET] "/3"):
+  
+Started GET "/3" for 127.0.0.1 at 2023-08-11 16:59:57 +0530
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  
+ActionController::RoutingError (No route matches [GET] "/3"):
+  
+Started GET "/3" for 127.0.0.1 at 2023-08-11 17:01:08 +0530
+Processing by UsersController#user as */*
+  Parameters: {"id"=>"3"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."name" = ? LIMIT ?[0m  [["name", "3"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:21:in `user'
+Completed 200 OK in 39ms (Views: 0.6ms | ActiveRecord: 1.6ms | Allocations: 6995)
+
+
+Started GET "/2" for 127.0.0.1 at 2023-08-11 17:01:30 +0530
+Processing by UsersController#user as */*
+  Parameters: {"id"=>"2"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."name" = ? LIMIT ?[0m  [["name", "2"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:21:in `user'
+Completed 200 OK in 6ms (Views: 0.4ms | ActiveRecord: 0.2ms | Allocations: 633)
+
+
+Started GET "/" for 127.0.0.1 at 2023-08-11 17:01:33 +0530
+Processing by UsersController#allUser as */*
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:16:in `allUser'
+Completed 200 OK in 58ms (Views: 55.8ms | ActiveRecord: 0.9ms | Allocations: 18144)
+
+
+Started GET "/1" for 127.0.0.1 at 2023-08-11 17:01:43 +0530
+Processing by UsersController#user as */*
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."name" = ? LIMIT ?[0m  [["name", "1"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:21:in `user'
+Completed 200 OK in 3ms (Views: 0.3ms | ActiveRecord: 0.1ms | Allocations: 704)
+
+
+Started GET "/1" for 127.0.0.1 at 2023-08-11 17:02:50 +0530
+  
+SyntaxError (/home/dev/Desktop/rajesh/liteProject/app/controllers/users_controller.rb:23: syntax error, unexpected local variable or method, expecting '}'
+...e: "user is not existes  " user} 
+...                           ^~~~
+):
+  
+app/controllers/users_controller.rb:23: syntax error, unexpected local variable or method, expecting '}'
+app/controllers/users_controller.rb:23: syntax error, unexpected local variable or method, expecting '}'
+app/controllers/users_controller.rb:23: syntax error, unexpected local variable or method, expecting '}'
+Started GET "/1" for 127.0.0.1 at 2023-08-11 17:03:14 +0530
+  
+SyntaxError (/home/dev/Desktop/rajesh/liteProject/app/controllers/users_controller.rb:23: syntax error, unexpected instance variable, expecting '}'
+...: "user is not existes  " @user} 
+...                          ^~~~~
+):
+  
+app/controllers/users_controller.rb:23: syntax error, unexpected instance variable, expecting '}'
+app/controllers/users_controller.rb:23: syntax error, unexpected instance variable, expecting '}'
+app/controllers/users_controller.rb:23: syntax error, unexpected instance variable, expecting '}'
+Started GET "/1" for 127.0.0.1 at 2023-08-11 17:05:02 +0530
+Processing by UsersController#user as */*
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."name" = ? LIMIT ?[0m  [["name", "1"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:21:in `user'
+Completed 500 Internal Server Error in 7ms (ActiveRecord: 0.9ms | Allocations: 2695)
+
+
+  
+TypeError (no implicit conversion of nil into String):
+  
+app/controllers/users_controller.rb:23:in `+'
+app/controllers/users_controller.rb:23:in `user'
+Started GET "/1" for 127.0.0.1 at 2023-08-11 17:08:23 +0530
+Processing by UsersController#user as */*
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:21:in `user'
+Completed 200 OK in 19ms (Views: 1.1ms | ActiveRecord: 2.3ms | Allocations: 4852)
+
+
+Started GET "/6" for 127.0.0.1 at 2023-08-11 17:08:29 +0530
+Processing by UsersController#user as */*
+  Parameters: {"id"=>"6"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:21:in `user'
+Completed 200 OK in 3ms (Views: 0.7ms | ActiveRecord: 0.2ms | Allocations: 720)
+
+
+Started GET "/5" for 127.0.0.1 at 2023-08-11 17:08:31 +0530
+Processing by UsersController#user as */*
+  Parameters: {"id"=>"5"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:21:in `user'
+Completed 200 OK in 4ms (Views: 0.8ms | ActiveRecord: 0.2ms | Allocations: 717)
+
+
+Started GET "/rajesh" for 127.0.0.1 at 2023-08-11 17:08:59 +0530
+Processing by UsersController#user as */*
+  Parameters: {"id"=>"rajesh"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."name" = ? LIMIT ?[0m  [["name", "rajesh"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:21:in `user'
+Completed 200 OK in 18ms (Views: 1.4ms | ActiveRecord: 1.8ms | Allocations: 4371)
+
+
+Started GET "/avg" for 127.0.0.1 at 2023-08-11 17:14:47 +0530
+Processing by UsersController#user as */*
+  Parameters: {"id"=>"avg"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."name" = ? LIMIT ?[0m  [["name", "avg"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:21:in `user'
+Completed 200 OK in 8ms (Views: 0.4ms | ActiveRecord: 0.8ms | Allocations: 2460)
+
+
+Started GET "/avg" for 127.0.0.1 at 2023-08-11 17:15:23 +0530
+Processing by UsersController#user as */*
+  Parameters: {"id"=>"avg"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."name" = ? LIMIT ?[0m  [["name", "avg"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:21:in `user'
+Completed 200 OK in 4ms (Views: 0.4ms | ActiveRecord: 0.2ms | Allocations: 609)
+
+
+Started GET "/avg" for 127.0.0.1 at 2023-08-11 17:16:26 +0530
+Processing by UsersController#user as */*
+  Parameters: {"id"=>"avg"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."name" = ? LIMIT ?[0m  [["name", "avg"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:21:in `user'
+Completed 200 OK in 3ms (Views: 0.4ms | ActiveRecord: 0.2ms | Allocations: 604)
+
+
+Started GET "/avg" for 127.0.0.1 at 2023-08-11 17:18:55 +0530
+  
+SyntaxError (/home/dev/Desktop/rajesh/liteProject/app/controllers/users_controller.rb:40: syntax error, unexpected `end', expecting end-of-input):
+  
+app/controllers/users_controller.rb:40: syntax error, unexpected `end', expecting end-of-input
+app/controllers/users_controller.rb:40: syntax error, unexpected `end', expecting end-of-input
+app/controllers/users_controller.rb:40: syntax error, unexpected `end', expecting end-of-input
+Started GET "/avg" for 127.0.0.1 at 2023-08-11 17:19:41 +0530
+  
+AbstractController::ActionNotFound (The action 'user' could not be found for UsersController):
+  
+actionpack (7.0.7) lib/abstract_controller/base.rb:146:in `process'
+actionview (7.0.7) lib/action_view/rendering.rb:39:in `process'
+actionpack (7.0.7) lib/action_controller/metal.rb:188:in `dispatch'
+actionpack (7.0.7) lib/action_controller/metal.rb:251:in `dispatch'
+actionpack (7.0.7) lib/action_dispatch/routing/route_set.rb:49:in `dispatch'
+actionpack (7.0.7) lib/action_dispatch/routing/route_set.rb:32:in `serve'
+actionpack (7.0.7) lib/action_dispatch/journey/router.rb:50:in `block in serve'
+actionpack (7.0.7) lib/action_dispatch/journey/router.rb:32:in `each'
+actionpack (7.0.7) lib/action_dispatch/journey/router.rb:32:in `serve'
+actionpack (7.0.7) lib/action_dispatch/routing/route_set.rb:852:in `call'
+rack (2.2.8) lib/rack/tempfile_reaper.rb:15:in `call'
+rack (2.2.8) lib/rack/etag.rb:27:in `call'
+rack (2.2.8) lib/rack/conditional_get.rb:27:in `call'
+rack (2.2.8) lib/rack/head.rb:12:in `call'
+actionpack (7.0.7) lib/action_dispatch/http/permissions_policy.rb:38:in `call'
+actionpack (7.0.7) lib/action_dispatch/http/content_security_policy.rb:36:in `call'
+rack (2.2.8) lib/rack/session/abstract/id.rb:266:in `context'
+rack (2.2.8) lib/rack/session/abstract/id.rb:260:in `call'
+actionpack (7.0.7) lib/action_dispatch/middleware/cookies.rb:704:in `call'
+activerecord (7.0.7) lib/active_record/migration.rb:603:in `call'
+actionpack (7.0.7) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (7.0.7) lib/active_support/callbacks.rb:99:in `run_callbacks'
+actionpack (7.0.7) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (7.0.7) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.0.7) lib/action_dispatch/middleware/actionable_exceptions.rb:17:in `call'
+actionpack (7.0.7) lib/action_dispatch/middleware/debug_exceptions.rb:28:in `call'
+web-console (4.2.0) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.2.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.2.0) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.2.0) lib/web_console/middleware.rb:17:in `call'
+actionpack (7.0.7) lib/action_dispatch/middleware/show_exceptions.rb:29:in `call'
+railties (7.0.7) lib/rails/rack/logger.rb:40:in `call_app'
+railties (7.0.7) lib/rails/rack/logger.rb:25:in `block in call'
+activesupport (7.0.7) lib/active_support/tagged_logging.rb:99:in `block in tagged'
+activesupport (7.0.7) lib/active_support/tagged_logging.rb:37:in `tagged'
+activesupport (7.0.7) lib/active_support/tagged_logging.rb:99:in `tagged'
+railties (7.0.7) lib/rails/rack/logger.rb:25:in `call'
+sprockets-rails (3.4.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (7.0.7) lib/action_dispatch/middleware/remote_ip.rb:93:in `call'
+actionpack (7.0.7) lib/action_dispatch/middleware/request_id.rb:26:in `call'
+rack (2.2.8) lib/rack/method_override.rb:24:in `call'
+rack (2.2.8) lib/rack/runtime.rb:22:in `call'
+activesupport (7.0.7) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (7.0.7) lib/action_dispatch/middleware/server_timing.rb:61:in `block in call'
+actionpack (7.0.7) lib/action_dispatch/middleware/server_timing.rb:26:in `collect_events'
+actionpack (7.0.7) lib/action_dispatch/middleware/server_timing.rb:60:in `call'
+actionpack (7.0.7) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.0.7) lib/action_dispatch/middleware/static.rb:23:in `call'
+rack (2.2.8) lib/rack/sendfile.rb:110:in `call'
+actionpack (7.0.7) lib/action_dispatch/middleware/host_authorization.rb:137:in `call'
+railties (7.0.7) lib/rails/engine.rb:530:in `call'
+puma (5.6.6) lib/puma/configuration.rb:252:in `call'
+puma (5.6.6) lib/puma/request.rb:77:in `block in handle_request'
+puma (5.6.6) lib/puma/thread_pool.rb:340:in `with_force_shutdown'
+puma (5.6.6) lib/puma/request.rb:76:in `handle_request'
+puma (5.6.6) lib/puma/server.rb:443:in `process_client'
+puma (5.6.6) lib/puma/thread_pool.rb:147:in `block in spawn_thread'
+Started GET "/avg" for 127.0.0.1 at 2023-08-11 17:20:20 +0530
+Processing by UsersController#avg as */*
+  [1m[36mUser Average (0.2ms)[0m  [1m[34mSELECT AVG("users"."age") FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:30:in `avg'
+Completed 200 OK in 8ms (Views: 0.4ms | ActiveRecord: 0.8ms | Allocations: 2356)
+
+
+Started GET "/" for 127.0.0.1 at 2023-08-11 17:20:32 +0530
+Processing by UsersController#allUser as */*
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:16:in `allUser'
+Completed 200 OK in 11ms (Views: 9.4ms | ActiveRecord: 0.9ms | Allocations: 3643)
+
+
+Started POST "/" for 127.0.0.1 at 2023-08-11 17:23:20 +0530
+  
+ActionController::RoutingError (No route matches [POST] "/"):
+  
+Started POST "/addUser" for 127.0.0.1 at 2023-08-11 17:23:36 +0530
+Processing by UsersController#addUser as */*
+  Parameters: {"name"=>"rajesh1234", "age"=>35, "email"=>"saini304@test.com", "user"=>{"name"=>"rajesh1234", "age"=>35, "email"=>"saini304@test.com"}}
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/users_controller.rb:6:in `addUser'
+  [1m[36mUser Exists? (0.7ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "saini304@test.com"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:6:in `addUser'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/controllers/users_controller.rb:6:in `addUser'
+Completed 200 OK in 23ms (Views: 1.0ms | ActiveRecord: 3.2ms | Allocations: 5100)
+
+
+Started POST "/addUser" for 127.0.0.1 at 2023-08-11 17:25:24 +0530
+Processing by UsersController#addUser as */*
+  Parameters: {"name"=>"rajesh1234", "age"=>35, "email"=>"saini304@test.com", "user"=>{"name"=>"rajesh1234", "age"=>35, "email"=>"saini304@test.com"}}
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/users_controller.rb:6:in `addUser'
+  [1m[36mUser Exists? (0.3ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "saini304@test.com"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:6:in `addUser'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/controllers/users_controller.rb:6:in `addUser'
+Completed 200 OK in 18ms (Views: 0.4ms | ActiveRecord: 1.8ms | Allocations: 4781)
+
+
+Started GET "/" for 127.0.0.1 at 2023-08-12 10:10:58 +0530
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  
+SyntaxError (/home/dev/Desktop/rajesh/liteProject/app/controllers/users_controller.rb:21: syntax error, unexpected local variable or method, expecting ')'
+...r = User.where('age > ?' params[:id]).delete_all
+...                         ^~~~~~
+/home/dev/Desktop/rajesh/liteProject/app/controllers/users_controller.rb:21: syntax error, unexpected ')', expecting `end'
+...er.where('age > ?' params[:id]).delete_all
+...                              ^
+):
+  
+app/controllers/users_controller.rb:21: syntax error, unexpected local variable or method, expecting ')'
+app/controllers/users_controller.rb:21: syntax error, unexpected ')', expecting `end'
+app/controllers/users_controller.rb:21: syntax error, unexpected local variable or method, expecting ')'
+app/controllers/users_controller.rb:21: syntax error, unexpected ')', expecting `end'
+app/controllers/users_controller.rb:21: syntax error, unexpected local variable or method, expecting ')'
+app/controllers/users_controller.rb:21: syntax error, unexpected ')', expecting `end'
+Started GET "/" for 127.0.0.1 at 2023-08-12 10:15:23 +0530
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by UsersController#allUser as HTML
+  [1m[36mUser Load (43.4ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:16:in `allUser'
+Completed 200 OK in 407ms (Views: 75.0ms | ActiveRecord: 44.6ms | Allocations: 22689)
+
+
+Started GET "/" for 127.0.0.1 at 2023-08-12 10:16:22 +0530
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /var/lib/gems/3.0.0/gems/railties-7.0.7/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /var/lib/gems/3.0.0/gems/railties-7.0.7/lib/rails/templates/rails/welcome/index.html.erb (Duration: 31.9ms | Allocations: 824)
+Completed 200 OK in 69ms (Views: 35.3ms | ActiveRecord: 0.0ms | Allocations: 5036)
+
+
+Started GET "/" for 127.0.0.1 at 2023-08-12 10:18:15 +0530
+  
+SyntaxError (/home/dev/Desktop/rajesh/liteProject/app/controllers/users_controller.rb:21: syntax error, unexpected integer literal, expecting ')'
+...@user = User.where('age > ?' 25).delete_all
+...                             ^~
+):
+  
+app/controllers/users_controller.rb:21: syntax error, unexpected integer literal, expecting ')'
+app/controllers/users_controller.rb:21: syntax error, unexpected integer literal, expecting ')'
+app/controllers/users_controller.rb:21: syntax error, unexpected integer literal, expecting ')'
+Started GET "/" for 127.0.0.1 at 2023-08-12 10:20:07 +0530
+Processing by UsersController#allUser as */*
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:16:in `allUser'
+Completed 200 OK in 16ms (Views: 10.0ms | ActiveRecord: 2.2ms | Allocations: 5381)
+
+
+Started GET "/deleteUser/34" for 127.0.0.1 at 2023-08-12 10:21:12 +0530
+  
+ActionController::RoutingError (No route matches [GET] "/deleteUser/34"):
+  
+Started POST "/deleteUser/34" for 127.0.0.1 at 2023-08-12 10:21:25 +0530
+Processing by UsersController#deleteUser as */*
+  Parameters: {"id"=>"34"}
+Can't verify CSRF token authenticity.
+Completed 422 Unprocessable Entity in 1ms (ActiveRecord: 0.0ms | Allocations: 526)
+
+
+  
+ActionController::InvalidAuthenticityToken (Can't verify CSRF token authenticity.):
+  
+actionpack (7.0.7) lib/action_controller/metal/request_forgery_protection.rb:253:in `handle_unverified_request'
+actionpack (7.0.7) lib/action_controller/metal/request_forgery_protection.rb:286:in `handle_unverified_request'
+actionpack (7.0.7) lib/action_controller/metal/request_forgery_protection.rb:275:in `verify_authenticity_token'
+activesupport (7.0.7) lib/active_support/callbacks.rb:400:in `block in make_lambda'
+activesupport (7.0.7) lib/active_support/callbacks.rb:180:in `block (2 levels) in halting_and_conditional'
+actionpack (7.0.7) lib/abstract_controller/callbacks.rb:34:in `block (2 levels) in <module:Callbacks>'
+activesupport (7.0.7) lib/active_support/callbacks.rb:181:in `block in halting_and_conditional'
+activesupport (7.0.7) lib/active_support/callbacks.rb:595:in `block in invoke_before'
+activesupport (7.0.7) lib/active_support/callbacks.rb:595:in `each'
+activesupport (7.0.7) lib/active_support/callbacks.rb:595:in `invoke_before'
+activesupport (7.0.7) lib/active_support/callbacks.rb:116:in `block in run_callbacks'
+activesupport (7.0.7) lib/active_support/callbacks.rb:138:in `run_callbacks'
+actionpack (7.0.7) lib/abstract_controller/callbacks.rb:233:in `process_action'
+actionpack (7.0.7) lib/action_controller/metal/rescue.rb:23:in `process_action'
+actionpack (7.0.7) lib/action_controller/metal/instrumentation.rb:67:in `block in process_action'
+activesupport (7.0.7) lib/active_support/notifications.rb:206:in `block in instrument'
+activesupport (7.0.7) lib/active_support/notifications/instrumenter.rb:24:in `instrument'
+activesupport (7.0.7) lib/active_support/notifications.rb:206:in `instrument'
+actionpack (7.0.7) lib/action_controller/metal/instrumentation.rb:66:in `process_action'
+actionpack (7.0.7) lib/action_controller/metal/params_wrapper.rb:259:in `process_action'
+activerecord (7.0.7) lib/active_record/railties/controller_runtime.rb:27:in `process_action'
+actionpack (7.0.7) lib/abstract_controller/base.rb:151:in `process'
+actionview (7.0.7) lib/action_view/rendering.rb:39:in `process'
+actionpack (7.0.7) lib/action_controller/metal.rb:188:in `dispatch'
+actionpack (7.0.7) lib/action_controller/metal.rb:251:in `dispatch'
+actionpack (7.0.7) lib/action_dispatch/routing/route_set.rb:49:in `dispatch'
+actionpack (7.0.7) lib/action_dispatch/routing/route_set.rb:32:in `serve'
+actionpack (7.0.7) lib/action_dispatch/journey/router.rb:50:in `block in serve'
+actionpack (7.0.7) lib/action_dispatch/journey/router.rb:32:in `each'
+actionpack (7.0.7) lib/action_dispatch/journey/router.rb:32:in `serve'
+actionpack (7.0.7) lib/action_dispatch/routing/route_set.rb:852:in `call'
+rack (2.2.8) lib/rack/tempfile_reaper.rb:15:in `call'
+rack (2.2.8) lib/rack/etag.rb:27:in `call'
+rack (2.2.8) lib/rack/conditional_get.rb:40:in `call'
+rack (2.2.8) lib/rack/head.rb:12:in `call'
+actionpack (7.0.7) lib/action_dispatch/http/permissions_policy.rb:38:in `call'
+actionpack (7.0.7) lib/action_dispatch/http/content_security_policy.rb:36:in `call'
+rack (2.2.8) lib/rack/session/abstract/id.rb:266:in `context'
+rack (2.2.8) lib/rack/session/abstract/id.rb:260:in `call'
+actionpack (7.0.7) lib/action_dispatch/middleware/cookies.rb:704:in `call'
+activerecord (7.0.7) lib/active_record/migration.rb:603:in `call'
+actionpack (7.0.7) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (7.0.7) lib/active_support/callbacks.rb:99:in `run_callbacks'
+actionpack (7.0.7) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (7.0.7) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.0.7) lib/action_dispatch/middleware/actionable_exceptions.rb:17:in `call'
+actionpack (7.0.7) lib/action_dispatch/middleware/debug_exceptions.rb:28:in `call'
+web-console (4.2.0) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.2.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.2.0) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.2.0) lib/web_console/middleware.rb:17:in `call'
+actionpack (7.0.7) lib/action_dispatch/middleware/show_exceptions.rb:29:in `call'
+railties (7.0.7) lib/rails/rack/logger.rb:40:in `call_app'
+railties (7.0.7) lib/rails/rack/logger.rb:25:in `block in call'
+activesupport (7.0.7) lib/active_support/tagged_logging.rb:99:in `block in tagged'
+activesupport (7.0.7) lib/active_support/tagged_logging.rb:37:in `tagged'
+activesupport (7.0.7) lib/active_support/tagged_logging.rb:99:in `tagged'
+railties (7.0.7) lib/rails/rack/logger.rb:25:in `call'
+sprockets-rails (3.4.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (7.0.7) lib/action_dispatch/middleware/remote_ip.rb:93:in `call'
+actionpack (7.0.7) lib/action_dispatch/middleware/request_id.rb:26:in `call'
+rack (2.2.8) lib/rack/method_override.rb:24:in `call'
+rack (2.2.8) lib/rack/runtime.rb:22:in `call'
+activesupport (7.0.7) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (7.0.7) lib/action_dispatch/middleware/server_timing.rb:61:in `block in call'
+actionpack (7.0.7) lib/action_dispatch/middleware/server_timing.rb:26:in `collect_events'
+actionpack (7.0.7) lib/action_dispatch/middleware/server_timing.rb:60:in `call'
+actionpack (7.0.7) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.0.7) lib/action_dispatch/middleware/static.rb:23:in `call'
+rack (2.2.8) lib/rack/sendfile.rb:110:in `call'
+actionpack (7.0.7) lib/action_dispatch/middleware/host_authorization.rb:137:in `call'
+railties (7.0.7) lib/rails/engine.rb:530:in `call'
+puma (5.6.6) lib/puma/configuration.rb:252:in `call'
+puma (5.6.6) lib/puma/request.rb:77:in `block in handle_request'
+puma (5.6.6) lib/puma/thread_pool.rb:340:in `with_force_shutdown'
+puma (5.6.6) lib/puma/request.rb:76:in `handle_request'
+puma (5.6.6) lib/puma/server.rb:443:in `process_client'
+puma (5.6.6) lib/puma/thread_pool.rb:147:in `block in spawn_thread'
+Started POST "/deleteUser/34" for 127.0.0.1 at 2023-08-12 10:22:23 +0530
+Processing by UsersController#deleteUser as */*
+  Parameters: {"id"=>"34"}
+  [1m[36mUser Delete All (102.0ms)[0m  [1m[31mDELETE FROM "users" WHERE (age > '34')[0m
+  ↳ app/controllers/users_controller.rb:21:in `deleteUser'
+Completed 200 OK in 112ms (Views: 0.4ms | ActiveRecord: 103.4ms | Allocations: 2280)
+
+
+Started GET "/" for 127.0.0.1 at 2023-08-12 10:22:56 +0530
+Processing by UsersController#allUser as */*
+  [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:16:in `allUser'
+Completed 200 OK in 23ms (Views: 20.0ms | ActiveRecord: 1.6ms | Allocations: 3555)
+
+
+Started GET "/" for 127.0.0.1 at 2023-08-12 10:24:41 +0530
+Processing by UsersController#allUser as */*
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:16:in `allUser'
+Completed 200 OK in 70ms (Views: 35.0ms | ActiveRecord: 11.8ms | Allocations: 5036)
+
+
