@@ -1,19 +1,22 @@
 class UsersController < ApplicationController
     skip_before_action :verify_authenticity_token, only: [:addUser, :deleteUser]
         
+    def new
+      @user = User.new
+    end
+
         def addUser
             @user = User.new(user_params)
           if @user.save
-            render json: @user, status: 200;
+           redirect_to allUser_path
             
           else
             render json: {message: "Please fill full details"}
           end
         end
 
-        def allUser
-            user = User.all
-            render json: user;
+        def all_users
+            @users = User.all
 
         end
 

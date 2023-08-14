@@ -1,0 +1,31 @@
+<div class="col-lg-12">
+<div class="card rounded-0 mt-5 mb-4 mx-3">
+    <div class="card-body">
+        <h2 class="text-center">Listing all User</h2>
+    </div>
+
+</div>
+<%= link_to "Create New User", addUser_path, class: "btn btn-primary btn-lg mb-4" %>
+<table class="table table-bordered">
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Age</th>
+            <th>Email</th>
+            <th>Address</th>
+        </tr>
+    </thead>
+    <tbody>
+        <% @users.each do |user| %>
+        <tr>
+            <td><%= user.name %></td>
+            <td><%= user.age %></td>
+            <td><%= user.email %></td>
+            <td><%= user.address%></td>
+
+        </tr>
+          
+        <%end%> 
+    </tbody>
+</table>
+</div>

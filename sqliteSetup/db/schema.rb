@@ -10,14 +10,8 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.0].define(version: 2023_08_10_134402) do
-  create_table "users", force: :cascade do |t|
-    t.string "name"
-    t.integer "age"
-    t.string "email"
-    t.string "address"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
-  end
+ActiveRecord::Schema[7.0].define(version: 2023_08_14_132420) do
+# Could not dump table "users" because of following StandardError
+#   Unknown type 'file' for column 'document'
 
 end

@@ -3,9 +3,18 @@ Rails.application.routes.draw do
 
   # Defines the root path route ("/")
   # root "articles#index"
+
+  # resources :users, only: [:new, :create]
+  # root to: 'users#new'  
+
+  resources :users
+
   post '/addUser', action: :addUser, controller: :users
 
-  get '/', action: :allUser, controller: :users
+  get '/addUser', controller: :users, to: 'users#new'
+
+
+  get '/allUser', action: :all_users, controller: :users, to: 'users#all_users'
 
   post '/deleteUser/:id', action: :deleteUser, controller: :users
 

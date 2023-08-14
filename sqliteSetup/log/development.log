@@ -835,3 +835,2719 @@ Processing by UsersController#allUser as */*
 Completed 200 OK in 70ms (Views: 35.0ms | ActiveRecord: 11.8ms | Allocations: 5036)
 
 
+Started GET "/" for 127.0.0.1 at 2023-08-12 11:10:03 +0530
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by UsersController#allUser as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:16:in `allUser'
+Completed 200 OK in 57ms (Views: 41.8ms | ActiveRecord: 1.6ms | Allocations: 22478)
+
+
+Started GET "/" for 127.0.0.1 at 2023-08-12 11:10:35 +0530
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /var/lib/gems/3.0.0/gems/railties-7.0.7/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /var/lib/gems/3.0.0/gems/railties-7.0.7/lib/rails/templates/rails/welcome/index.html.erb (Duration: 2.6ms | Allocations: 824)
+Completed 200 OK in 40ms (Views: 7.5ms | ActiveRecord: 0.0ms | Allocations: 5127)
+
+
+Started GET "/" for 127.0.0.1 at 2023-08-12 11:22:20 +0530
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /var/lib/gems/3.0.0/gems/railties-7.0.7/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /var/lib/gems/3.0.0/gems/railties-7.0.7/lib/rails/templates/rails/welcome/index.html.erb (Duration: 3.0ms | Allocations: 487)
+Completed 200 OK in 9ms (Views: 7.4ms | ActiveRecord: 0.0ms | Allocations: 1542)
+
+
+Started GET "/adduser" for 127.0.0.1 at 2023-08-12 11:22:26 +0530
+  
+ActionController::RoutingError (No route matches [GET] "/adduser"):
+  
+Started GET "/rails/info/routes?path=h" for 127.0.0.1 at 2023-08-12 11:22:33 +0530
+Processing by Rails::InfoController#routes as */*
+  Parameters: {"path"=>"h"}
+Completed 200 OK in 5ms (Views: 0.5ms | ActiveRecord: 0.0ms | Allocations: 1967)
+
+
+Started GET "/adduser" for 127.0.0.1 at 2023-08-12 11:37:15 +0530
+  
+ActionController::RoutingError (No route matches [GET] "/adduser"):
+  
+Started GET "/addUser" for 127.0.0.1 at 2023-08-12 11:43:33 +0530
+  
+AbstractController::ActionNotFound (The action 'new' could not be found for UsersController):
+  
+actionpack (7.0.7) lib/abstract_controller/base.rb:146:in `process'
+actionview (7.0.7) lib/action_view/rendering.rb:39:in `process'
+actionpack (7.0.7) lib/action_controller/metal.rb:188:in `dispatch'
+actionpack (7.0.7) lib/action_controller/metal.rb:251:in `dispatch'
+actionpack (7.0.7) lib/action_dispatch/routing/route_set.rb:49:in `dispatch'
+actionpack (7.0.7) lib/action_dispatch/routing/route_set.rb:32:in `serve'
+actionpack (7.0.7) lib/action_dispatch/journey/router.rb:50:in `block in serve'
+actionpack (7.0.7) lib/action_dispatch/journey/router.rb:32:in `each'
+actionpack (7.0.7) lib/action_dispatch/journey/router.rb:32:in `serve'
+actionpack (7.0.7) lib/action_dispatch/routing/route_set.rb:852:in `call'
+rack (2.2.8) lib/rack/tempfile_reaper.rb:15:in `call'
+rack (2.2.8) lib/rack/etag.rb:27:in `call'
+rack (2.2.8) lib/rack/conditional_get.rb:27:in `call'
+rack (2.2.8) lib/rack/head.rb:12:in `call'
+actionpack (7.0.7) lib/action_dispatch/http/permissions_policy.rb:38:in `call'
+actionpack (7.0.7) lib/action_dispatch/http/content_security_policy.rb:36:in `call'
+rack (2.2.8) lib/rack/session/abstract/id.rb:266:in `context'
+rack (2.2.8) lib/rack/session/abstract/id.rb:260:in `call'
+actionpack (7.0.7) lib/action_dispatch/middleware/cookies.rb:704:in `call'
+activerecord (7.0.7) lib/active_record/migration.rb:603:in `call'
+actionpack (7.0.7) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (7.0.7) lib/active_support/callbacks.rb:99:in `run_callbacks'
+actionpack (7.0.7) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (7.0.7) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.0.7) lib/action_dispatch/middleware/actionable_exceptions.rb:17:in `call'
+actionpack (7.0.7) lib/action_dispatch/middleware/debug_exceptions.rb:28:in `call'
+web-console (4.2.0) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.2.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.2.0) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.2.0) lib/web_console/middleware.rb:17:in `call'
+actionpack (7.0.7) lib/action_dispatch/middleware/show_exceptions.rb:29:in `call'
+railties (7.0.7) lib/rails/rack/logger.rb:40:in `call_app'
+railties (7.0.7) lib/rails/rack/logger.rb:25:in `block in call'
+activesupport (7.0.7) lib/active_support/tagged_logging.rb:99:in `block in tagged'
+activesupport (7.0.7) lib/active_support/tagged_logging.rb:37:in `tagged'
+activesupport (7.0.7) lib/active_support/tagged_logging.rb:99:in `tagged'
+railties (7.0.7) lib/rails/rack/logger.rb:25:in `call'
+sprockets-rails (3.4.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (7.0.7) lib/action_dispatch/middleware/remote_ip.rb:93:in `call'
+actionpack (7.0.7) lib/action_dispatch/middleware/request_id.rb:26:in `call'
+rack (2.2.8) lib/rack/method_override.rb:24:in `call'
+rack (2.2.8) lib/rack/runtime.rb:22:in `call'
+activesupport (7.0.7) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (7.0.7) lib/action_dispatch/middleware/server_timing.rb:61:in `block in call'
+actionpack (7.0.7) lib/action_dispatch/middleware/server_timing.rb:26:in `collect_events'
+actionpack (7.0.7) lib/action_dispatch/middleware/server_timing.rb:60:in `call'
+actionpack (7.0.7) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.0.7) lib/action_dispatch/middleware/static.rb:23:in `call'
+rack (2.2.8) lib/rack/sendfile.rb:110:in `call'
+actionpack (7.0.7) lib/action_dispatch/middleware/host_authorization.rb:137:in `call'
+railties (7.0.7) lib/rails/engine.rb:530:in `call'
+puma (5.6.6) lib/puma/configuration.rb:252:in `call'
+puma (5.6.6) lib/puma/request.rb:77:in `block in handle_request'
+puma (5.6.6) lib/puma/thread_pool.rb:340:in `with_force_shutdown'
+puma (5.6.6) lib/puma/request.rb:76:in `handle_request'
+puma (5.6.6) lib/puma/server.rb:443:in `process_client'
+puma (5.6.6) lib/puma/thread_pool.rb:147:in `block in spawn_thread'
+Started PUT "/__web_console/repl_sessions/1bfe51bb279a265e2c2d74f097a0b202" for 127.0.0.1 at 2023-08-12 11:44:00 +0530
+Started GET "/addUser" for 127.0.0.1 at 2023-08-12 11:44:10 +0530
+  
+AbstractController::ActionNotFound (The action 'new' could not be found for UsersController):
+  
+actionpack (7.0.7) lib/abstract_controller/base.rb:146:in `process'
+actionview (7.0.7) lib/action_view/rendering.rb:39:in `process'
+actionpack (7.0.7) lib/action_controller/metal.rb:188:in `dispatch'
+actionpack (7.0.7) lib/action_controller/metal.rb:251:in `dispatch'
+actionpack (7.0.7) lib/action_dispatch/routing/route_set.rb:49:in `dispatch'
+actionpack (7.0.7) lib/action_dispatch/routing/route_set.rb:32:in `serve'
+actionpack (7.0.7) lib/action_dispatch/journey/router.rb:50:in `block in serve'
+actionpack (7.0.7) lib/action_dispatch/journey/router.rb:32:in `each'
+actionpack (7.0.7) lib/action_dispatch/journey/router.rb:32:in `serve'
+actionpack (7.0.7) lib/action_dispatch/routing/route_set.rb:852:in `call'
+rack (2.2.8) lib/rack/tempfile_reaper.rb:15:in `call'
+rack (2.2.8) lib/rack/etag.rb:27:in `call'
+rack (2.2.8) lib/rack/conditional_get.rb:27:in `call'
+rack (2.2.8) lib/rack/head.rb:12:in `call'
+actionpack (7.0.7) lib/action_dispatch/http/permissions_policy.rb:38:in `call'
+actionpack (7.0.7) lib/action_dispatch/http/content_security_policy.rb:36:in `call'
+rack (2.2.8) lib/rack/session/abstract/id.rb:266:in `context'
+rack (2.2.8) lib/rack/session/abstract/id.rb:260:in `call'
+actionpack (7.0.7) lib/action_dispatch/middleware/cookies.rb:704:in `call'
+activerecord (7.0.7) lib/active_record/migration.rb:603:in `call'
+actionpack (7.0.7) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (7.0.7) lib/active_support/callbacks.rb:99:in `run_callbacks'
+actionpack (7.0.7) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (7.0.7) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.0.7) lib/action_dispatch/middleware/actionable_exceptions.rb:17:in `call'
+actionpack (7.0.7) lib/action_dispatch/middleware/debug_exceptions.rb:28:in `call'
+web-console (4.2.0) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.2.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.2.0) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.2.0) lib/web_console/middleware.rb:17:in `call'
+actionpack (7.0.7) lib/action_dispatch/middleware/show_exceptions.rb:29:in `call'
+railties (7.0.7) lib/rails/rack/logger.rb:40:in `call_app'
+railties (7.0.7) lib/rails/rack/logger.rb:25:in `block in call'
+activesupport (7.0.7) lib/active_support/tagged_logging.rb:99:in `block in tagged'
+activesupport (7.0.7) lib/active_support/tagged_logging.rb:37:in `tagged'
+activesupport (7.0.7) lib/active_support/tagged_logging.rb:99:in `tagged'
+railties (7.0.7) lib/rails/rack/logger.rb:25:in `call'
+sprockets-rails (3.4.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (7.0.7) lib/action_dispatch/middleware/remote_ip.rb:93:in `call'
+actionpack (7.0.7) lib/action_dispatch/middleware/request_id.rb:26:in `call'
+rack (2.2.8) lib/rack/method_override.rb:24:in `call'
+rack (2.2.8) lib/rack/runtime.rb:22:in `call'
+activesupport (7.0.7) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (7.0.7) lib/action_dispatch/middleware/server_timing.rb:61:in `block in call'
+actionpack (7.0.7) lib/action_dispatch/middleware/server_timing.rb:26:in `collect_events'
+actionpack (7.0.7) lib/action_dispatch/middleware/server_timing.rb:60:in `call'
+actionpack (7.0.7) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.0.7) lib/action_dispatch/middleware/static.rb:23:in `call'
+rack (2.2.8) lib/rack/sendfile.rb:110:in `call'
+actionpack (7.0.7) lib/action_dispatch/middleware/host_authorization.rb:137:in `call'
+railties (7.0.7) lib/rails/engine.rb:530:in `call'
+puma (5.6.6) lib/puma/configuration.rb:252:in `call'
+puma (5.6.6) lib/puma/request.rb:77:in `block in handle_request'
+puma (5.6.6) lib/puma/thread_pool.rb:340:in `with_force_shutdown'
+puma (5.6.6) lib/puma/request.rb:76:in `handle_request'
+puma (5.6.6) lib/puma/server.rb:443:in `process_client'
+puma (5.6.6) lib/puma/thread_pool.rb:147:in `block in spawn_thread'
+Started GET "/" for 127.0.0.1 at 2023-08-12 11:47:13 +0530
+  
+AbstractController::ActionNotFound (The action 'new' could not be found for UsersController):
+  
+actionpack (7.0.7) lib/abstract_controller/base.rb:146:in `process'
+actionview (7.0.7) lib/action_view/rendering.rb:39:in `process'
+actionpack (7.0.7) lib/action_controller/metal.rb:188:in `dispatch'
+actionpack (7.0.7) lib/action_controller/metal.rb:251:in `dispatch'
+actionpack (7.0.7) lib/action_dispatch/routing/route_set.rb:49:in `dispatch'
+actionpack (7.0.7) lib/action_dispatch/routing/route_set.rb:32:in `serve'
+actionpack (7.0.7) lib/action_dispatch/journey/router.rb:50:in `block in serve'
+actionpack (7.0.7) lib/action_dispatch/journey/router.rb:32:in `each'
+actionpack (7.0.7) lib/action_dispatch/journey/router.rb:32:in `serve'
+actionpack (7.0.7) lib/action_dispatch/routing/route_set.rb:852:in `call'
+rack (2.2.8) lib/rack/tempfile_reaper.rb:15:in `call'
+rack (2.2.8) lib/rack/etag.rb:27:in `call'
+rack (2.2.8) lib/rack/conditional_get.rb:27:in `call'
+rack (2.2.8) lib/rack/head.rb:12:in `call'
+actionpack (7.0.7) lib/action_dispatch/http/permissions_policy.rb:38:in `call'
+actionpack (7.0.7) lib/action_dispatch/http/content_security_policy.rb:36:in `call'
+rack (2.2.8) lib/rack/session/abstract/id.rb:266:in `context'
+rack (2.2.8) lib/rack/session/abstract/id.rb:260:in `call'
+actionpack (7.0.7) lib/action_dispatch/middleware/cookies.rb:704:in `call'
+activerecord (7.0.7) lib/active_record/migration.rb:603:in `call'
+actionpack (7.0.7) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (7.0.7) lib/active_support/callbacks.rb:99:in `run_callbacks'
+actionpack (7.0.7) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (7.0.7) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.0.7) lib/action_dispatch/middleware/actionable_exceptions.rb:17:in `call'
+actionpack (7.0.7) lib/action_dispatch/middleware/debug_exceptions.rb:28:in `call'
+web-console (4.2.0) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.2.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.2.0) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.2.0) lib/web_console/middleware.rb:17:in `call'
+actionpack (7.0.7) lib/action_dispatch/middleware/show_exceptions.rb:29:in `call'
+railties (7.0.7) lib/rails/rack/logger.rb:40:in `call_app'
+railties (7.0.7) lib/rails/rack/logger.rb:25:in `block in call'
+activesupport (7.0.7) lib/active_support/tagged_logging.rb:99:in `block in tagged'
+activesupport (7.0.7) lib/active_support/tagged_logging.rb:37:in `tagged'
+activesupport (7.0.7) lib/active_support/tagged_logging.rb:99:in `tagged'
+railties (7.0.7) lib/rails/rack/logger.rb:25:in `call'
+sprockets-rails (3.4.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (7.0.7) lib/action_dispatch/middleware/remote_ip.rb:93:in `call'
+actionpack (7.0.7) lib/action_dispatch/middleware/request_id.rb:26:in `call'
+rack (2.2.8) lib/rack/method_override.rb:24:in `call'
+rack (2.2.8) lib/rack/runtime.rb:22:in `call'
+activesupport (7.0.7) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (7.0.7) lib/action_dispatch/middleware/server_timing.rb:61:in `block in call'
+actionpack (7.0.7) lib/action_dispatch/middleware/server_timing.rb:26:in `collect_events'
+actionpack (7.0.7) lib/action_dispatch/middleware/server_timing.rb:60:in `call'
+actionpack (7.0.7) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.0.7) lib/action_dispatch/middleware/static.rb:23:in `call'
+rack (2.2.8) lib/rack/sendfile.rb:110:in `call'
+actionpack (7.0.7) lib/action_dispatch/middleware/host_authorization.rb:137:in `call'
+railties (7.0.7) lib/rails/engine.rb:530:in `call'
+puma (5.6.6) lib/puma/configuration.rb:252:in `call'
+puma (5.6.6) lib/puma/request.rb:77:in `block in handle_request'
+puma (5.6.6) lib/puma/thread_pool.rb:340:in `with_force_shutdown'
+puma (5.6.6) lib/puma/request.rb:76:in `handle_request'
+puma (5.6.6) lib/puma/server.rb:443:in `process_client'
+puma (5.6.6) lib/puma/thread_pool.rb:147:in `block in spawn_thread'
+Started GET "/" for 127.0.0.1 at 2023-08-12 11:48:19 +0530
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  
+AbstractController::ActionNotFound (The action 'new' could not be found for UsersController):
+  
+actionpack (7.0.7) lib/abstract_controller/base.rb:146:in `process'
+actionview (7.0.7) lib/action_view/rendering.rb:39:in `process'
+actionpack (7.0.7) lib/action_controller/metal.rb:188:in `dispatch'
+actionpack (7.0.7) lib/action_controller/metal.rb:251:in `dispatch'
+actionpack (7.0.7) lib/action_dispatch/routing/route_set.rb:49:in `dispatch'
+actionpack (7.0.7) lib/action_dispatch/routing/route_set.rb:32:in `serve'
+actionpack (7.0.7) lib/action_dispatch/journey/router.rb:50:in `block in serve'
+actionpack (7.0.7) lib/action_dispatch/journey/router.rb:32:in `each'
+actionpack (7.0.7) lib/action_dispatch/journey/router.rb:32:in `serve'
+actionpack (7.0.7) lib/action_dispatch/routing/route_set.rb:852:in `call'
+rack (2.2.8) lib/rack/tempfile_reaper.rb:15:in `call'
+rack (2.2.8) lib/rack/etag.rb:27:in `call'
+rack (2.2.8) lib/rack/conditional_get.rb:27:in `call'
+rack (2.2.8) lib/rack/head.rb:12:in `call'
+actionpack (7.0.7) lib/action_dispatch/http/permissions_policy.rb:38:in `call'
+actionpack (7.0.7) lib/action_dispatch/http/content_security_policy.rb:36:in `call'
+rack (2.2.8) lib/rack/session/abstract/id.rb:266:in `context'
+rack (2.2.8) lib/rack/session/abstract/id.rb:260:in `call'
+actionpack (7.0.7) lib/action_dispatch/middleware/cookies.rb:704:in `call'
+activerecord (7.0.7) lib/active_record/migration.rb:603:in `call'
+actionpack (7.0.7) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (7.0.7) lib/active_support/callbacks.rb:99:in `run_callbacks'
+actionpack (7.0.7) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (7.0.7) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.0.7) lib/action_dispatch/middleware/actionable_exceptions.rb:17:in `call'
+actionpack (7.0.7) lib/action_dispatch/middleware/debug_exceptions.rb:28:in `call'
+web-console (4.2.0) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.2.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.2.0) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.2.0) lib/web_console/middleware.rb:17:in `call'
+actionpack (7.0.7) lib/action_dispatch/middleware/show_exceptions.rb:29:in `call'
+railties (7.0.7) lib/rails/rack/logger.rb:40:in `call_app'
+railties (7.0.7) lib/rails/rack/logger.rb:25:in `block in call'
+activesupport (7.0.7) lib/active_support/tagged_logging.rb:99:in `block in tagged'
+activesupport (7.0.7) lib/active_support/tagged_logging.rb:37:in `tagged'
+activesupport (7.0.7) lib/active_support/tagged_logging.rb:99:in `tagged'
+railties (7.0.7) lib/rails/rack/logger.rb:25:in `call'
+sprockets-rails (3.4.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (7.0.7) lib/action_dispatch/middleware/remote_ip.rb:93:in `call'
+actionpack (7.0.7) lib/action_dispatch/middleware/request_id.rb:26:in `call'
+rack (2.2.8) lib/rack/method_override.rb:24:in `call'
+rack (2.2.8) lib/rack/runtime.rb:22:in `call'
+activesupport (7.0.7) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (7.0.7) lib/action_dispatch/middleware/server_timing.rb:61:in `block in call'
+actionpack (7.0.7) lib/action_dispatch/middleware/server_timing.rb:26:in `collect_events'
+actionpack (7.0.7) lib/action_dispatch/middleware/server_timing.rb:60:in `call'
+actionpack (7.0.7) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.0.7) lib/action_dispatch/middleware/static.rb:23:in `call'
+rack (2.2.8) lib/rack/sendfile.rb:110:in `call'
+actionpack (7.0.7) lib/action_dispatch/middleware/host_authorization.rb:137:in `call'
+railties (7.0.7) lib/rails/engine.rb:530:in `call'
+puma (5.6.6) lib/puma/configuration.rb:252:in `call'
+puma (5.6.6) lib/puma/request.rb:77:in `block in handle_request'
+puma (5.6.6) lib/puma/thread_pool.rb:340:in `with_force_shutdown'
+puma (5.6.6) lib/puma/request.rb:76:in `handle_request'
+puma (5.6.6) lib/puma/server.rb:443:in `process_client'
+puma (5.6.6) lib/puma/thread_pool.rb:147:in `block in spawn_thread'
+Started GET "/" for 127.0.0.1 at 2023-08-12 11:50:17 +0530
+Processing by UsersController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/_form.html.erb (Duration: 3.2ms | Allocations: 1370)
+  Rendered users/new.html.erb within layouts/application (Duration: 6.7ms | Allocations: 1652)
+  Rendered layout layouts/application.html.erb (Duration: 8.9ms | Allocations: 1730)
+Completed 500 Internal Server Error in 48ms (ActiveRecord: 0.0ms | Allocations: 9641)
+
+
+  
+ActionView::Template::Error (First argument in form cannot contain nil or be empty):
+    1: <%= form_for @user do |f| %>
+    2:     <div>
+    3:       <%= f.label :name %>
+    4:       <%= f.text_field :name %>
+  
+app/views/users/_form.html.erb:1
+app/views/users/new.html.erb:3
+Started GET "/addUser" for 127.0.0.1 at 2023-08-12 11:50:50 +0530
+Processing by UsersController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/_form.html.erb (Duration: 9.6ms | Allocations: 1030)
+  Rendered users/new.html.erb within layouts/application (Duration: 10.8ms | Allocations: 1102)
+  Rendered layout layouts/application.html.erb (Duration: 12.2ms | Allocations: 1179)
+Completed 500 Internal Server Error in 29ms (ActiveRecord: 0.0ms | Allocations: 2048)
+
+
+  
+ActionView::Template::Error (First argument in form cannot contain nil or be empty):
+    1: <%= form_for @user do |f| %>
+    2:     <div>
+    3:       <%= f.label :name %>
+    4:       <%= f.text_field :name %>
+  
+app/views/users/_form.html.erb:1
+app/views/users/new.html.erb:3
+Started GET "/" for 127.0.0.1 at 2023-08-12 11:59:12 +0530
+Processing by UsersController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/_form.html.erb (Duration: 1.1ms | Allocations: 1030)
+  Rendered users/new.html.erb within layouts/application (Duration: 1.5ms | Allocations: 1102)
+  Rendered layout layouts/application.html.erb (Duration: 1.7ms | Allocations: 1179)
+Completed 500 Internal Server Error in 4ms (ActiveRecord: 0.0ms | Allocations: 2047)
+
+
+  
+ActionView::Template::Error (First argument in form cannot contain nil or be empty):
+    1: <%= form_for @user do |f| %>
+    2:     <div>
+    3:       <%= f.label :name %>
+    4:       <%= f.text_field :name %>
+  
+app/views/users/_form.html.erb:1
+app/views/users/new.html.erb:3
+Started GET "/addUser" for 127.0.0.1 at 2023-08-12 12:02:04 +0530
+Processing by UsersController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/_form.html.erb (Duration: 1.2ms | Allocations: 1070)
+  Rendered users/new.html.erb within layouts/application (Duration: 1.7ms | Allocations: 1128)
+  Rendered layout layouts/application.html.erb (Duration: 2.8ms | Allocations: 1199)
+Completed 500 Internal Server Error in 5ms (ActiveRecord: 0.0ms | Allocations: 1494)
+
+
+  
+ActionView::Template::Error (First argument in form cannot contain nil or be empty):
+    1: <%= form_for @user do |f| %>
+    2:     <div>
+    3:       <%= f.label :name %>
+    4:       <%= f.text_field :name %>
+  
+app/views/users/_form.html.erb:1
+app/views/users/new.html.erb:3
+Started GET "/addUser" for 127.0.0.1 at 2023-08-12 12:07:36 +0530
+Processing by UsersController#new as HTML
+Completed 500 Internal Server Error in 8ms (ActiveRecord: 0.0ms | Allocations: 2019)
+
+
+  
+NoMethodError (undefined method `mailTo' for URI:Module):
+  
+app/models/user.rb:3:in `<class:User>'
+app/models/user.rb:1:in `<main>'
+app/controllers/users_controller.rb:5:in `new'
+Started GET "/addUser" for 127.0.0.1 at 2023-08-12 12:10:59 +0530
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by UsersController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/_form.html.erb (Duration: 41.2ms | Allocations: 4339)
+  Rendered users/new.html.erb within layouts/application (Duration: 44.0ms | Allocations: 4999)
+  Rendered layout layouts/application.html.erb (Duration: 803.0ms | Allocations: 94931)
+Completed 200 OK in 845ms (Views: 806.6ms | ActiveRecord: 1.7ms | Allocations: 119789)
+
+
+Started POST "/users" for 127.0.0.1 at 2023-08-12 12:11:10 +0530
+  
+AbstractController::ActionNotFound (The action 'create' could not be found for UsersController):
+  
+actionpack (7.0.7) lib/abstract_controller/base.rb:146:in `process'
+actionview (7.0.7) lib/action_view/rendering.rb:39:in `process'
+actionpack (7.0.7) lib/action_controller/metal.rb:188:in `dispatch'
+actionpack (7.0.7) lib/action_controller/metal.rb:251:in `dispatch'
+actionpack (7.0.7) lib/action_dispatch/routing/route_set.rb:49:in `dispatch'
+actionpack (7.0.7) lib/action_dispatch/routing/route_set.rb:32:in `serve'
+actionpack (7.0.7) lib/action_dispatch/journey/router.rb:50:in `block in serve'
+actionpack (7.0.7) lib/action_dispatch/journey/router.rb:32:in `each'
+actionpack (7.0.7) lib/action_dispatch/journey/router.rb:32:in `serve'
+actionpack (7.0.7) lib/action_dispatch/routing/route_set.rb:852:in `call'
+rack (2.2.8) lib/rack/tempfile_reaper.rb:15:in `call'
+rack (2.2.8) lib/rack/etag.rb:27:in `call'
+rack (2.2.8) lib/rack/conditional_get.rb:40:in `call'
+rack (2.2.8) lib/rack/head.rb:12:in `call'
+actionpack (7.0.7) lib/action_dispatch/http/permissions_policy.rb:38:in `call'
+actionpack (7.0.7) lib/action_dispatch/http/content_security_policy.rb:36:in `call'
+rack (2.2.8) lib/rack/session/abstract/id.rb:266:in `context'
+rack (2.2.8) lib/rack/session/abstract/id.rb:260:in `call'
+actionpack (7.0.7) lib/action_dispatch/middleware/cookies.rb:704:in `call'
+activerecord (7.0.7) lib/active_record/migration.rb:603:in `call'
+actionpack (7.0.7) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (7.0.7) lib/active_support/callbacks.rb:99:in `run_callbacks'
+actionpack (7.0.7) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (7.0.7) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.0.7) lib/action_dispatch/middleware/actionable_exceptions.rb:17:in `call'
+actionpack (7.0.7) lib/action_dispatch/middleware/debug_exceptions.rb:28:in `call'
+web-console (4.2.0) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.2.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.2.0) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.2.0) lib/web_console/middleware.rb:17:in `call'
+actionpack (7.0.7) lib/action_dispatch/middleware/show_exceptions.rb:29:in `call'
+railties (7.0.7) lib/rails/rack/logger.rb:40:in `call_app'
+railties (7.0.7) lib/rails/rack/logger.rb:25:in `block in call'
+activesupport (7.0.7) lib/active_support/tagged_logging.rb:99:in `block in tagged'
+activesupport (7.0.7) lib/active_support/tagged_logging.rb:37:in `tagged'
+activesupport (7.0.7) lib/active_support/tagged_logging.rb:99:in `tagged'
+railties (7.0.7) lib/rails/rack/logger.rb:25:in `call'
+sprockets-rails (3.4.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (7.0.7) lib/action_dispatch/middleware/remote_ip.rb:93:in `call'
+actionpack (7.0.7) lib/action_dispatch/middleware/request_id.rb:26:in `call'
+rack (2.2.8) lib/rack/method_override.rb:24:in `call'
+rack (2.2.8) lib/rack/runtime.rb:22:in `call'
+activesupport (7.0.7) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (7.0.7) lib/action_dispatch/middleware/server_timing.rb:61:in `block in call'
+actionpack (7.0.7) lib/action_dispatch/middleware/server_timing.rb:26:in `collect_events'
+actionpack (7.0.7) lib/action_dispatch/middleware/server_timing.rb:60:in `call'
+actionpack (7.0.7) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.0.7) lib/action_dispatch/middleware/static.rb:23:in `call'
+rack (2.2.8) lib/rack/sendfile.rb:110:in `call'
+actionpack (7.0.7) lib/action_dispatch/middleware/host_authorization.rb:137:in `call'
+railties (7.0.7) lib/rails/engine.rb:530:in `call'
+puma (5.6.6) lib/puma/configuration.rb:252:in `call'
+puma (5.6.6) lib/puma/request.rb:77:in `block in handle_request'
+puma (5.6.6) lib/puma/thread_pool.rb:340:in `with_force_shutdown'
+puma (5.6.6) lib/puma/request.rb:76:in `handle_request'
+puma (5.6.6) lib/puma/server.rb:443:in `process_client'
+puma (5.6.6) lib/puma/thread_pool.rb:147:in `block in spawn_thread'
+Started GET "/addUser" for 127.0.0.1 at 2023-08-12 12:11:10 +0530
+Processing by UsersController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/_form.html.erb (Duration: 6.6ms | Allocations: 1479)
+  Rendered users/new.html.erb within layouts/application (Duration: 7.1ms | Allocations: 1535)
+  Rendered layout layouts/application.html.erb (Duration: 15.9ms | Allocations: 3845)
+Completed 200 OK in 19ms (Views: 17.4ms | ActiveRecord: 0.0ms | Allocations: 4219)
+
+
+Started POST "/users" for 127.0.0.1 at 2023-08-12 12:11:29 +0530
+  
+AbstractController::ActionNotFound (The action 'create' could not be found for UsersController):
+  
+actionpack (7.0.7) lib/abstract_controller/base.rb:146:in `process'
+actionview (7.0.7) lib/action_view/rendering.rb:39:in `process'
+actionpack (7.0.7) lib/action_controller/metal.rb:188:in `dispatch'
+actionpack (7.0.7) lib/action_controller/metal.rb:251:in `dispatch'
+actionpack (7.0.7) lib/action_dispatch/routing/route_set.rb:49:in `dispatch'
+actionpack (7.0.7) lib/action_dispatch/routing/route_set.rb:32:in `serve'
+actionpack (7.0.7) lib/action_dispatch/journey/router.rb:50:in `block in serve'
+actionpack (7.0.7) lib/action_dispatch/journey/router.rb:32:in `each'
+actionpack (7.0.7) lib/action_dispatch/journey/router.rb:32:in `serve'
+actionpack (7.0.7) lib/action_dispatch/routing/route_set.rb:852:in `call'
+rack (2.2.8) lib/rack/tempfile_reaper.rb:15:in `call'
+rack (2.2.8) lib/rack/etag.rb:27:in `call'
+rack (2.2.8) lib/rack/conditional_get.rb:40:in `call'
+rack (2.2.8) lib/rack/head.rb:12:in `call'
+actionpack (7.0.7) lib/action_dispatch/http/permissions_policy.rb:38:in `call'
+actionpack (7.0.7) lib/action_dispatch/http/content_security_policy.rb:36:in `call'
+rack (2.2.8) lib/rack/session/abstract/id.rb:266:in `context'
+rack (2.2.8) lib/rack/session/abstract/id.rb:260:in `call'
+actionpack (7.0.7) lib/action_dispatch/middleware/cookies.rb:704:in `call'
+activerecord (7.0.7) lib/active_record/migration.rb:603:in `call'
+actionpack (7.0.7) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (7.0.7) lib/active_support/callbacks.rb:99:in `run_callbacks'
+actionpack (7.0.7) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (7.0.7) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.0.7) lib/action_dispatch/middleware/actionable_exceptions.rb:17:in `call'
+actionpack (7.0.7) lib/action_dispatch/middleware/debug_exceptions.rb:28:in `call'
+web-console (4.2.0) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.2.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.2.0) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.2.0) lib/web_console/middleware.rb:17:in `call'
+actionpack (7.0.7) lib/action_dispatch/middleware/show_exceptions.rb:29:in `call'
+railties (7.0.7) lib/rails/rack/logger.rb:40:in `call_app'
+railties (7.0.7) lib/rails/rack/logger.rb:25:in `block in call'
+activesupport (7.0.7) lib/active_support/tagged_logging.rb:99:in `block in tagged'
+activesupport (7.0.7) lib/active_support/tagged_logging.rb:37:in `tagged'
+activesupport (7.0.7) lib/active_support/tagged_logging.rb:99:in `tagged'
+railties (7.0.7) lib/rails/rack/logger.rb:25:in `call'
+sprockets-rails (3.4.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (7.0.7) lib/action_dispatch/middleware/remote_ip.rb:93:in `call'
+actionpack (7.0.7) lib/action_dispatch/middleware/request_id.rb:26:in `call'
+rack (2.2.8) lib/rack/method_override.rb:24:in `call'
+rack (2.2.8) lib/rack/runtime.rb:22:in `call'
+activesupport (7.0.7) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (7.0.7) lib/action_dispatch/middleware/server_timing.rb:61:in `block in call'
+actionpack (7.0.7) lib/action_dispatch/middleware/server_timing.rb:26:in `collect_events'
+actionpack (7.0.7) lib/action_dispatch/middleware/server_timing.rb:60:in `call'
+actionpack (7.0.7) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.0.7) lib/action_dispatch/middleware/static.rb:23:in `call'
+rack (2.2.8) lib/rack/sendfile.rb:110:in `call'
+actionpack (7.0.7) lib/action_dispatch/middleware/host_authorization.rb:137:in `call'
+railties (7.0.7) lib/rails/engine.rb:530:in `call'
+puma (5.6.6) lib/puma/configuration.rb:252:in `call'
+puma (5.6.6) lib/puma/request.rb:77:in `block in handle_request'
+puma (5.6.6) lib/puma/thread_pool.rb:340:in `with_force_shutdown'
+puma (5.6.6) lib/puma/request.rb:76:in `handle_request'
+puma (5.6.6) lib/puma/server.rb:443:in `process_client'
+puma (5.6.6) lib/puma/thread_pool.rb:147:in `block in spawn_thread'
+Started GET "/addUser" for 127.0.0.1 at 2023-08-12 12:11:29 +0530
+Processing by UsersController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/_form.html.erb (Duration: 6.3ms | Allocations: 1309)
+  Rendered users/new.html.erb within layouts/application (Duration: 6.8ms | Allocations: 1365)
+  Rendered layout layouts/application.html.erb (Duration: 14.3ms | Allocations: 3561)
+Completed 200 OK in 17ms (Views: 15.8ms | ActiveRecord: 0.0ms | Allocations: 3896)
+
+
+Started GET "/" for 127.0.0.1 at 2023-08-12 12:11:39 +0530
+Processing by UsersController#new as */*
+  Rendering layout layouts/application.html.erb
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/_form.html.erb (Duration: 3.9ms | Allocations: 1241)
+  Rendered users/new.html.erb within layouts/application (Duration: 4.5ms | Allocations: 1297)
+  Rendered layout layouts/application.html.erb (Duration: 11.4ms | Allocations: 3483)
+Completed 200 OK in 13ms (Views: 12.6ms | ActiveRecord: 0.0ms | Allocations: 3829)
+
+
+Started GET "/" for 127.0.0.1 at 2023-08-12 12:11:55 +0530
+Processing by UsersController#new as */*
+  Rendering layout layouts/application.html.erb
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/_form.html.erb (Duration: 5.6ms | Allocations: 1316)
+  Rendered users/new.html.erb within layouts/application (Duration: 8.3ms | Allocations: 1372)
+  Rendered layout layouts/application.html.erb (Duration: 23.4ms | Allocations: 3557)
+Completed 200 OK in 29ms (Views: 27.6ms | ActiveRecord: 0.0ms | Allocations: 3895)
+
+
+Started GET "/" for 127.0.0.1 at 2023-08-12 12:12:48 +0530
+Processing by UsersController#allUser as */*
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:20:in `allUser'
+Completed 200 OK in 73ms (Views: 64.0ms | ActiveRecord: 3.1ms | Allocations: 5322)
+
+
+Started GET "/addUser" for 127.0.0.1 at 2023-08-12 12:17:14 +0530
+Processing by UsersController#new as HTML
+  Parameters: {"only"=>[:new, :addUser]}
+  Rendering layout layouts/application.html.erb
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/_form.html.erb (Duration: 18.7ms | Allocations: 3378)
+  Rendered users/new.html.erb within layouts/application (Duration: 21.0ms | Allocations: 3452)
+  Rendered layout layouts/application.html.erb (Duration: 22.8ms | Allocations: 3529)
+Completed 500 Internal Server Error in 48ms (ActiveRecord: 1.7ms | Allocations: 7665)
+
+
+  
+ActionView::Template::Error (undefined method `users_path' for #<ActionView::Base:0x00000000012e58>
+Did you mean?  addUser_path):
+    1: <%= form_for @user do |f| %>
+    2:     <div>
+    3:       <%= f.label :name %>
+    4:       <%= f.text_field :name %>
+  
+app/views/users/_form.html.erb:1
+app/views/users/new.html.erb:3
+Started GET "/addUser" for 127.0.0.1 at 2023-08-12 12:26:32 +0530
+Processing by UsersController#new as HTML
+  Parameters: {"only"=>[:new, :create]}
+  Rendering layout layouts/application.html.erb
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/_form.html.erb (Duration: 20.8ms | Allocations: 3332)
+  Rendered users/new.html.erb within layouts/application (Duration: 24.5ms | Allocations: 3404)
+  Rendered layout layouts/application.html.erb (Duration: 28.8ms | Allocations: 3482)
+Completed 500 Internal Server Error in 45ms (ActiveRecord: 0.8ms | Allocations: 7230)
+
+
+  
+ActionView::Template::Error (undefined method `users_path' for #<ActionView::Base:0x00000000016d50>
+Did you mean?  addUser_path):
+    1: <%= form_for @user do |f| %>
+    2:     <div>
+    3:       <%= f.label :name %>
+    4:       <%= f.text_field :name %>
+  
+app/views/users/_form.html.erb:1
+app/views/users/new.html.erb:3
+Started GET "/" for 127.0.0.1 at 2023-08-12 12:27:31 +0530
+Processing by UsersController#allUser as HTML
+  [1m[36mUser Load (1.2ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:20:in `allUser'
+Completed 200 OK in 10ms (Views: 8.1ms | ActiveRecord: 1.2ms | Allocations: 1767)
+
+
+Started GET "/" for 127.0.0.1 at 2023-08-12 12:29:27 +0530
+Processing by UsersController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/_form.html.erb (Duration: 5.1ms | Allocations: 1583)
+  Rendered users/new.html.erb within layouts/application (Duration: 5.9ms | Allocations: 1653)
+  Rendered layout layouts/application.html.erb (Duration: 52.2ms | Allocations: 15483)
+Completed 200 OK in 78ms (Views: 63.5ms | ActiveRecord: 1.8ms | Allocations: 19656)
+
+
+Started POST "/users" for 127.0.0.1 at 2023-08-12 12:31:36 +0530
+Processing by UsersController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "user"=>{"name"=>"saini306", "age"=>"37", "email"=>"sainiji@gmail123.com", "address"=>"delhi 86"}, "commit"=>"Create User"}
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/users_controller.rb:10:in `create'
+  [1m[36mUser Exists? (0.4ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "sainiji@gmail123.com"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:10:in `create'
+  [1m[36mUser Create (1.9ms)[0m  [1m[32mINSERT INTO "users" ("name", "age", "email", "address", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "saini306"], ["age", 37], ["email", "sainiji@gmail123.com"], ["address", "delhi 86"], ["created_at", "2023-08-12 07:01:36.654298"], ["updated_at", "2023-08-12 07:01:36.654298"]]
+  ↳ app/controllers/users_controller.rb:10:in `create'
+  [1m[36mTRANSACTION (116.5ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/users_controller.rb:10:in `create'
+Completed 200 OK in 191ms (Views: 0.8ms | ActiveRecord: 118.9ms | Allocations: 11773)
+
+
+Started POST "/users" for 127.0.0.1 at 2023-08-12 12:31:40 +0530
+Processing by UsersController#create as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "user"=>{"name"=>"saini306", "age"=>"37", "email"=>"sainiji@gmail123.com", "address"=>"delhi 86"}, "commit"=>"Create User"}
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/users_controller.rb:10:in `create'
+  [1m[36mUser Exists? (0.3ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "sainiji@gmail123.com"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:10:in `create'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/controllers/users_controller.rb:10:in `create'
+Completed 200 OK in 17ms (Views: 0.4ms | ActiveRecord: 0.6ms | Allocations: 2789)
+
+
+Started GET "/alluser" for 127.0.0.1 at 2023-08-12 12:32:30 +0530
+Processing by UsersController#allUser as */*
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:20:in `allUser'
+Completed 200 OK in 22ms (Views: 13.8ms | ActiveRecord: 2.4ms | Allocations: 5198)
+
+
+Started GET "/" for 127.0.0.1 at 2023-08-12 12:45:35 +0530
+  
+NameError (undefined local variable or method `adduser' for #<ActionDispatch::Routing::Mapper:0x00007facf4f68df0 @set=#<ActionDispatch::Routing::RouteSet:0x000055993ec17cf8>, @draw_paths=[#<Pathname:/home/dev/Desktop/ror/sqliteSetup/config/routes>], @scope=#<ActionDispatch::Routing::Mapper::Scope:0x00007facf4f68da0 @hash={:path_names=>{:new=>"new", :edit=>"edit"}}, @parent=#<ActionDispatch::Routing::Mapper::Scope:0x000055993fecf4e0 @hash=nil, @parent=nil, @scope_level=nil>, @scope_level=nil>, @concerns={}>
+Did you mean?  add_route):
+  
+config/routes.rb:7:in `block in <main>'
+config/routes.rb:1:in `<main>'
+Started GET "/addUser" for 127.0.0.1 at 2023-08-12 12:48:49 +0530
+  
+NameError (undefined local variable or method `addUser' for #<ActionDispatch::Routing::Mapper:0x00007f5d508f86a8 @set=#<ActionDispatch::Routing::RouteSet:0x00005600dd306720>, @draw_paths=[#<Pathname:/home/dev/Desktop/ror/sqliteSetup/config/routes>], @scope=#<ActionDispatch::Routing::Mapper::Scope:0x00007f5d508f8568 @hash={:path_names=>{:new=>"new", :edit=>"edit"}}, @parent=#<ActionDispatch::Routing::Mapper::Scope:0x00005600df394460 @hash=nil, @parent=nil, @scope_level=nil>, @scope_level=nil>, @concerns={}>
+Did you mean?  add_route):
+  
+config/routes.rb:7:in `block in <main>'
+config/routes.rb:1:in `<main>'
+Started GET "/addUser" for 127.0.0.1 at 2023-08-12 12:52:10 +0530
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by UsersController#new as HTML
+  Parameters: {"only"=>[:new, :create]}
+  Rendering layout layouts/application.html.erb
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/_form.html.erb (Duration: 18.4ms | Allocations: 3789)
+  Rendered users/new.html.erb within layouts/application (Duration: 20.0ms | Allocations: 4078)
+  Rendered layout layouts/application.html.erb (Duration: 20.4ms | Allocations: 4156)
+Completed 500 Internal Server Error in 100ms (ActiveRecord: 1.9ms | Allocations: 25890)
+
+
+  
+ActionView::Template::Error (undefined method `users_path' for #<ActionView::Base:0x0000000000afa0>
+Did you mean?  alluser_path):
+    1: <%= form_for @user do |f| %>
+    2:     <div>
+    3:       <%= f.label :name %>
+    4:       <%= f.text_field :name %>
+  
+app/views/users/_form.html.erb:1
+app/views/users/new.html.erb:3
+Started GET "/addUser" for 127.0.0.1 at 2023-08-12 12:57:04 +0530
+Processing by UsersController#new as HTML
+  Parameters: {"only"=>[:new, :create]}
+  Rendering layout layouts/application.html.erb
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/_form.html.erb (Duration: 18.1ms | Allocations: 3362)
+  Rendered users/new.html.erb within layouts/application (Duration: 19.4ms | Allocations: 3434)
+  Rendered layout layouts/application.html.erb (Duration: 20.4ms | Allocations: 3511)
+Completed 500 Internal Server Error in 39ms (ActiveRecord: 1.8ms | Allocations: 7704)
+
+
+  
+ActionView::Template::Error (undefined method `users_path' for #<ActionView::Base:0x0000000000f050>
+Did you mean?  alluser_path):
+    1: <%= form_for @user do |f| %>
+    2:     <div>
+    3:       <%= f.label :name %>
+    4:       <%= f.text_field :name %>
+  
+app/views/users/_form.html.erb:1
+app/views/users/new.html.erb:3
+Started GET "/addUser" for 127.0.0.1 at 2023-08-12 13:11:57 +0530
+Processing by UsersController#new as HTML
+  Parameters: {"only"=>[:new, :create]}
+  Rendering layout layouts/application.html.erb
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/_form.html.erb (Duration: 17.3ms | Allocations: 3345)
+  Rendered users/new.html.erb within layouts/application (Duration: 17.8ms | Allocations: 3403)
+  Rendered layout layouts/application.html.erb (Duration: 18.1ms | Allocations: 3474)
+Completed 500 Internal Server Error in 20ms (ActiveRecord: 0.0ms | Allocations: 3794)
+
+
+  
+ActionView::Template::Error (undefined method `users_path' for #<ActionView::Base:0x0000000000f398>
+Did you mean?  alluser_path):
+    1: <%= form_for @user do |f| %>
+    2:     <div>
+    3:       <%= f.label :name %>
+    4:       <%= f.text_field :name %>
+  
+app/views/users/_form.html.erb:1
+app/views/users/new.html.erb:3
+Started GET "/addUser" for 127.0.0.1 at 2023-08-12 13:12:53 +0530
+Processing by UsersController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/_form.html.erb (Duration: 16.9ms | Allocations: 3362)
+  Rendered users/new.html.erb within layouts/application (Duration: 17.5ms | Allocations: 3434)
+  Rendered layout layouts/application.html.erb (Duration: 21.0ms | Allocations: 3512)
+Completed 500 Internal Server Error in 41ms (ActiveRecord: 0.5ms | Allocations: 7260)
+
+
+  
+ActionView::Template::Error (undefined method `users_path' for #<ActionView::Base:0x000000000131a0>
+Did you mean?  alluser_path):
+    1: <%= form_for @user do |f| %>
+    2:     <div>
+    3:       <%= f.label :name %>
+    4:       <%= f.text_field :name %>
+  
+app/views/users/_form.html.erb:1
+app/views/users/new.html.erb:3
+Started POST "/__web_console/repl_sessions/e5c12faedfcd5dad34eeb0103b1913c4/trace" for 127.0.0.1 at 2023-08-12 13:15:34 +0530
+Started POST "/__web_console/repl_sessions/e5c12faedfcd5dad34eeb0103b1913c4/trace" for 127.0.0.1 at 2023-08-12 13:15:39 +0530
+Started POST "/__web_console/repl_sessions/e5c12faedfcd5dad34eeb0103b1913c4/trace" for 127.0.0.1 at 2023-08-12 13:16:07 +0530
+Started POST "/__web_console/repl_sessions/e5c12faedfcd5dad34eeb0103b1913c4/trace" for 127.0.0.1 at 2023-08-12 13:17:08 +0530
+Started POST "/__web_console/repl_sessions/e5c12faedfcd5dad34eeb0103b1913c4/trace" for 127.0.0.1 at 2023-08-12 13:17:12 +0530
+Started POST "/__web_console/repl_sessions/e5c12faedfcd5dad34eeb0103b1913c4/trace" for 127.0.0.1 at 2023-08-12 13:17:14 +0530
+Started POST "/__web_console/repl_sessions/e5c12faedfcd5dad34eeb0103b1913c4/trace" for 127.0.0.1 at 2023-08-12 13:17:21 +0530
+Started GET "/addUser" for 127.0.0.1 at 2023-08-12 13:39:34 +0530
+Processing by UsersController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/_form.html.erb (Duration: 13.5ms | Allocations: 3373)
+  Rendered users/new.html.erb within layouts/application (Duration: 17.7ms | Allocations: 3437)
+  Rendered layout layouts/application.html.erb (Duration: 19.4ms | Allocations: 3509)
+Completed 500 Internal Server Error in 27ms (ActiveRecord: 0.0ms | Allocations: 3864)
+
+
+  
+ActionView::Template::Error (undefined method `users_path' for #<ActionView::Base:0x000000000136c8>
+Did you mean?  alluser_path):
+    1: <%= form_for @user do |f| %>
+    2:     <div>
+    3:       <%= f.label :name %>
+    4:       <%= f.text_field :name %>
+  
+app/views/users/_form.html.erb:1
+app/views/users/new.html.erb:3
+Started GET "/addUser" for 127.0.0.1 at 2023-08-12 13:54:43 +0530
+Processing by UsersController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/_form.html.erb (Duration: 313.8ms | Allocations: 10125)
+  Rendered users/new.html.erb within layouts/application (Duration: 316.5ms | Allocations: 10410)
+  Rendered layout layouts/application.html.erb (Duration: 611.1ms | Allocations: 44470)
+Completed 200 OK in 619ms (Views: 616.7ms | ActiveRecord: 0.0ms | Allocations: 45695)
+
+
+Started GET "/alluser" for 127.0.0.1 at 2023-08-12 13:57:50 +0530
+Processing by UsersController#allUser as */*
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:20:in `allUser'
+Completed 200 OK in 50ms (Views: 47.4ms | ActiveRecord: 1.8ms | Allocations: 2184)
+
+
+Started POST "/addUser" for 127.0.0.1 at 2023-08-12 13:58:34 +0530
+  
+AbstractController::ActionNotFound (The action 'addUser' could not be found for UsersController):
+  
+actionpack (7.0.7) lib/abstract_controller/base.rb:146:in `process'
+actionview (7.0.7) lib/action_view/rendering.rb:39:in `process'
+actionpack (7.0.7) lib/action_controller/metal.rb:188:in `dispatch'
+actionpack (7.0.7) lib/action_controller/metal.rb:251:in `dispatch'
+actionpack (7.0.7) lib/action_dispatch/routing/route_set.rb:49:in `dispatch'
+actionpack (7.0.7) lib/action_dispatch/routing/route_set.rb:32:in `serve'
+actionpack (7.0.7) lib/action_dispatch/journey/router.rb:50:in `block in serve'
+actionpack (7.0.7) lib/action_dispatch/journey/router.rb:32:in `each'
+actionpack (7.0.7) lib/action_dispatch/journey/router.rb:32:in `serve'
+actionpack (7.0.7) lib/action_dispatch/routing/route_set.rb:852:in `call'
+rack (2.2.8) lib/rack/tempfile_reaper.rb:15:in `call'
+rack (2.2.8) lib/rack/etag.rb:27:in `call'
+rack (2.2.8) lib/rack/conditional_get.rb:40:in `call'
+rack (2.2.8) lib/rack/head.rb:12:in `call'
+actionpack (7.0.7) lib/action_dispatch/http/permissions_policy.rb:38:in `call'
+actionpack (7.0.7) lib/action_dispatch/http/content_security_policy.rb:36:in `call'
+rack (2.2.8) lib/rack/session/abstract/id.rb:266:in `context'
+rack (2.2.8) lib/rack/session/abstract/id.rb:260:in `call'
+actionpack (7.0.7) lib/action_dispatch/middleware/cookies.rb:704:in `call'
+activerecord (7.0.7) lib/active_record/migration.rb:603:in `call'
+actionpack (7.0.7) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (7.0.7) lib/active_support/callbacks.rb:99:in `run_callbacks'
+actionpack (7.0.7) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (7.0.7) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.0.7) lib/action_dispatch/middleware/actionable_exceptions.rb:17:in `call'
+actionpack (7.0.7) lib/action_dispatch/middleware/debug_exceptions.rb:28:in `call'
+web-console (4.2.0) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.2.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.2.0) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.2.0) lib/web_console/middleware.rb:17:in `call'
+actionpack (7.0.7) lib/action_dispatch/middleware/show_exceptions.rb:29:in `call'
+railties (7.0.7) lib/rails/rack/logger.rb:40:in `call_app'
+railties (7.0.7) lib/rails/rack/logger.rb:25:in `block in call'
+activesupport (7.0.7) lib/active_support/tagged_logging.rb:99:in `block in tagged'
+activesupport (7.0.7) lib/active_support/tagged_logging.rb:37:in `tagged'
+activesupport (7.0.7) lib/active_support/tagged_logging.rb:99:in `tagged'
+railties (7.0.7) lib/rails/rack/logger.rb:25:in `call'
+sprockets-rails (3.4.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (7.0.7) lib/action_dispatch/middleware/remote_ip.rb:93:in `call'
+actionpack (7.0.7) lib/action_dispatch/middleware/request_id.rb:26:in `call'
+rack (2.2.8) lib/rack/method_override.rb:24:in `call'
+rack (2.2.8) lib/rack/runtime.rb:22:in `call'
+activesupport (7.0.7) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (7.0.7) lib/action_dispatch/middleware/server_timing.rb:61:in `block in call'
+actionpack (7.0.7) lib/action_dispatch/middleware/server_timing.rb:26:in `collect_events'
+actionpack (7.0.7) lib/action_dispatch/middleware/server_timing.rb:60:in `call'
+actionpack (7.0.7) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.0.7) lib/action_dispatch/middleware/static.rb:23:in `call'
+rack (2.2.8) lib/rack/sendfile.rb:110:in `call'
+actionpack (7.0.7) lib/action_dispatch/middleware/host_authorization.rb:137:in `call'
+railties (7.0.7) lib/rails/engine.rb:530:in `call'
+puma (5.6.6) lib/puma/configuration.rb:252:in `call'
+puma (5.6.6) lib/puma/request.rb:77:in `block in handle_request'
+puma (5.6.6) lib/puma/thread_pool.rb:340:in `with_force_shutdown'
+puma (5.6.6) lib/puma/request.rb:76:in `handle_request'
+puma (5.6.6) lib/puma/server.rb:443:in `process_client'
+puma (5.6.6) lib/puma/thread_pool.rb:147:in `block in spawn_thread'
+Started GET "/addUser" for 127.0.0.1 at 2023-08-12 13:58:34 +0530
+Processing by UsersController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/_form.html.erb (Duration: 5.6ms | Allocations: 1333)
+  Rendered users/new.html.erb within layouts/application (Duration: 6.7ms | Allocations: 1389)
+  Rendered layout layouts/application.html.erb (Duration: 18.0ms | Allocations: 3590)
+Completed 200 OK in 22ms (Views: 20.6ms | ActiveRecord: 0.0ms | Allocations: 3933)
+
+
+Started GET "/alluser" for 127.0.0.1 at 2023-08-12 14:00:08 +0530
+Processing by UsersController#allUser as */*
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:20:in `allUser'
+Completed 200 OK in 5ms (Views: 3.7ms | ActiveRecord: 0.2ms | Allocations: 1600)
+
+
+Started GET "/addUser" for 127.0.0.1 at 2023-08-12 14:05:02 +0530
+Processing by UsersController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/_form.html.erb (Duration: 7.0ms | Allocations: 1535)
+  Rendered users/new.html.erb within layouts/application (Duration: 7.5ms | Allocations: 1605)
+  Rendered layout layouts/application.html.erb (Duration: 42.1ms | Allocations: 15439)
+Completed 200 OK in 67ms (Views: 45.6ms | ActiveRecord: 1.6ms | Allocations: 19640)
+
+
+Started POST "/addUser" for 127.0.0.1 at 2023-08-12 14:05:23 +0530
+Processing by UsersController#addUser as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "user"=>{"name"=>"excellence", "age"=>"100", "email"=>"excellence@gmail.com", "address"=>"noida sec 8"}, "commit"=>"Create User"}
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/users_controller.rb:10:in `addUser'
+  [1m[36mUser Exists? (74.2ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "excellence@gmail.com"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:10:in `addUser'
+  [1m[36mUser Create (52.7ms)[0m  [1m[32mINSERT INTO "users" ("name", "age", "email", "address", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "excellence"], ["age", 100], ["email", "excellence@gmail.com"], ["address", "noida sec 8"], ["created_at", "2023-08-12 08:35:24.033703"], ["updated_at", "2023-08-12 08:35:24.033703"]]
+  ↳ app/controllers/users_controller.rb:10:in `addUser'
+  [1m[36mTRANSACTION (141.5ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/users_controller.rb:10:in `addUser'
+Completed 200 OK in 350ms (Views: 0.7ms | ActiveRecord: 268.5ms | Allocations: 6006)
+
+
+Started GET "/alluser" for 127.0.0.1 at 2023-08-12 14:05:30 +0530
+Processing by UsersController#allUser as */*
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:20:in `allUser'
+Completed 200 OK in 41ms (Views: 40.1ms | ActiveRecord: 0.3ms | Allocations: 1838)
+
+
+Started POST "/addUser" for 127.0.0.1 at 2023-08-12 14:06:34 +0530
+  
+ActionController::RoutingError (No route matches [POST] "/addUser"):
+  
+Started GET "/addUser" for 127.0.0.1 at 2023-08-12 14:06:34 +0530
+Processing by UsersController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/_form.html.erb (Duration: 3.3ms | Allocations: 1535)
+  Rendered users/new.html.erb within layouts/application (Duration: 3.7ms | Allocations: 1605)
+  Rendered layout layouts/application.html.erb (Duration: 30.3ms | Allocations: 15439)
+Completed 200 OK in 52ms (Views: 32.2ms | ActiveRecord: 3.5ms | Allocations: 19602)
+
+
+Started GET "/alluser" for 127.0.0.1 at 2023-08-12 14:06:40 +0530
+Processing by UsersController#allUser as */*
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:20:in `allUser'
+Completed 200 OK in 7ms (Views: 5.4ms | ActiveRecord: 0.3ms | Allocations: 2002)
+
+
+Started POST "/addUser" for 127.0.0.1 at 2023-08-12 14:14:21 +0530
+  
+AbstractController::ActionNotFound (The action 'saveUser' could not be found for UsersController):
+  
+actionpack (7.0.7) lib/abstract_controller/base.rb:146:in `process'
+actionview (7.0.7) lib/action_view/rendering.rb:39:in `process'
+actionpack (7.0.7) lib/action_controller/metal.rb:188:in `dispatch'
+actionpack (7.0.7) lib/action_controller/metal.rb:251:in `dispatch'
+actionpack (7.0.7) lib/action_dispatch/routing/route_set.rb:49:in `dispatch'
+actionpack (7.0.7) lib/action_dispatch/routing/route_set.rb:32:in `serve'
+actionpack (7.0.7) lib/action_dispatch/journey/router.rb:50:in `block in serve'
+actionpack (7.0.7) lib/action_dispatch/journey/router.rb:32:in `each'
+actionpack (7.0.7) lib/action_dispatch/journey/router.rb:32:in `serve'
+actionpack (7.0.7) lib/action_dispatch/routing/route_set.rb:852:in `call'
+rack (2.2.8) lib/rack/tempfile_reaper.rb:15:in `call'
+rack (2.2.8) lib/rack/etag.rb:27:in `call'
+rack (2.2.8) lib/rack/conditional_get.rb:40:in `call'
+rack (2.2.8) lib/rack/head.rb:12:in `call'
+actionpack (7.0.7) lib/action_dispatch/http/permissions_policy.rb:38:in `call'
+actionpack (7.0.7) lib/action_dispatch/http/content_security_policy.rb:36:in `call'
+rack (2.2.8) lib/rack/session/abstract/id.rb:266:in `context'
+rack (2.2.8) lib/rack/session/abstract/id.rb:260:in `call'
+actionpack (7.0.7) lib/action_dispatch/middleware/cookies.rb:704:in `call'
+activerecord (7.0.7) lib/active_record/migration.rb:603:in `call'
+actionpack (7.0.7) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (7.0.7) lib/active_support/callbacks.rb:99:in `run_callbacks'
+actionpack (7.0.7) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (7.0.7) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.0.7) lib/action_dispatch/middleware/actionable_exceptions.rb:17:in `call'
+actionpack (7.0.7) lib/action_dispatch/middleware/debug_exceptions.rb:28:in `call'
+web-console (4.2.0) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.2.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.2.0) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.2.0) lib/web_console/middleware.rb:17:in `call'
+actionpack (7.0.7) lib/action_dispatch/middleware/show_exceptions.rb:29:in `call'
+railties (7.0.7) lib/rails/rack/logger.rb:40:in `call_app'
+railties (7.0.7) lib/rails/rack/logger.rb:25:in `block in call'
+activesupport (7.0.7) lib/active_support/tagged_logging.rb:99:in `block in tagged'
+activesupport (7.0.7) lib/active_support/tagged_logging.rb:37:in `tagged'
+activesupport (7.0.7) lib/active_support/tagged_logging.rb:99:in `tagged'
+railties (7.0.7) lib/rails/rack/logger.rb:25:in `call'
+sprockets-rails (3.4.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (7.0.7) lib/action_dispatch/middleware/remote_ip.rb:93:in `call'
+actionpack (7.0.7) lib/action_dispatch/middleware/request_id.rb:26:in `call'
+rack (2.2.8) lib/rack/method_override.rb:24:in `call'
+rack (2.2.8) lib/rack/runtime.rb:22:in `call'
+activesupport (7.0.7) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (7.0.7) lib/action_dispatch/middleware/server_timing.rb:61:in `block in call'
+actionpack (7.0.7) lib/action_dispatch/middleware/server_timing.rb:26:in `collect_events'
+actionpack (7.0.7) lib/action_dispatch/middleware/server_timing.rb:60:in `call'
+actionpack (7.0.7) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.0.7) lib/action_dispatch/middleware/static.rb:23:in `call'
+rack (2.2.8) lib/rack/sendfile.rb:110:in `call'
+actionpack (7.0.7) lib/action_dispatch/middleware/host_authorization.rb:137:in `call'
+railties (7.0.7) lib/rails/engine.rb:530:in `call'
+puma (5.6.6) lib/puma/configuration.rb:252:in `call'
+puma (5.6.6) lib/puma/request.rb:77:in `block in handle_request'
+puma (5.6.6) lib/puma/thread_pool.rb:340:in `with_force_shutdown'
+puma (5.6.6) lib/puma/request.rb:76:in `handle_request'
+puma (5.6.6) lib/puma/server.rb:443:in `process_client'
+puma (5.6.6) lib/puma/thread_pool.rb:147:in `block in spawn_thread'
+Started GET "/addUser" for 127.0.0.1 at 2023-08-12 14:14:21 +0530
+Processing by UsersController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/_form.html.erb (Duration: 7.7ms | Allocations: 1536)
+  Rendered users/new.html.erb within layouts/application (Duration: 8.5ms | Allocations: 1606)
+  Rendered layout layouts/application.html.erb (Duration: 33.9ms | Allocations: 15439)
+Completed 200 OK in 49ms (Views: 36.9ms | ActiveRecord: 1.1ms | Allocations: 19146)
+
+
+Started GET "/alluser" for 127.0.0.1 at 2023-08-12 14:14:26 +0530
+Processing by UsersController#allUser as */*
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:20:in `allUser'
+Completed 200 OK in 6ms (Views: 4.1ms | ActiveRecord: 0.4ms | Allocations: 2001)
+
+
+Started POST "/addUser" for 127.0.0.1 at 2023-08-12 14:16:24 +0530
+Processing by UsersController#saveUser as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "user"=>{"name"=>"excellence", "age"=>"96", "email"=>"none@gmail.com", "address"=>"noida up"}, "commit"=>"Create User"}
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/users_controller.rb:10:in `saveUser'
+  [1m[36mUser Exists? (0.3ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "none@gmail.com"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:10:in `saveUser'
+  [1m[36mUser Create (1.0ms)[0m  [1m[32mINSERT INTO "users" ("name", "age", "email", "address", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "excellence"], ["age", 96], ["email", "none@gmail.com"], ["address", "noida up"], ["created_at", "2023-08-12 08:46:24.588591"], ["updated_at", "2023-08-12 08:46:24.588591"]]
+  ↳ app/controllers/users_controller.rb:10:in `saveUser'
+  [1m[36mTRANSACTION (70.4ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/users_controller.rb:10:in `saveUser'
+Completed 200 OK in 97ms (Views: 0.8ms | ActiveRecord: 73.7ms | Allocations: 7103)
+
+
+Started GET "/addUser" for 127.0.0.1 at 2023-08-12 14:20:18 +0530
+Processing by UsersController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/_form.html.erb (Duration: 5.9ms | Allocations: 1959)
+  Rendered users/new.html.erb within layouts/application (Duration: 7.5ms | Allocations: 2234)
+  Rendered layout layouts/application.html.erb (Duration: 35.7ms | Allocations: 16191)
+Completed 200 OK in 49ms (Views: 39.9ms | ActiveRecord: 0.9ms | Allocations: 20747)
+
+
+Started GET "/addUser" for 127.0.0.1 at 2023-08-12 14:25:31 +0530
+Processing by UsersController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/_form.html.erb (Duration: 7.5ms | Allocations: 1907)
+  Rendered users/new.html.erb within layouts/application (Duration: 10.3ms | Allocations: 2182)
+  Rendered layout layouts/application.html.erb (Duration: 38.2ms | Allocations: 7891)
+Completed 200 OK in 44ms (Views: 41.8ms | ActiveRecord: 0.0ms | Allocations: 9115)
+
+
+  
+ActionController::RoutingError (No route matches [GET] "/bootstrap-sprockets"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/bootstrap"):
+  
+Started GET "/addUser" for 127.0.0.1 at 2023-08-12 14:25:33 +0530
+Processing by UsersController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/_form.html.erb (Duration: 3.4ms | Allocations: 1338)
+  Rendered users/new.html.erb within layouts/application (Duration: 5.0ms | Allocations: 1394)
+  Rendered layout layouts/application.html.erb (Duration: 16.0ms | Allocations: 3595)
+Completed 200 OK in 19ms (Views: 17.7ms | ActiveRecord: 0.0ms | Allocations: 3949)
+
+
+  
+ActionController::RoutingError (No route matches [GET] "/bootstrap-sprockets"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/bootstrap"):
+  
+Started GET "/addUser" for 127.0.0.1 at 2023-08-12 14:30:12 +0530
+Processing by UsersController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/_form.html.erb (Duration: 4.7ms | Allocations: 1336)
+  Rendered users/new.html.erb within layouts/application (Duration: 5.4ms | Allocations: 1392)
+  Rendered layout layouts/application.html.erb (Duration: 23.7ms | Allocations: 4913)
+Completed 200 OK in 27ms (Views: 25.3ms | ActiveRecord: 0.0ms | Allocations: 5243)
+
+
+  
+ActionController::RoutingError (No route matches [GET] "/bootstrap-sprockets"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/bootstrap"):
+  
+Started GET "/addUser" for 127.0.0.1 at 2023-08-12 14:30:57 +0530
+Processing by UsersController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/_form.html.erb (Duration: 5.1ms | Allocations: 1324)
+  Rendered users/new.html.erb within layouts/application (Duration: 6.0ms | Allocations: 1380)
+  Rendered layout layouts/application.html.erb (Duration: 43.5ms | Allocations: 4903)
+Completed 200 OK in 47ms (Views: 45.9ms | ActiveRecord: 0.0ms | Allocations: 5233)
+
+
+  
+ActionController::RoutingError (No route matches [GET] "/bootstrap"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/bootstrap-sprockets"):
+  
+Started GET "/addUser" for 127.0.0.1 at 2023-08-12 14:31:04 +0530
+Processing by UsersController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/_form.html.erb (Duration: 3.4ms | Allocations: 1324)
+  Rendered users/new.html.erb within layouts/application (Duration: 7.8ms | Allocations: 1380)
+  Rendered layout layouts/application.html.erb (Duration: 35.9ms | Allocations: 3619)
+Completed 200 OK in 39ms (Views: 37.9ms | ActiveRecord: 0.0ms | Allocations: 3949)
+
+
+  
+ActionController::RoutingError (No route matches [GET] "/bootstrap"):
+  
+  
+ActionController::RoutingError (No route matches [GET] "/bootstrap-sprockets"):
+  
+Started GET "/addUser" for 127.0.0.1 at 2023-08-12 14:35:14 +0530
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by UsersController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/_form.html.erb (Duration: 30.1ms | Allocations: 4041)
+  Rendered users/new.html.erb within layouts/application (Duration: 33.1ms | Allocations: 4701)
+  Rendered layout layouts/application.html.erb (Duration: 811.7ms | Allocations: 109542)
+Completed 200 OK in 928ms (Views: 842.3ms | ActiveRecord: 1.7ms | Allocations: 134373)
+
+
+Started GET "/addUser" for 127.0.0.1 at 2023-08-12 14:43:55 +0530
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by UsersController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/_form.html.erb (Duration: 18.9ms | Allocations: 4039)
+  Rendered users/new.html.erb within layouts/application (Duration: 24.1ms | Allocations: 4699)
+  Rendered layout layouts/application.html.erb (Duration: 733.5ms | Allocations: 113938)
+Completed 200 OK in 796ms (Views: 739.5ms | ActiveRecord: 3.1ms | Allocations: 138769)
+
+
+Started GET "/addUser" for 127.0.0.1 at 2023-08-12 14:45:40 +0530
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by UsersController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/_form.html.erb (Duration: 24.5ms | Allocations: 4037)
+  Rendered users/new.html.erb within layouts/application (Duration: 28.4ms | Allocations: 4697)
+  Rendered layout layouts/application.html.erb (Duration: 225.1ms | Allocations: 49649)
+Completed 200 OK in 291ms (Views: 230.9ms | ActiveRecord: 3.7ms | Allocations: 74480)
+
+
+Started POST "/addUser" for 127.0.0.1 at 2023-08-14 10:38:40 +0530
+Processing by UsersController#addUser as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "user"=>{"name"=>"saini304", "age"=>"22", "email"=>"saini@gmail.com", "address"=>"laxmi nagar delhi"}, "commit"=>"Create User"}
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/users_controller.rb:10:in `addUser'
+  [1m[36mUser Exists? (0.4ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "saini@gmail.com"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:10:in `addUser'
+  [1m[36mUser Create (0.9ms)[0m  [1m[32mINSERT INTO "users" ("name", "age", "email", "address", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "saini304"], ["age", 22], ["email", "saini@gmail.com"], ["address", "laxmi nagar delhi"], ["created_at", "2023-08-14 05:08:41.372359"], ["updated_at", "2023-08-14 05:08:41.372359"]]
+  ↳ app/controllers/users_controller.rb:10:in `addUser'
+  [1m[36mTRANSACTION (314.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/users_controller.rb:10:in `addUser'
+Completed 200 OK in 530ms (Views: 1.0ms | ActiveRecord: 317.4ms | Allocations: 26884)
+
+
+Started GET "/alluser" for 127.0.0.1 at 2023-08-14 10:42:56 +0530
+Processing by UsersController#allUser as */*
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:21:in `allUser'
+Completed 200 OK in 8ms (Views: 6.2ms | ActiveRecord: 0.3ms | Allocations: 2168)
+
+
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+Started GET "/addUser" for 127.0.0.1 at 2023-08-14 11:34:12 +0530
+Processing by UsersController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (Duration: 73.8ms | Allocations: 4239)
+  Rendered layout layouts/application.html.erb (Duration: 628.4ms | Allocations: 50368)
+Completed 200 OK in 796ms (Views: 666.6ms | ActiveRecord: 0.5ms | Allocations: 57525)
+
+
+Started GET "/" for 127.0.0.1 at 2023-08-14 11:34:17 +0530
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /var/lib/gems/3.0.0/gems/railties-7.0.7/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /var/lib/gems/3.0.0/gems/railties-7.0.7/lib/rails/templates/rails/welcome/index.html.erb (Duration: 2.5ms | Allocations: 493)
+Completed 200 OK in 37ms (Views: 5.3ms | ActiveRecord: 0.0ms | Allocations: 1574)
+
+
+Started GET "/addUser" for 127.0.0.1 at 2023-08-14 11:34:25 +0530
+Processing by UsersController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (Duration: 8.3ms | Allocations: 1967)
+  Rendered layout layouts/application.html.erb (Duration: 36.6ms | Allocations: 4599)
+Completed 200 OK in 46ms (Views: 42.1ms | ActiveRecord: 0.0ms | Allocations: 5861)
+
+
+Started POST "/addUser" for 127.0.0.1 at 2023-08-14 11:34:59 +0530
+Processing by UsersController#addUser as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "user"=>{"name"=>"rajesh12321", "age"=>"21", "email"=>"sainisaini@gmail.com", "address"=>"noida up india"}, "commit"=>"Create User"}
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/users_controller.rb:10:in `addUser'
+  [1m[36mUser Exists? (0.3ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "sainisaini@gmail.com"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:10:in `addUser'
+  [1m[36mUser Create (0.4ms)[0m  [1m[32mINSERT INTO "users" ("name", "age", "email", "address", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "rajesh12321"], ["age", 21], ["email", "sainisaini@gmail.com"], ["address", "noida up india"], ["created_at", "2023-08-14 06:04:59.703055"], ["updated_at", "2023-08-14 06:04:59.703055"]]
+  ↳ app/controllers/users_controller.rb:10:in `addUser'
+  [1m[36mTRANSACTION (192.2ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/users_controller.rb:10:in `addUser'
+Completed 200 OK in 206ms (Views: 0.9ms | ActiveRecord: 193.0ms | Allocations: 3399)
+
+
+Started GET "/alluser" for 127.0.0.1 at 2023-08-14 11:35:06 +0530
+Processing by UsersController#allUser as */*
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:21:in `allUser'
+Completed 200 OK in 7ms (Views: 5.4ms | ActiveRecord: 0.3ms | Allocations: 2223)
+
+
+Started GET "/allUser" for 127.0.0.1 at 2023-08-14 11:45:14 +0530
+  
+ActionController::RoutingError (No route matches [GET] "/allUser"):
+  
+Started GET "/alluser" for 127.0.0.1 at 2023-08-14 11:45:30 +0530
+Processing by UsersController#allUsers as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/allUsers.html.erb within layouts/application
+  Rendered users/allUsers.html.erb within layouts/application (Duration: 1.2ms | Allocations: 125)
+  Rendered layout layouts/application.html.erb (Duration: 107.8ms | Allocations: 16261)
+Completed 200 OK in 115ms (Views: 113.2ms | ActiveRecord: 0.0ms | Allocations: 17325)
+
+
+Started GET "/alluser" for 127.0.0.1 at 2023-08-14 11:56:11 +0530
+Processing by UsersController#allUsers as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/allUsers.html.erb within layouts/application
+  Rendered users/allUsers.html.erb within layouts/application (Duration: 5.1ms | Allocations: 1727)
+  Rendered layout layouts/application.html.erb (Duration: 5.7ms | Allocations: 1807)
+Completed 500 Internal Server Error in 9ms (ActiveRecord: 0.0ms | Allocations: 2793)
+
+
+  
+ActionView::Template::Error (undefined method `each' for nil:NilClass):
+     8:         </tr>
+     9:     </thead>
+    10:     <tbody>
+    11:         <% @users.each do |users| %>
+    12:         <tr>
+    13:             <td><%= user.name %></td>
+    14:             <td><%= user.age %></td>
+  
+app/views/users/allUsers.html.erb:11
+Started GET "/alluser" for 127.0.0.1 at 2023-08-14 11:56:35 +0530
+Processing by UsersController#allUsers as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/allUsers.html.erb within layouts/application
+  Rendered users/allUsers.html.erb within layouts/application (Duration: 4.0ms | Allocations: 1663)
+  Rendered layout layouts/application.html.erb (Duration: 4.6ms | Allocations: 1743)
+Completed 500 Internal Server Error in 8ms (ActiveRecord: 0.0ms | Allocations: 2715)
+
+
+  
+ActionView::Template::Error (undefined method `each' for nil:NilClass):
+     8:         </tr>
+     9:     </thead>
+    10:     <tbody>
+    11:         <% @Users.each do |users| %>
+    12:         <tr>
+    13:             <td><%= user.name %></td>
+    14:             <td><%= user.age %></td>
+  
+app/views/users/allUsers.html.erb:11
+Started GET "/alluser" for 127.0.0.1 at 2023-08-14 11:58:33 +0530
+Processing by UsersController#allUsers as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/allUsers.html.erb within layouts/application
+  Rendered users/allUsers.html.erb within layouts/application (Duration: 12.0ms | Allocations: 4435)
+  Rendered layout layouts/application.html.erb (Duration: 12.5ms | Allocations: 4515)
+Completed 500 Internal Server Error in 16ms (ActiveRecord: 0.0ms | Allocations: 5489)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `user' for #<ActionView::Base:0x00000000017c78>
+Did you mean?  super):
+     8:         </tr>
+     9:     </thead>
+    10:     <tbody>
+    11:         <% user.each do |users| %>
+    12:         <tr>
+    13:             <td><%= user.name %></td>
+    14:             <td><%= user.age %></td>
+  
+app/views/users/allUsers.html.erb:11
+Started GET "/alluser" for 127.0.0.1 at 2023-08-14 11:58:59 +0530
+Processing by UsersController#allUsers as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/allUsers.html.erb within layouts/application
+  Rendered users/allUsers.html.erb within layouts/application (Duration: 10.2ms | Allocations: 4063)
+  Rendered layout layouts/application.html.erb (Duration: 10.6ms | Allocations: 4143)
+Completed 500 Internal Server Error in 13ms (ActiveRecord: 0.0ms | Allocations: 5011)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `user' for #<ActionView::Base:0x0000000001b9e0>
+Did you mean?  super):
+     8:         </tr>
+     9:     </thead>
+    10:     <tbody>
+    11:         <% user.each do |users| %>
+    12:         <tr>
+    13:             <td><%= user.name %></td>
+    14:             <td><%= user.age %></td>
+  
+app/views/users/allUsers.html.erb:11
+Started GET "/alluser" for 127.0.0.1 at 2023-08-14 11:59:23 +0530
+Processing by UsersController#allUsers as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/allUsers.html.erb within layouts/application
+  Rendered users/allUsers.html.erb within layouts/application (Duration: 6.6ms | Allocations: 1662)
+  Rendered layout layouts/application.html.erb (Duration: 7.3ms | Allocations: 1742)
+Completed 500 Internal Server Error in 12ms (ActiveRecord: 0.0ms | Allocations: 2713)
+
+
+  
+ActionView::Template::Error (undefined method `each' for nil:NilClass):
+     8:         </tr>
+     9:     </thead>
+    10:     <tbody>
+    11:         <% @user.each do |users| %>
+    12:         <tr>
+    13:             <td><%= user.name %></td>
+    14:             <td><%= user.age %></td>
+  
+app/views/users/allUsers.html.erb:11
+Started GET "/alluser" for 127.0.0.1 at 2023-08-14 12:04:22 +0530
+Processing by UsersController#allUsers as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/allUsers.html.erb within layouts/application
+  Rendered users/allUsers.html.erb within layouts/application (Duration: 4.1ms | Allocations: 1662)
+  Rendered layout layouts/application.html.erb (Duration: 4.7ms | Allocations: 1742)
+Completed 500 Internal Server Error in 8ms (ActiveRecord: 0.0ms | Allocations: 2714)
+
+
+  
+ActionView::Template::Error (undefined method `each' for nil:NilClass):
+     8:         </tr>
+     9:     </thead>
+    10:     <tbody>
+    11:         <% @users.each do |user| %>
+    12:         <tr>
+    13:             <td><%= user.name %></td>
+    14:             <td><%= user.age %></td>
+  
+app/views/users/allUsers.html.erb:11
+Started GET "/alluser" for 127.0.0.1 at 2023-08-14 12:04:42 +0530
+Processing by UsersController#allUsers as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/allUsers.html.erb within layouts/application
+  Rendered users/allUsers.html.erb within layouts/application (Duration: 6.0ms | Allocations: 1663)
+  Rendered layout layouts/application.html.erb (Duration: 11.1ms | Allocations: 1744)
+Completed 500 Internal Server Error in 18ms (ActiveRecord: 0.0ms | Allocations: 2716)
+
+
+  
+ActionView::Template::Error (undefined method `each' for nil:NilClass):
+     8:         </tr>
+     9:     </thead>
+    10:     <tbody>
+    11:         <% @user.each do |user| %>
+    12:         <tr>
+    13:             <td><%= user.name %></td>
+    14:             <td><%= user.age %></td>
+  
+app/views/users/allUsers.html.erb:11
+Started GET "/alluser" for 127.0.0.1 at 2023-08-14 12:05:15 +0530
+Processing by UsersController#allUsers as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/allUsers.html.erb within layouts/application
+  Rendered users/allUsers.html.erb within layouts/application (Duration: 2.4ms | Allocations: 1609)
+  Rendered layout layouts/application.html.erb (Duration: 3.2ms | Allocations: 1689)
+Completed 500 Internal Server Error in 9ms (ActiveRecord: 0.0ms | Allocations: 2765)
+
+
+  
+ActionView::Template::Error (undefined method `each' for nil:NilClass):
+     8:         </tr>
+     9:     </thead>
+    10:     <tbody>
+    11:         <% @users.each do |user| %>
+    12:         <tr>
+    13:             <td><%= user.name %></td>
+    14:             <td><%= user.age %></td>
+  
+app/views/users/allUsers.html.erb:11
+Started PUT "/__web_console/repl_sessions/e3ba7e33f7e2b13113c83488b3b3c06e" for 127.0.0.1 at 2023-08-14 12:05:30 +0530
+Started PUT "/__web_console/repl_sessions/e3ba7e33f7e2b13113c83488b3b3c06e" for 127.0.0.1 at 2023-08-14 12:05:40 +0530
+Started PUT "/__web_console/repl_sessions/e3ba7e33f7e2b13113c83488b3b3c06e" for 127.0.0.1 at 2023-08-14 12:05:43 +0530
+Started PUT "/__web_console/repl_sessions/e3ba7e33f7e2b13113c83488b3b3c06e" for 127.0.0.1 at 2023-08-14 12:05:55 +0530
+Started PUT "/__web_console/repl_sessions/e3ba7e33f7e2b13113c83488b3b3c06e" for 127.0.0.1 at 2023-08-14 12:06:12 +0530
+Started GET "/alluser" for 127.0.0.1 at 2023-08-14 12:08:03 +0530
+Processing by UsersController#allUsers as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/allUsers.html.erb within layouts/application
+  Rendered users/allUsers.html.erb within layouts/application (Duration: 1.8ms | Allocations: 1322)
+  Rendered layout layouts/application.html.erb (Duration: 2.3ms | Allocations: 1402)
+Completed 500 Internal Server Error in 7ms (ActiveRecord: 0.0ms | Allocations: 2270)
+
+
+  
+ActionView::Template::Error (undefined method `each' for nil:NilClass):
+     8:         </tr>
+     9:     </thead>
+    10:     <tbody>
+    11:         <% @users.each do |user| %>
+    12:         <tr>
+    13:             <td><%= user.name %></td>
+    14:             <td><%= user.age %></td>
+  
+app/views/users/allUsers.html.erb:11
+Started GET "/alluser" for 127.0.0.1 at 2023-08-14 12:11:51 +0530
+Processing by UsersController#allUsers as */*
+  Rendering layout layouts/application.html.erb
+  Rendering users/allUsers.html.erb within layouts/application
+  Rendered users/allUsers.html.erb within layouts/application (Duration: 2.5ms | Allocations: 1358)
+  Rendered layout layouts/application.html.erb (Duration: 3.2ms | Allocations: 1429)
+Completed 500 Internal Server Error in 5ms (ActiveRecord: 0.0ms | Allocations: 1726)
+
+
+  
+ActionView::Template::Error (undefined method `each' for nil:NilClass):
+     8:         </tr>
+     9:     </thead>
+    10:     <tbody>
+    11:         <% @users.each do |user| %>
+    12:         <tr>
+    13:             <td><%= user.name %></td>
+    14:             <td><%= user.age %></td>
+  
+app/views/users/allUsers.html.erb:11
+Started GET "/alluser" for 127.0.0.1 at 2023-08-14 12:12:53 +0530
+Processing by UsersController#allUsers as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/allUsers.html.erb within layouts/application
+  Rendered users/allUsers.html.erb within layouts/application (Duration: 3.4ms | Allocations: 1358)
+  Rendered layout layouts/application.html.erb (Duration: 3.9ms | Allocations: 1429)
+Completed 500 Internal Server Error in 10ms (ActiveRecord: 0.0ms | Allocations: 1709)
+
+
+  
+ActionView::Template::Error (undefined method `each' for nil:NilClass):
+     8:         </tr>
+     9:     </thead>
+    10:     <tbody>
+    11:         <% @users.each do |user| %>
+    12:         <tr>
+    13:             <td><%= user.name %></td>
+    14:             <td><%= user.age %></td>
+  
+app/views/users/allUsers.html.erb:11
+Started GET "/alluser" for 127.0.0.1 at 2023-08-14 12:13:52 +0530
+  
+ActionController::RoutingError (No route matches [GET] "/alluser"):
+  
+Started GET "/alluser" for 127.0.0.1 at 2023-08-14 12:14:03 +0530
+  
+ActionController::RoutingError (No route matches [GET] "/alluser"):
+  
+Started GET "/alluser" for 127.0.0.1 at 2023-08-14 12:14:16 +0530
+  
+ActionController::RoutingError (No route matches [GET] "/alluser"):
+  
+Started GET "/alluser" for 127.0.0.1 at 2023-08-14 12:14:28 +0530
+  
+ActionController::RoutingError (No route matches [GET] "/alluser"):
+  
+Started GET "/allUser" for 127.0.0.1 at 2023-08-14 12:14:43 +0530
+Processing by UsersController#allUsers as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/allUsers.html.erb within layouts/application
+  Rendered users/allUsers.html.erb within layouts/application (Duration: 1.8ms | Allocations: 1322)
+  Rendered layout layouts/application.html.erb (Duration: 2.3ms | Allocations: 1402)
+Completed 500 Internal Server Error in 5ms (ActiveRecord: 0.0ms | Allocations: 2270)
+
+
+  
+ActionView::Template::Error (undefined method `each' for nil:NilClass):
+     8:         </tr>
+     9:     </thead>
+    10:     <tbody>
+    11:         <% @users.each do |user| %>
+    12:         <tr>
+    13:             <td><%= user.name %></td>
+    14:             <td><%= user.age %></td>
+  
+app/views/users/allUsers.html.erb:11
+Started GET "/allUser" for 127.0.0.1 at 2023-08-14 12:15:00 +0530
+Processing by UsersController#allUsers as */*
+  Rendering layout layouts/application.html.erb
+  Rendering users/allUsers.html.erb within layouts/application
+  Rendered users/allUsers.html.erb within layouts/application (Duration: 2.0ms | Allocations: 1358)
+  Rendered layout layouts/application.html.erb (Duration: 2.8ms | Allocations: 1429)
+Completed 500 Internal Server Error in 6ms (ActiveRecord: 0.0ms | Allocations: 1726)
+
+
+  
+ActionView::Template::Error (undefined method `each' for nil:NilClass):
+     8:         </tr>
+     9:     </thead>
+    10:     <tbody>
+    11:         <% @users.each do |user| %>
+    12:         <tr>
+    13:             <td><%= user.name %></td>
+    14:             <td><%= user.age %></td>
+  
+app/views/users/allUsers.html.erb:11
+Started GET "/allUser" for 127.0.0.1 at 2023-08-14 12:21:07 +0530
+Processing by UsersController#allUsers as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/allUsers.html.erb within layouts/application
+  Rendered users/allUsers.html.erb within layouts/application (Duration: 2.0ms | Allocations: 1322)
+  Rendered layout layouts/application.html.erb (Duration: 2.7ms | Allocations: 1402)
+Completed 500 Internal Server Error in 5ms (ActiveRecord: 0.0ms | Allocations: 2270)
+
+
+  
+ActionView::Template::Error (undefined method `each' for nil:NilClass):
+     8:         </tr>
+     9:     </thead>
+    10:     <tbody>
+    11:         <% @users.each do |user| %>
+    12:         <tr>
+    13:             <td><%= user.name %></td>
+    14:             <td><%= user.age %></td>
+  
+app/views/users/allUsers.html.erb:11
+Started GET "/allUser" for 127.0.0.1 at 2023-08-14 12:24:34 +0530
+Processing by UsersController#all_users as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/all_users.html.erb within layouts/application
+  Rendered users/all_users.html.erb within layouts/application (Duration: 3.1ms | Allocations: 1610)
+  Rendered layout layouts/application.html.erb (Duration: 3.7ms | Allocations: 1690)
+Completed 500 Internal Server Error in 8ms (ActiveRecord: 0.0ms | Allocations: 2766)
+
+
+  
+ActionView::Template::Error (undefined method `each' for nil:NilClass):
+     8:         </tr>
+     9:     </thead>
+    10:     <tbody>
+    11:         <% @users.each do |user| %>
+    12:         <tr>
+    13:             <td><%= user.name %></td>
+    14:             <td><%= user.age %></td>
+  
+app/views/users/all_users.html.erb:11
+Started GET "/allUser" for 127.0.0.1 at 2023-08-14 12:26:29 +0530
+Processing by UsersController#all_users as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/all_users.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/all_users.html.erb:11
+  Rendered users/all_users.html.erb within layouts/application (Duration: 9.6ms | Allocations: 2761)
+  Rendered layout layouts/application.html.erb (Duration: 49.3ms | Allocations: 18914)
+Completed 200 OK in 57ms (Views: 51.0ms | ActiveRecord: 0.6ms | Allocations: 20740)
+
+
+Started GET "/allUser" for 127.0.0.1 at 2023-08-14 12:38:35 +0530
+Processing by UsersController#all_users as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/all_users.html.erb within layouts/application
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/all_users.html.erb:11
+  Rendered users/all_users.html.erb within layouts/application (Duration: 10.8ms | Allocations: 1279)
+  Rendered layout layouts/application.html.erb (Duration: 27.9ms | Allocations: 4171)
+Completed 200 OK in 37ms (Views: 32.9ms | ActiveRecord: 1.3ms | Allocations: 5406)
+
+
+Started GET "/allUser" for 127.0.0.1 at 2023-08-14 12:48:23 +0530
+Processing by UsersController#all_users as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/all_users.html.erb within layouts/application
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/all_users.html.erb:18
+  Rendered users/all_users.html.erb within layouts/application (Duration: 7.0ms | Allocations: 1308)
+  Rendered layout layouts/application.html.erb (Duration: 21.9ms | Allocations: 4201)
+Completed 200 OK in 31ms (Views: 25.2ms | ActiveRecord: 1.7ms | Allocations: 5415)
+
+
+Started GET "/allUser" for 127.0.0.1 at 2023-08-14 12:52:38 +0530
+Processing by UsersController#all_users as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/all_users.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/all_users.html.erb:18
+  Rendered users/all_users.html.erb within layouts/application (Duration: 5.9ms | Allocations: 1126)
+  Rendered layout layouts/application.html.erb (Duration: 29.0ms | Allocations: 4013)
+Completed 200 OK in 34ms (Views: 32.7ms | ActiveRecord: 0.2ms | Allocations: 5231)
+
+
+Started GET "/allUser" for 127.0.0.1 at 2023-08-14 12:52:40 +0530
+Processing by UsersController#all_users as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/all_users.html.erb within layouts/application
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/all_users.html.erb:18
+  Rendered users/all_users.html.erb within layouts/application (Duration: 4.3ms | Allocations: 717)
+  Rendered layout layouts/application.html.erb (Duration: 15.2ms | Allocations: 3092)
+Completed 200 OK in 19ms (Views: 17.4ms | ActiveRecord: 0.4ms | Allocations: 3438)
+
+
+Started GET "/allUser" for 127.0.0.1 at 2023-08-14 12:54:00 +0530
+Processing by UsersController#all_users as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/all_users.html.erb within layouts/application
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/all_users.html.erb:18
+  Rendered users/all_users.html.erb within layouts/application (Duration: 9.5ms | Allocations: 1118)
+  Rendered layout layouts/application.html.erb (Duration: 24.8ms | Allocations: 4002)
+Completed 200 OK in 29ms (Views: 26.9ms | ActiveRecord: 0.3ms | Allocations: 5196)
+
+
+Started GET "/allUser" for 127.0.0.1 at 2023-08-14 12:54:01 +0530
+Processing by UsersController#all_users as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/all_users.html.erb within layouts/application
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/all_users.html.erb:18
+  Rendered users/all_users.html.erb within layouts/application (Duration: 4.7ms | Allocations: 717)
+  Rendered layout layouts/application.html.erb (Duration: 17.1ms | Allocations: 3108)
+Completed 200 OK in 21ms (Views: 19.6ms | ActiveRecord: 0.3ms | Allocations: 3454)
+
+
+Started GET "/allUser" for 127.0.0.1 at 2023-08-14 12:54:15 +0530
+Processing by UsersController#all_users as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/all_users.html.erb within layouts/application
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/all_users.html.erb:18
+  Rendered users/all_users.html.erb within layouts/application (Duration: 4.6ms | Allocations: 1118)
+  Rendered layout layouts/application.html.erb (Duration: 20.9ms | Allocations: 4018)
+Completed 200 OK in 30ms (Views: 26.6ms | ActiveRecord: 0.4ms | Allocations: 5212)
+
+
+Started GET "/allUser" for 127.0.0.1 at 2023-08-14 12:54:25 +0530
+Processing by UsersController#all_users as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/all_users.html.erb within layouts/application
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/all_users.html.erb:18
+  Rendered users/all_users.html.erb within layouts/application (Duration: 10.1ms | Allocations: 1118)
+  Rendered layout layouts/application.html.erb (Duration: 29.9ms | Allocations: 4014)
+Completed 200 OK in 38ms (Views: 34.5ms | ActiveRecord: 0.7ms | Allocations: 5228)
+
+
+Started GET "/allUser" for 127.0.0.1 at 2023-08-14 13:02:49 +0530
+Processing by UsersController#all_users as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/all_users.html.erb within layouts/application
+  Rendered users/all_users.html.erb within layouts/application (Duration: 33.2ms | Allocations: 1242)
+  Rendered layout layouts/application.html.erb (Duration: 35.0ms | Allocations: 1324)
+Completed 500 Internal Server Error in 42ms (ActiveRecord: 0.0ms | Allocations: 2514)
+
+
+  
+ActionView::SyntaxErrorInTemplate (Encountered a syntax error while rendering template: check <div class="card rounded-0 mt-5 mb-5 mx-3">
+    <div class="card-body">
+        <h2 class="text-center">Listing all User</h2>
+    </div>
+
+</div>
+
+<%= link_to "Create New User", addUser_path
+
+<table class="table table-bordered">
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Age</th>
+            <th>Email</th>
+            <th>Address</th>
+        </tr>
+    </thead>
+    <tbody>
+        <% @users.each do |user| %>
+        <tr>
+            <td><%= user.name %></td>
+            <td><%= user.age %></td>
+            <td><%= user.email %></td>
+            <td><%= user.address%></td>
+
+        </tr>
+          
+        <%end%> 
+    </tbody>
+</table>
+
+):
+1:    <div class="card rounded-0 mt-5 mb-5 mx-3">
+2:        <div class="card-body">
+3:            <h2 class="text-center">Listing all User</h2>
+4:        </div>
+5:    
+6:    </div>
+7:    
+8:    <%= link_to "Create New User", addUser_path
+9:    
+10:    <table class="table table-bordered">
+11:        <thead>
+12:            <tr>
+13:                <th>Name</th>
+14:                <th>Age</th>
+15:                <th>Email</th>
+16:                <th>Address</th>
+17:            </tr>
+18:        </thead>
+19:        <tbody>
+20:            <% @users.each do |user| %>
+21:            <tr>
+22:                <td><%= user.name %></td>
+23:                <td><%= user.age %></td>
+24:                <td><%= user.email %></td>
+25:                <td><%= user.address%></td>
+26:    
+27:            </tr>
+28:              
+29:            <%end%> 
+30:        </tbody>
+31:    </table>
+  
+app/views/users/all_users.html.erb:10: syntax error, unexpected '<', expecting `end'
+app/views/users/all_users.html.erb:11: syntax error, unexpected '<'
+app/views/users/all_users.html.erb:14: unknown regexp options - th
+app/views/users/all_users.html.erb:15: syntax error, unexpected '<'
+app/views/users/all_users.html.erb:16: unknown regexp options - th
+app/views/users/all_users.html.erb:17: syntax error, unexpected '<'
+app/views/users/all_users.html.erb:18: unknown regexp options - thad
+app/views/users/all_users.html.erb:19: syntax error, unexpected '<'
+app/views/users/all_users.html.erb:20: syntax error, unexpected `do' for block, expecting `end'
+app/views/users/all_users.html.erb:34: syntax error, unexpected `end', expecting end-of-input
+app/views/users/all_users.html.erb:10: syntax error, unexpected '<', expecting `end'
+app/views/users/all_users.html.erb:11: syntax error, unexpected '<'
+app/views/users/all_users.html.erb:14: unknown regexp options - th
+app/views/users/all_users.html.erb:15: syntax error, unexpected '<'
+app/views/users/all_users.html.erb:16: unknown regexp options - th
+app/views/users/all_users.html.erb:17: syntax error, unexpected '<'
+app/views/users/all_users.html.erb:18: unknown regexp options - thad
+app/views/users/all_users.html.erb:19: syntax error, unexpected '<'
+app/views/users/all_users.html.erb:20: syntax error, unexpected `do' for block, expecting `end'
+app/views/users/all_users.html.erb:34: syntax error, unexpected `end', expecting end-of-input
+app/views/users/all_users.html.erb:10: syntax error, unexpected '<', expecting `end'
+app/views/users/all_users.html.erb:11: syntax error, unexpected '<'
+app/views/users/all_users.html.erb:14: unknown regexp options - th
+app/views/users/all_users.html.erb:15: syntax error, unexpected '<'
+app/views/users/all_users.html.erb:16: unknown regexp options - th
+app/views/users/all_users.html.erb:17: syntax error, unexpected '<'
+app/views/users/all_users.html.erb:18: unknown regexp options - thad
+app/views/users/all_users.html.erb:19: syntax error, unexpected '<'
+app/views/users/all_users.html.erb:20: syntax error, unexpected `do' for block, expecting `end'
+app/views/users/all_users.html.erb:34: syntax error, unexpected `end', expecting end-of-input
+app/views/users/all_users.html.erb:10: syntax error, unexpected '<', expecting `end'
+app/views/users/all_users.html.erb:11: syntax error, unexpected '<'
+app/views/users/all_users.html.erb:14: unknown regexp options - th
+app/views/users/all_users.html.erb:15: syntax error, unexpected '<'
+app/views/users/all_users.html.erb:16: unknown regexp options - th
+app/views/users/all_users.html.erb:17: syntax error, unexpected '<'
+app/views/users/all_users.html.erb:18: unknown regexp options - thad
+app/views/users/all_users.html.erb:19: syntax error, unexpected '<'
+app/views/users/all_users.html.erb:20: syntax error, unexpected `do' for block, expecting `end'
+app/views/users/all_users.html.erb:34: syntax error, unexpected `end', expecting end-of-input
+app/views/users/all_users.html.erb:10: syntax error, unexpected '<', expecting `end'
+app/views/users/all_users.html.erb:11: syntax error, unexpected '<'
+app/views/users/all_users.html.erb:14: unknown regexp options - th
+app/views/users/all_users.html.erb:15: syntax error, unexpected '<'
+app/views/users/all_users.html.erb:16: unknown regexp options - th
+app/views/users/all_users.html.erb:17: syntax error, unexpected '<'
+app/views/users/all_users.html.erb:18: unknown regexp options - thad
+app/views/users/all_users.html.erb:19: syntax error, unexpected '<'
+app/views/users/all_users.html.erb:20: syntax error, unexpected `do' for block, expecting `end'
+app/views/users/all_users.html.erb:34: syntax error, unexpected `end', expecting end-of-input
+app/views/users/all_users.html.erb:10: syntax error, unexpected '<', expecting `end'
+app/views/users/all_users.html.erb:11: syntax error, unexpected '<'
+app/views/users/all_users.html.erb:14: unknown regexp options - th
+app/views/users/all_users.html.erb:15: syntax error, unexpected '<'
+app/views/users/all_users.html.erb:16: unknown regexp options - th
+app/views/users/all_users.html.erb:17: syntax error, unexpected '<'
+app/views/users/all_users.html.erb:18: unknown regexp options - thad
+app/views/users/all_users.html.erb:19: syntax error, unexpected '<'
+app/views/users/all_users.html.erb:20: syntax error, unexpected `do' for block, expecting `end'
+app/views/users/all_users.html.erb:34: syntax error, unexpected `end', expecting end-of-input
+Started GET "/allUser" for 127.0.0.1 at 2023-08-14 13:03:18 +0530
+Processing by UsersController#all_users as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/all_users.html.erb within layouts/application
+  Rendered users/all_users.html.erb within layouts/application (Duration: 4.6ms | Allocations: 1218)
+  Rendered layout layouts/application.html.erb (Duration: 5.2ms | Allocations: 1299)
+Completed 500 Internal Server Error in 12ms (ActiveRecord: 0.0ms | Allocations: 2472)
+
+
+  
+ActionView::SyntaxErrorInTemplate (Encountered a syntax error while rendering template: check <div class="card rounded-0 mt-5 mb-5 mx-3">
+    <div class="card-body">
+        <h2 class="text-center">Listing all User</h2>
+    </div>
+
+</div>
+
+<!-- <%= link_to "Create New User", addUser_path -->
+
+<table class="table table-bordered">
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Age</th>
+            <th>Email</th>
+            <th>Address</th>
+        </tr>
+    </thead>
+    <tbody>
+        <% @users.each do |user| %>
+        <tr>
+            <td><%= user.name %></td>
+            <td><%= user.age %></td>
+            <td><%= user.email %></td>
+            <td><%= user.address%></td>
+
+        </tr>
+          
+        <%end%> 
+    </tbody>
+</table>
+
+):
+1:    <div class="card rounded-0 mt-5 mb-5 mx-3">
+2:        <div class="card-body">
+3:            <h2 class="text-center">Listing all User</h2>
+4:        </div>
+5:    
+6:    </div>
+7:    
+8:    <!-- <%= link_to "Create New User", addUser_path -->
+9:    
+10:    <table class="table table-bordered">
+11:        <thead>
+12:            <tr>
+13:                <th>Name</th>
+14:                <th>Age</th>
+15:                <th>Email</th>
+16:                <th>Address</th>
+17:            </tr>
+18:        </thead>
+19:        <tbody>
+20:            <% @users.each do |user| %>
+21:            <tr>
+22:                <td><%= user.name %></td>
+23:                <td><%= user.age %></td>
+24:                <td><%= user.email %></td>
+25:                <td><%= user.address%></td>
+26:    
+27:            </tr>
+28:              
+29:            <%end%> 
+30:        </tbody>
+31:    </table>
+  
+app/views/users/all_users.html.erb:8: syntax error, unexpected unary-, expecting `do' or '{' or '('
+app/views/users/all_users.html.erb:11: syntax error, unexpected '<'
+app/views/users/all_users.html.erb:14: unknown regexp options - th
+app/views/users/all_users.html.erb:15: syntax error, unexpected '<'
+app/views/users/all_users.html.erb:16: unknown regexp options - th
+app/views/users/all_users.html.erb:17: syntax error, unexpected '<'
+app/views/users/all_users.html.erb:18: unknown regexp options - thad
+app/views/users/all_users.html.erb:19: syntax error, unexpected '<'
+app/views/users/all_users.html.erb:20: syntax error, unexpected `do' for lambda, expecting `end'
+app/views/users/all_users.html.erb:34: syntax error, unexpected `end', expecting end-of-input
+app/views/users/all_users.html.erb:8: syntax error, unexpected unary-, expecting `do' or '{' or '('
+app/views/users/all_users.html.erb:11: syntax error, unexpected '<'
+app/views/users/all_users.html.erb:14: unknown regexp options - th
+app/views/users/all_users.html.erb:15: syntax error, unexpected '<'
+app/views/users/all_users.html.erb:16: unknown regexp options - th
+app/views/users/all_users.html.erb:17: syntax error, unexpected '<'
+app/views/users/all_users.html.erb:18: unknown regexp options - thad
+app/views/users/all_users.html.erb:19: syntax error, unexpected '<'
+app/views/users/all_users.html.erb:20: syntax error, unexpected `do' for lambda, expecting `end'
+app/views/users/all_users.html.erb:34: syntax error, unexpected `end', expecting end-of-input
+app/views/users/all_users.html.erb:8: syntax error, unexpected unary-, expecting `do' or '{' or '('
+app/views/users/all_users.html.erb:11: syntax error, unexpected '<'
+app/views/users/all_users.html.erb:14: unknown regexp options - th
+app/views/users/all_users.html.erb:15: syntax error, unexpected '<'
+app/views/users/all_users.html.erb:16: unknown regexp options - th
+app/views/users/all_users.html.erb:17: syntax error, unexpected '<'
+app/views/users/all_users.html.erb:18: unknown regexp options - thad
+app/views/users/all_users.html.erb:19: syntax error, unexpected '<'
+app/views/users/all_users.html.erb:20: syntax error, unexpected `do' for lambda, expecting `end'
+app/views/users/all_users.html.erb:34: syntax error, unexpected `end', expecting end-of-input
+app/views/users/all_users.html.erb:8: syntax error, unexpected unary-, expecting `do' or '{' or '('
+app/views/users/all_users.html.erb:11: syntax error, unexpected '<'
+app/views/users/all_users.html.erb:14: unknown regexp options - th
+app/views/users/all_users.html.erb:15: syntax error, unexpected '<'
+app/views/users/all_users.html.erb:16: unknown regexp options - th
+app/views/users/all_users.html.erb:17: syntax error, unexpected '<'
+app/views/users/all_users.html.erb:18: unknown regexp options - thad
+app/views/users/all_users.html.erb:19: syntax error, unexpected '<'
+app/views/users/all_users.html.erb:20: syntax error, unexpected `do' for lambda, expecting `end'
+app/views/users/all_users.html.erb:34: syntax error, unexpected `end', expecting end-of-input
+app/views/users/all_users.html.erb:8: syntax error, unexpected unary-, expecting `do' or '{' or '('
+app/views/users/all_users.html.erb:11: syntax error, unexpected '<'
+app/views/users/all_users.html.erb:14: unknown regexp options - th
+app/views/users/all_users.html.erb:15: syntax error, unexpected '<'
+app/views/users/all_users.html.erb:16: unknown regexp options - th
+app/views/users/all_users.html.erb:17: syntax error, unexpected '<'
+app/views/users/all_users.html.erb:18: unknown regexp options - thad
+app/views/users/all_users.html.erb:19: syntax error, unexpected '<'
+app/views/users/all_users.html.erb:20: syntax error, unexpected `do' for lambda, expecting `end'
+app/views/users/all_users.html.erb:34: syntax error, unexpected `end', expecting end-of-input
+app/views/users/all_users.html.erb:8: syntax error, unexpected unary-, expecting `do' or '{' or '('
+app/views/users/all_users.html.erb:11: syntax error, unexpected '<'
+app/views/users/all_users.html.erb:14: unknown regexp options - th
+app/views/users/all_users.html.erb:15: syntax error, unexpected '<'
+app/views/users/all_users.html.erb:16: unknown regexp options - th
+app/views/users/all_users.html.erb:17: syntax error, unexpected '<'
+app/views/users/all_users.html.erb:18: unknown regexp options - thad
+app/views/users/all_users.html.erb:19: syntax error, unexpected '<'
+app/views/users/all_users.html.erb:20: syntax error, unexpected `do' for lambda, expecting `end'
+app/views/users/all_users.html.erb:34: syntax error, unexpected `end', expecting end-of-input
+Started GET "/allUser" for 127.0.0.1 at 2023-08-14 13:03:57 +0530
+Processing by UsersController#all_users as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/all_users.html.erb within layouts/application
+  [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/all_users.html.erb:18
+  Rendered users/all_users.html.erb within layouts/application (Duration: 6.8ms | Allocations: 1299)
+  Rendered layout layouts/application.html.erb (Duration: 22.6ms | Allocations: 4217)
+Completed 200 OK in 30ms (Views: 26.6ms | ActiveRecord: 1.6ms | Allocations: 5423)
+
+
+Started GET "/allUser" for 127.0.0.1 at 2023-08-14 13:05:09 +0530
+Processing by UsersController#all_users as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/all_users.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/all_users.html.erb:18
+  Rendered users/all_users.html.erb within layouts/application (Duration: 4.4ms | Allocations: 1229)
+  Rendered layout layouts/application.html.erb (Duration: 24.6ms | Allocations: 4102)
+Completed 200 OK in 32ms (Views: 28.5ms | ActiveRecord: 0.2ms | Allocations: 5316)
+
+
+Started GET "/addUser" for 127.0.0.1 at 2023-08-14 13:05:11 +0530
+Processing by UsersController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (Duration: 14.3ms | Allocations: 1826)
+  Rendered layout layouts/application.html.erb (Duration: 30.7ms | Allocations: 4035)
+Completed 200 OK in 35ms (Views: 32.8ms | ActiveRecord: 0.0ms | Allocations: 4454)
+
+
+Started GET "/addUser" for 127.0.0.1 at 2023-08-14 13:09:41 +0530
+Processing by UsersController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (Duration: 10.1ms | Allocations: 1939)
+  Rendered layout layouts/application.html.erb (Duration: 27.0ms | Allocations: 4590)
+Completed 200 OK in 34ms (Views: 31.7ms | ActiveRecord: 0.0ms | Allocations: 5792)
+
+
+Started GET "/allUser" for 127.0.0.1 at 2023-08-14 13:10:02 +0530
+Processing by UsersController#all_users as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/all_users.html.erb within layouts/application
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/all_users.html.erb:18
+  Rendered users/all_users.html.erb within layouts/application (Duration: 6.9ms | Allocations: 1131)
+  Rendered layout layouts/application.html.erb (Duration: 18.1ms | Allocations: 3499)
+Completed 200 OK in 21ms (Views: 19.0ms | ActiveRecord: 0.3ms | Allocations: 3898)
+
+
+Started GET "/addUser" for 127.0.0.1 at 2023-08-14 13:10:08 +0530
+Processing by UsersController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (Duration: 3.8ms | Allocations: 1336)
+  Rendered layout layouts/application.html.erb (Duration: 10.5ms | Allocations: 3545)
+Completed 200 OK in 13ms (Views: 11.5ms | ActiveRecord: 0.0ms | Allocations: 3883)
+
+
+Started GET "/allUser" for 127.0.0.1 at 2023-08-14 13:13:08 +0530
+Processing by UsersController#all_users as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/all_users.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/all_users.html.erb:19
+  Rendered users/all_users.html.erb within layouts/application (Duration: 5.5ms | Allocations: 1244)
+  Rendered layout layouts/application.html.erb (Duration: 17.0ms | Allocations: 4125)
+Completed 200 OK in 24ms (Views: 21.3ms | ActiveRecord: 0.2ms | Allocations: 5319)
+
+
+Started GET "/addUser" for 127.0.0.1 at 2023-08-14 13:13:10 +0530
+Processing by UsersController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (Duration: 5.6ms | Allocations: 1798)
+  Rendered layout layouts/application.html.erb (Duration: 14.1ms | Allocations: 4007)
+Completed 200 OK in 17ms (Views: 16.0ms | ActiveRecord: 0.0ms | Allocations: 4416)
+
+
+Started GET "/addUser" for 127.0.0.1 at 2023-08-14 13:14:12 +0530
+Processing by UsersController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (Duration: 13.8ms | Allocations: 1933)
+  Rendered layout layouts/application.html.erb (Duration: 23.4ms | Allocations: 4582)
+Completed 200 OK in 29ms (Views: 26.9ms | ActiveRecord: 0.0ms | Allocations: 5784)
+
+
+Started GET "/allUser" for 127.0.0.1 at 2023-08-14 13:14:18 +0530
+Processing by UsersController#all_users as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/all_users.html.erb within layouts/application
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/all_users.html.erb:19
+  Rendered users/all_users.html.erb within layouts/application (Duration: 5.0ms | Allocations: 1148)
+  Rendered layout layouts/application.html.erb (Duration: 13.4ms | Allocations: 3518)
+Completed 200 OK in 16ms (Views: 14.2ms | ActiveRecord: 0.7ms | Allocations: 3919)
+
+
+Started GET "/addUser" for 127.0.0.1 at 2023-08-14 13:14:57 +0530
+Processing by UsersController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (Duration: 9.5ms | Allocations: 1326)
+  Rendered layout layouts/application.html.erb (Duration: 22.9ms | Allocations: 3535)
+Completed 200 OK in 25ms (Views: 24.3ms | ActiveRecord: 0.0ms | Allocations: 3873)
+
+
+Started GET "/addUser" for 127.0.0.1 at 2023-08-14 13:16:39 +0530
+Processing by UsersController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (Duration: 11.0ms | Allocations: 1957)
+  Rendered layout layouts/application.html.erb (Duration: 26.6ms | Allocations: 4606)
+Completed 200 OK in 32ms (Views: 30.5ms | ActiveRecord: 0.0ms | Allocations: 5808)
+
+
+Started GET "/addUser" for 127.0.0.1 at 2023-08-14 13:17:43 +0530
+Processing by UsersController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (Duration: 7.5ms | Allocations: 1961)
+  Rendered layout layouts/application.html.erb (Duration: 27.0ms | Allocations: 4610)
+Completed 200 OK in 36ms (Views: 32.7ms | ActiveRecord: 0.0ms | Allocations: 5836)
+
+
+Started GET "/addUser" for 127.0.0.1 at 2023-08-14 13:20:26 +0530
+Processing by UsersController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (Duration: 11.7ms | Allocations: 1978)
+  Rendered layout layouts/application.html.erb (Duration: 21.3ms | Allocations: 4627)
+Completed 200 OK in 27ms (Views: 24.7ms | ActiveRecord: 0.0ms | Allocations: 5853)
+
+
+Started GET "/addUser" for 127.0.0.1 at 2023-08-14 13:30:30 +0530
+Processing by UsersController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (Duration: 10.4ms | Allocations: 4748)
+  Rendered layout layouts/application.html.erb (Duration: 11.5ms | Allocations: 4828)
+Completed 500 Internal Server Error in 19ms (ActiveRecord: 0.0ms | Allocations: 6016)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `mb' for #<ActionView::Base:0x000000000383d8>):
+     9: <div class="row">
+    10:     <div class="col-lg-4">
+    11:     <div class="form-group">
+    12:     <%= f.label :name, class: mb-2 %>
+    13:     <%= f.text_field :name, class: "form-control form-control-lg" %>
+    14:   </div>
+    15: </div> 
+  
+app/views/users/new.html.erb:12
+app/views/users/new.html.erb:8
+Started GET "/addUser" for 127.0.0.1 at 2023-08-14 13:36:43 +0530
+Processing by UsersController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (Duration: 6.2ms | Allocations: 2072)
+  Rendered layout layouts/application.html.erb (Duration: 20.6ms | Allocations: 4736)
+Completed 200 OK in 28ms (Views: 25.1ms | ActiveRecord: 0.0ms | Allocations: 5954)
+
+
+Started GET "/addUser" for 127.0.0.1 at 2023-08-14 13:48:44 +0530
+Processing by UsersController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (Duration: 32.8ms | Allocations: 2105)
+  Rendered layout layouts/application.html.erb (Duration: 40.2ms | Allocations: 4754)
+Completed 200 OK in 47ms (Views: 44.4ms | ActiveRecord: 0.0ms | Allocations: 5980)
+
+
+Started GET "/addUser" for 127.0.0.1 at 2023-08-14 13:53:20 +0530
+Processing by UsersController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (Duration: 3.6ms | Allocations: 1334)
+  Rendered layout layouts/application.html.erb (Duration: 4.5ms | Allocations: 1415)
+Completed 500 Internal Server Error in 10ms (ActiveRecord: 0.0ms | Allocations: 2607)
+
+
+  
+ActionView::SyntaxErrorInTemplate (Encountered a syntax error while rendering template: check <div class="col-lg-12">
+    <div class="card rounded-0 mt-5 mb-4 mx-3">
+        <div class="card-body">
+            <h2 class="text-center">Create New User</h2>
+        </div>
+    
+    </div>
+<%= form_for @user, url: addUser_path do |f| %>
+<div class="row">
+    <div class="col-lg-4">
+    <div class="form-group">
+    <%= f.label :name, class: 'mb-2' %>
+    <%= f.text_field :name, class: "form-control form-control-lg" %>
+  </div>
+</div>
+</div> 
+
+<div class="row">
+<div class="col-lg-4">
+  <div class="form-group">
+    <%= f.label :age, class: 'mb-2' %>
+    <%= f.number_field :age, class: "form-control form-control-lg" %>
+  </div>
+</div>
+</div>
+
+ 
+<div class="row">
+<div class="col-lg-4">
+  <div class="form-group">
+    <%= f.label :email, class: 'mb-2' %>
+    <%= f.email_field :email, class: "form-control form-control-lg" %>
+  </div>
+</div>
+</div>    
+  
+  <div class="row">
+  <div class="col-lg-4">
+  <div class="form-group">
+    <%= f.label :address, class: 'mb-2' %>
+    <%= f.text_area :address, class: "form-control form-control-lg" %>
+  </div>
+</div>
+</div>
+
+<div class="row">
+  <div class="col-lg-4">
+  <div class="form-group">
+    <%= f.submit 'Create User', class: "btn btn-primary btn-lg mt-4" %>
+    <%= link_to "Back to User List", allUser_path, class: "btn btn-outline-primary btn-lg"
+  </div>
+  </div>
+</div>
+<% end %>
+</div>
+
+
+):
+1:    <div class="col-lg-12">
+2:        <div class="card rounded-0 mt-5 mb-4 mx-3">
+3:            <div class="card-body">
+4:                <h2 class="text-center">Create New User</h2>
+5:            </div>
+6:        
+7:        </div>
+8:    <%= form_for @user, url: addUser_path do |f| %>
+9:    <div class="row">
+10:        <div class="col-lg-4">
+11:        <div class="form-group">
+12:        <%= f.label :name, class: 'mb-2' %>
+13:        <%= f.text_field :name, class: "form-control form-control-lg" %>
+14:      </div>
+15:    </div>
+16:    </div> 
+17:    
+18:    <div class="row">
+19:    <div class="col-lg-4">
+20:      <div class="form-group">
+21:        <%= f.label :age, class: 'mb-2' %>
+22:        <%= f.number_field :age, class: "form-control form-control-lg" %>
+23:      </div>
+24:    </div>
+25:    </div>
+26:    
+27:     
+28:    <div class="row">
+29:    <div class="col-lg-4">
+30:      <div class="form-group">
+31:        <%= f.label :email, class: 'mb-2' %>
+32:        <%= f.email_field :email, class: "form-control form-control-lg" %>
+33:      </div>
+34:    </div>
+35:    </div>    
+36:      
+37:      <div class="row">
+38:      <div class="col-lg-4">
+39:      <div class="form-group">
+40:        <%= f.label :address, class: 'mb-2' %>
+41:        <%= f.text_area :address, class: "form-control form-control-lg" %>
+42:      </div>
+43:    </div>
+44:    </div>
+45:    
+46:    <div class="row">
+47:      <div class="col-lg-4">
+48:      <div class="form-group">
+49:        <%= f.submit 'Create User', class: "btn btn-primary btn-lg mt-4" %>
+50:        <%= link_to "Back to User List", allUser_path, class: "btn btn-outline-primary btn-lg"
+51:      </div>
+52:      </div>
+53:    </div>
+54:    <% end %>
+55:    </div>
+  
+app/views/users/new.html.erb:51: syntax error, unexpected '<', expecting ')'
+app/views/users/new.html.erb:52: unknown regexp options - dv
+app/views/users/new.html.erb:53: syntax error, unexpected '<'
+app/views/users/new.html.erb:55: unknown regexp options - dv
+app/views/users/new.html.erb:55: unmatched close parenthesis: /div>
+app/views/users/new.html.erb:59: unterminated string meets end of file
+app/views/users/new.html.erb:59: syntax error, unexpected end-of-input, expecting ')'
+app/views/users/new.html.erb:51: syntax error, unexpected '<', expecting ')'
+app/views/users/new.html.erb:52: unknown regexp options - dv
+app/views/users/new.html.erb:53: syntax error, unexpected '<'
+app/views/users/new.html.erb:55: unknown regexp options - dv
+app/views/users/new.html.erb:55: unmatched close parenthesis: /div>
+app/views/users/new.html.erb:59: unterminated string meets end of file
+app/views/users/new.html.erb:59: syntax error, unexpected end-of-input, expecting ')'
+app/views/users/new.html.erb:51: syntax error, unexpected '<', expecting ')'
+app/views/users/new.html.erb:52: unknown regexp options - dv
+app/views/users/new.html.erb:53: syntax error, unexpected '<'
+app/views/users/new.html.erb:55: unknown regexp options - dv
+app/views/users/new.html.erb:55: unmatched close parenthesis: /div>
+app/views/users/new.html.erb:59: unterminated string meets end of file
+app/views/users/new.html.erb:59: syntax error, unexpected end-of-input, expecting ')'
+app/views/users/new.html.erb:51: syntax error, unexpected '<', expecting ')'
+app/views/users/new.html.erb:52: unknown regexp options - dv
+app/views/users/new.html.erb:53: syntax error, unexpected '<'
+app/views/users/new.html.erb:55: unknown regexp options - dv
+app/views/users/new.html.erb:55: unmatched close parenthesis: /div>
+app/views/users/new.html.erb:59: unterminated string meets end of file
+app/views/users/new.html.erb:59: syntax error, unexpected end-of-input, expecting ')'
+app/views/users/new.html.erb:51: syntax error, unexpected '<', expecting ')'
+app/views/users/new.html.erb:52: unknown regexp options - dv
+app/views/users/new.html.erb:53: syntax error, unexpected '<'
+app/views/users/new.html.erb:55: unknown regexp options - dv
+app/views/users/new.html.erb:55: unmatched close parenthesis: /div>
+app/views/users/new.html.erb:59: unterminated string meets end of file
+app/views/users/new.html.erb:59: syntax error, unexpected end-of-input, expecting ')'
+app/views/users/new.html.erb:51: syntax error, unexpected '<', expecting ')'
+app/views/users/new.html.erb:52: unknown regexp options - dv
+app/views/users/new.html.erb:53: syntax error, unexpected '<'
+app/views/users/new.html.erb:55: unknown regexp options - dv
+app/views/users/new.html.erb:55: unmatched close parenthesis: /div>
+app/views/users/new.html.erb:59: unterminated string meets end of file
+app/views/users/new.html.erb:59: syntax error, unexpected end-of-input, expecting ')'
+Started GET "/addUser" for 127.0.0.1 at 2023-08-14 13:54:17 +0530
+Processing by UsersController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (Duration: 13.4ms | Allocations: 2159)
+  Rendered layout layouts/application.html.erb (Duration: 19.8ms | Allocations: 4823)
+Completed 200 OK in 30ms (Views: 26.4ms | ActiveRecord: 0.0ms | Allocations: 6045)
+
+
+Started GET "/addUser" for 127.0.0.1 at 2023-08-14 13:55:22 +0530
+Processing by UsersController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (Duration: 7.4ms | Allocations: 2168)
+  Rendered layout layouts/application.html.erb (Duration: 18.3ms | Allocations: 4817)
+Completed 200 OK in 25ms (Views: 23.5ms | ActiveRecord: 0.0ms | Allocations: 6043)
+
+
+Started GET "/allUser" for 127.0.0.1 at 2023-08-14 13:55:26 +0530
+Processing by UsersController#all_users as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/all_users.html.erb within layouts/application
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/all_users.html.erb:19
+  Rendered users/all_users.html.erb within layouts/application (Duration: 12.1ms | Allocations: 1325)
+  Rendered layout layouts/application.html.erb (Duration: 27.4ms | Allocations: 3703)
+Completed 200 OK in 32ms (Views: 27.7ms | ActiveRecord: 1.8ms | Allocations: 4104)
+
+
+Started GET "/addUser" for 127.0.0.1 at 2023-08-14 13:55:54 +0530
+Processing by UsersController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (Duration: 11.0ms | Allocations: 1412)
+  Rendered layout layouts/application.html.erb (Duration: 20.8ms | Allocations: 3621)
+Completed 200 OK in 27ms (Views: 24.6ms | ActiveRecord: 0.0ms | Allocations: 3959)
+
+
+Started POST "/addUser" for 127.0.0.1 at 2023-08-14 13:56:28 +0530
+Processing by UsersController#addUser as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "user"=>{"name"=>"ram", "age"=>"32", "email"=>"ram@gmail.com", "address"=>"ayodhya"}, "commit"=>"Create User"}
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/users_controller.rb:10:in `addUser'
+  [1m[36mUser Exists? (1.7ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "ram@gmail.com"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:10:in `addUser'
+  [1m[36mUser Create (1.6ms)[0m  [1m[32mINSERT INTO "users" ("name", "age", "email", "address", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "ram"], ["age", 32], ["email", "ram@gmail.com"], ["address", "ayodhya"], ["created_at", "2023-08-14 08:26:28.272330"], ["updated_at", "2023-08-14 08:26:28.272330"]]
+  ↳ app/controllers/users_controller.rb:10:in `addUser'
+  [1m[36mTRANSACTION (184.9ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/users_controller.rb:10:in `addUser'
+Completed 200 OK in 212ms (Views: 1.4ms | ActiveRecord: 188.4ms | Allocations: 3245)
+
+
+Started POST "/addUser" for 127.0.0.1 at 2023-08-14 13:56:31 +0530
+Processing by UsersController#addUser as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "user"=>{"name"=>"ram", "age"=>"32", "email"=>"ram@gmail.com", "address"=>"ayodhya"}, "commit"=>"Create User"}
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/users_controller.rb:10:in `addUser'
+  [1m[36mUser Exists? (0.5ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "ram@gmail.com"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:10:in `addUser'
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/controllers/users_controller.rb:10:in `addUser'
+Completed 200 OK in 23ms (Views: 2.0ms | ActiveRecord: 0.9ms | Allocations: 2494)
+
+
+Started GET "/allUser" for 127.0.0.1 at 2023-08-14 13:56:35 +0530
+Processing by UsersController#all_users as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/all_users.html.erb within layouts/application
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/all_users.html.erb:19
+  Rendered users/all_users.html.erb within layouts/application (Duration: 16.6ms | Allocations: 790)
+  Rendered layout layouts/application.html.erb (Duration: 28.0ms | Allocations: 3176)
+Completed 200 OK in 40ms (Views: 38.6ms | ActiveRecord: 0.3ms | Allocations: 3504)
+
+
+Started GET "/addUser" for 127.0.0.1 at 2023-08-14 13:56:39 +0530
+Processing by UsersController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (Duration: 7.9ms | Allocations: 1420)
+  Rendered layout layouts/application.html.erb (Duration: 23.6ms | Allocations: 3629)
+Completed 200 OK in 30ms (Views: 28.0ms | ActiveRecord: 0.0ms | Allocations: 3961)
+
+
+Started GET "/allUser" for 127.0.0.1 at 2023-08-14 13:56:43 +0530
+Processing by UsersController#all_users as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/all_users.html.erb within layouts/application
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/all_users.html.erb:19
+  Rendered users/all_users.html.erb within layouts/application (Duration: 4.7ms | Allocations: 790)
+  Rendered layout layouts/application.html.erb (Duration: 23.8ms | Allocations: 3170)
+Completed 200 OK in 32ms (Views: 28.7ms | ActiveRecord: 0.5ms | Allocations: 3498)
+
+
+Started GET "/addUser" for 127.0.0.1 at 2023-08-14 13:56:46 +0530
+Processing by UsersController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (Duration: 10.6ms | Allocations: 1410)
+  Rendered layout layouts/application.html.erb (Duration: 24.3ms | Allocations: 3619)
+Completed 200 OK in 29ms (Views: 27.1ms | ActiveRecord: 0.0ms | Allocations: 3951)
+
+
+Started GET "/addUser" for 127.0.0.1 at 2023-08-14 13:58:06 +0530
+Processing by UsersController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (Duration: 3.1ms | Allocations: 1337)
+  Rendered layout layouts/application.html.erb (Duration: 4.2ms | Allocations: 1418)
+Completed 500 Internal Server Error in 10ms (ActiveRecord: 0.0ms | Allocations: 2583)
+
+
+  
+ActionView::SyntaxErrorInTemplate (Encountered a syntax error while rendering template: check <div class="col-lg-12">
+    <div class="card rounded-0 mt-5 mb-4 mx-3">
+        <div class="card-body">
+            <h2 class="text-center">Create New User</h2>
+        </div>
+    
+    </div>
+<%= form_for @user, url: addUser_path do |f| %>
+<div class="row">
+    <div class="col-lg-4">
+    <div class="form-group">
+    <%= f.label :name, class: 'mb-2' %>
+    <%= f.text_field :name, class: "form-control form-control-lg" %>
+  </div>
+</div>
+</div> 
+
+<div class="row">
+<div class="col-lg-4">
+  <div class="form-group">
+    <%= f.label :age, class: 'mb-2' %>
+    <%= f.number_field :age, class: "form-control form-control-lg" %>
+  </div>
+</div>
+</div>
+
+ 
+<div class="row">
+<div class="col-lg-4">
+  <div class="form-group">
+    <%= f.label :email, class: 'mb-2' %>
+    <%= f.email_field :email, class: "form-control form-control-lg" %>
+  </div>
+</div>
+</div>    
+  
+  <div class="row">
+  <div class="col-lg-4">
+  <div class="form-group">
+    <%= f.label :address, class: 'mb-2' %>
+    <%= f.text_area :address, class: "form-control form-control-lg" %>
+  </div>
+</div>
+</div>
+
+<div class="row">
+  <div class="col-lg-4">
+  <div class="form-group">
+    <%= f.submit 'Create User', class: "btn btn-primary btn-lg mt-4",link_to "create User", allUser_path %>
+    <%= link_to "Back to User List", allUser_path, class: "btn btn-outline-primary btn-lg mt-4" %>
+  </div>
+  </div>
+</div>
+<% end %>
+</div>
+
+
+):
+1:    <div class="col-lg-12">
+2:        <div class="card rounded-0 mt-5 mb-4 mx-3">
+3:            <div class="card-body">
+4:                <h2 class="text-center">Create New User</h2>
+5:            </div>
+6:        
+7:        </div>
+8:    <%= form_for @user, url: addUser_path do |f| %>
+9:    <div class="row">
+10:        <div class="col-lg-4">
+11:        <div class="form-group">
+12:        <%= f.label :name, class: 'mb-2' %>
+13:        <%= f.text_field :name, class: "form-control form-control-lg" %>
+14:      </div>
+15:    </div>
+16:    </div> 
+17:    
+18:    <div class="row">
+19:    <div class="col-lg-4">
+20:      <div class="form-group">
+21:        <%= f.label :age, class: 'mb-2' %>
+22:        <%= f.number_field :age, class: "form-control form-control-lg" %>
+23:      </div>
+24:    </div>
+25:    </div>
+26:    
+27:     
+28:    <div class="row">
+29:    <div class="col-lg-4">
+30:      <div class="form-group">
+31:        <%= f.label :email, class: 'mb-2' %>
+32:        <%= f.email_field :email, class: "form-control form-control-lg" %>
+33:      </div>
+34:    </div>
+35:    </div>    
+36:      
+37:      <div class="row">
+38:      <div class="col-lg-4">
+39:      <div class="form-group">
+40:        <%= f.label :address, class: 'mb-2' %>
+41:        <%= f.text_area :address, class: "form-control form-control-lg" %>
+42:      </div>
+43:    </div>
+44:    </div>
+45:    
+46:    <div class="row">
+47:      <div class="col-lg-4">
+48:      <div class="form-group">
+49:        <%= f.submit 'Create User', class: "btn btn-primary btn-lg mt-4",link_to "create User", allUser_path %>
+50:        <%= link_to "Back to User List", allUser_path, class: "btn btn-outline-primary btn-lg mt-4" %>
+51:      </div>
+52:      </div>
+53:    </div>
+54:    <% end %>
+55:    </div>
+  
+app/views/users/new.html.erb:49: syntax error, unexpected string literal, expecting `do' or '{' or '('
+app/views/users/new.html.erb:49: syntax error, unexpected ',', expecting ')'
+app/views/users/new.html.erb:49: syntax error, unexpected string literal, expecting `do' or '{' or '('
+app/views/users/new.html.erb:49: syntax error, unexpected ',', expecting ')'
+app/views/users/new.html.erb:49: syntax error, unexpected string literal, expecting `do' or '{' or '('
+app/views/users/new.html.erb:49: syntax error, unexpected ',', expecting ')'
+app/views/users/new.html.erb:49: syntax error, unexpected string literal, expecting `do' or '{' or '('
+app/views/users/new.html.erb:49: syntax error, unexpected ',', expecting ')'
+app/views/users/new.html.erb:49: syntax error, unexpected string literal, expecting `do' or '{' or '('
+app/views/users/new.html.erb:49: syntax error, unexpected ',', expecting ')'
+app/views/users/new.html.erb:49: syntax error, unexpected string literal, expecting `do' or '{' or '('
+app/views/users/new.html.erb:49: syntax error, unexpected ',', expecting ')'
+Started GET "/addUser" for 127.0.0.1 at 2023-08-14 13:58:35 +0530
+Processing by UsersController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (Duration: 10.8ms | Allocations: 2163)
+  Rendered layout layouts/application.html.erb (Duration: 27.6ms | Allocations: 4827)
+Completed 200 OK in 36ms (Views: 32.6ms | ActiveRecord: 0.0ms | Allocations: 6045)
+
+
+Started POST "/addUser" for 127.0.0.1 at 2023-08-14 14:01:04 +0530
+Processing by UsersController#addUser as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "user"=>{"name"=>"user", "age"=>"36", "email"=>"users@test.com", "address"=>"noida "}, "commit"=>"Create User"}
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/users_controller.rb:10:in `addUser'
+  [1m[36mUser Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "users@test.com"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:10:in `addUser'
+  [1m[36mUser Create (1.4ms)[0m  [1m[32mINSERT INTO "users" ("name", "age", "email", "address", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "user"], ["age", 36], ["email", "users@test.com"], ["address", "noida "], ["created_at", "2023-08-14 08:31:04.388756"], ["updated_at", "2023-08-14 08:31:04.388756"]]
+  ↳ app/controllers/users_controller.rb:10:in `addUser'
+  [1m[36mTRANSACTION (75.3ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/users_controller.rb:10:in `addUser'
+Redirected to http://127.0.0.1:3000/allUser
+Completed 302 Found in 103ms (ActiveRecord: 78.8ms | Allocations: 6673)
+
+
+Started GET "/allUser" for 127.0.0.1 at 2023-08-14 14:01:04 +0530
+Processing by UsersController#all_users as TURBO_STREAM
+  Rendering layout layouts/application.html.erb
+  Rendering users/all_users.html.erb within layouts/application
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/all_users.html.erb:19
+  Rendered users/all_users.html.erb within layouts/application (Duration: 5.1ms | Allocations: 1352)
+  Rendered layout layouts/application.html.erb (Duration: 28.0ms | Allocations: 17224)
+Completed 200 OK in 33ms (Views: 31.5ms | ActiveRecord: 0.4ms | Allocations: 18209)
+
+
+Started GET "/deleteUser/11" for 127.0.0.1 at 2023-08-14 14:03:55 +0530
+  
+ActionController::RoutingError (No route matches [GET] "/deleteUser/11"):
+  
+Started POST "/deleteUser/11" for 127.0.0.1 at 2023-08-14 14:04:04 +0530
+Processing by UsersController#deleteUser as */*
+  Parameters: {"id"=>"11"}
+  [1m[36mUser Delete All (75.8ms)[0m  [1m[31mDELETE FROM "users" WHERE (age >= '11')[0m
+  ↳ app/controllers/users_controller.rb:24:in `deleteUser'
+Completed 200 OK in 79ms (Views: 0.8ms | ActiveRecord: 75.8ms | Allocations: 704)
+
+
+Started GET "/allUser" for 127.0.0.1 at 2023-08-14 14:04:15 +0530
+Processing by UsersController#all_users as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/all_users.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/all_users.html.erb:19
+  Rendered users/all_users.html.erb within layouts/application (Duration: 3.2ms | Allocations: 569)
+  Rendered layout layouts/application.html.erb (Duration: 19.4ms | Allocations: 2943)
+Completed 200 OK in 21ms (Views: 20.0ms | ActiveRecord: 0.2ms | Allocations: 3272)
+
+
+Started POST "/deleteUser/10" for 127.0.0.1 at 2023-08-14 14:04:25 +0530
+Processing by UsersController#deleteUser as */*
+  Parameters: {"id"=>"10"}
+  [1m[36mUser Delete All (131.5ms)[0m  [1m[31mDELETE FROM "users" WHERE (age >= '10')[0m
+  ↳ app/controllers/users_controller.rb:24:in `deleteUser'
+Completed 200 OK in 140ms (Views: 0.7ms | ActiveRecord: 131.5ms | Allocations: 569)
+
+
+Started GET "/allUser" for 127.0.0.1 at 2023-08-14 14:04:28 +0530
+Processing by UsersController#all_users as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/all_users.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/all_users.html.erb:19
+  Rendered users/all_users.html.erb within layouts/application (Duration: 5.2ms | Allocations: 546)
+  Rendered layout layouts/application.html.erb (Duration: 20.5ms | Allocations: 2922)
+Completed 200 OK in 25ms (Views: 22.3ms | ActiveRecord: 0.2ms | Allocations: 3248)
+
+
+Started GET "/addUser" for 127.0.0.1 at 2023-08-14 14:04:32 +0530
+Processing by UsersController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (Duration: 6.0ms | Allocations: 1534)
+  Rendered layout layouts/application.html.erb (Duration: 15.9ms | Allocations: 3746)
+Completed 200 OK in 21ms (Views: 19.4ms | ActiveRecord: 0.0ms | Allocations: 4086)
+
+
+Started POST "/addUser" for 127.0.0.1 at 2023-08-14 14:04:56 +0530
+Processing by UsersController#addUser as TURBO_STREAM
+  Parameters: {"authenticity_token"=>"[FILTERED]", "user"=>{"name"=>"test", "age"=>"25", "email"=>"test@gmail.com", "address"=>"noida up"}, "commit"=>"Create User"}
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/users_controller.rb:10:in `addUser'
+  [1m[36mUser Exists? (0.4ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "test@gmail.com"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:10:in `addUser'
+  [1m[36mUser Create (1.2ms)[0m  [1m[32mINSERT INTO "users" ("name", "age", "email", "address", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "test"], ["age", 25], ["email", "test@gmail.com"], ["address", "noida up"], ["created_at", "2023-08-14 08:34:56.482961"], ["updated_at", "2023-08-14 08:34:56.482961"]]
+  ↳ app/controllers/users_controller.rb:10:in `addUser'
+  [1m[36mTRANSACTION (104.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/users_controller.rb:10:in `addUser'
+Redirected to http://127.0.0.1:3000/allUser
+Completed 302 Found in 132ms (ActiveRecord: 105.7ms | Allocations: 2800)
+
+
+Started GET "/allUser" for 127.0.0.1 at 2023-08-14 14:04:56 +0530
+Processing by UsersController#all_users as TURBO_STREAM
+  Rendering layout layouts/application.html.erb
+  Rendering users/all_users.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/all_users.html.erb:19
+  Rendered users/all_users.html.erb within layouts/application (Duration: 2.5ms | Allocations: 572)
+  Rendered layout layouts/application.html.erb (Duration: 11.1ms | Allocations: 2952)
+Completed 200 OK in 14ms (Views: 12.5ms | ActiveRecord: 0.2ms | Allocations: 3283)
+
+
+Started GET "/addUser" for 127.0.0.1 at 2023-08-14 14:23:12 +0530
+Processing by UsersController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (Duration: 8.2ms | Allocations: 1412)
+  Rendered layout layouts/application.html.erb (Duration: 16.7ms | Allocations: 3621)
+Completed 200 OK in 18ms (Views: 17.5ms | ActiveRecord: 0.0ms | Allocations: 3953)
+
+
+Started GET "/addUser" for 127.0.0.1 at 2023-08-14 14:26:40 +0530
+Processing by UsersController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (Duration: 8.0ms | Allocations: 2172)
+  Rendered layout layouts/application.html.erb (Duration: 22.1ms | Allocations: 4821)
+Completed 200 OK in 29ms (Views: 26.5ms | ActiveRecord: 0.0ms | Allocations: 6018)
+
+
+Started GET "/addUser" for 127.0.0.1 at 2023-08-14 14:26:48 +0530
+Processing by UsersController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (Duration: 14.7ms | Allocations: 2171)
+  Rendered layout layouts/application.html.erb (Duration: 40.6ms | Allocations: 4820)
+Completed 200 OK in 53ms (Views: 49.6ms | ActiveRecord: 0.0ms | Allocations: 6050)
+
+
+Started GET "/addUser" for 127.0.0.1 at 2023-08-14 14:27:05 +0530
+Processing by UsersController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (Duration: 17.0ms | Allocations: 2174)
+  Rendered layout layouts/application.html.erb (Duration: 34.4ms | Allocations: 4823)
+Completed 200 OK in 44ms (Views: 39.9ms | ActiveRecord: 0.0ms | Allocations: 6049)
+
+
+Started GET "/addUser" for 127.0.0.1 at 2023-08-14 14:27:07 +0530
+Processing by UsersController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (Duration: 9.9ms | Allocations: 1408)
+  Rendered layout layouts/application.html.erb (Duration: 25.1ms | Allocations: 3621)
+Completed 200 OK in 32ms (Views: 29.6ms | ActiveRecord: 0.0ms | Allocations: 3975)
+
+
+Started GET "/addUser" for 127.0.0.1 at 2023-08-14 14:27:08 +0530
+Processing by UsersController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (Duration: 5.6ms | Allocations: 1414)
+  Rendered layout layouts/application.html.erb (Duration: 20.2ms | Allocations: 3623)
+Completed 200 OK in 23ms (Views: 21.6ms | ActiveRecord: 0.0ms | Allocations: 3953)
+
+
+Started GET "/addUser" for 127.0.0.1 at 2023-08-14 14:27:24 +0530
+Processing by UsersController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (Duration: 22.3ms | Allocations: 2164)
+  Rendered layout layouts/application.html.erb (Duration: 34.1ms | Allocations: 4813)
+Completed 200 OK in 50ms (Views: 45.3ms | ActiveRecord: 0.0ms | Allocations: 6015)
+
+
+Started GET "/addUser" for 127.0.0.1 at 2023-08-14 14:27:25 +0530
+Processing by UsersController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (Duration: 4.7ms | Allocations: 1412)
+  Rendered layout layouts/application.html.erb (Duration: 13.7ms | Allocations: 3621)
+Completed 200 OK in 17ms (Views: 15.9ms | ActiveRecord: 0.0ms | Allocations: 3975)
+
+
+Started GET "/addUser" for 127.0.0.1 at 2023-08-14 14:27:26 +0530
+Processing by UsersController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (Duration: 9.4ms | Allocations: 1408)
+  Rendered layout layouts/application.html.erb (Duration: 22.1ms | Allocations: 3617)
+Completed 200 OK in 25ms (Views: 23.8ms | ActiveRecord: 0.0ms | Allocations: 3947)
+
+
+Started GET "/addUser" for 127.0.0.1 at 2023-08-14 14:27:27 +0530
+Processing by UsersController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/new.html.erb within layouts/application
+  Rendered users/new.html.erb within layouts/application (Duration: 9.4ms | Allocations: 1412)
+  Rendered layout layouts/application.html.erb (Duration: 23.7ms | Allocations: 3621)
+Completed 200 OK in 28ms (Views: 26.8ms | ActiveRecord: 0.0ms | Allocations: 3951)
+
+
+Started GET "/allUser" for 127.0.0.1 at 2023-08-14 14:44:13 +0530
+Processing by UsersController#all_users as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering users/all_users.html.erb within layouts/application
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/views/users/all_users.html.erb:19
+  Rendered users/all_users.html.erb within layouts/application (Duration: 9.1ms | Allocations: 1127)
+  Rendered layout layouts/application.html.erb (Duration: 16.2ms | Allocations: 3497)
+Completed 200 OK in 18ms (Views: 16.2ms | ActiveRecord: 1.0ms | Allocations: 3880)
+
+
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to AddColumnsToUsers (20230814115144)
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (1.5ms)[0m  [1m[35mALTER TABLE "users" ADD "document" file[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.4ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20230814115144"]]
+  [1m[36mTRANSACTION (90.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.4ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.2ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to RemoveDocumentFromUsers (20230814132420)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.5ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20230814132420"]]
+  [1m[36mTRANSACTION (84.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.4ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.2ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m

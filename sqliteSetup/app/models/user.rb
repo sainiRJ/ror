@@ -1,6 +1,5 @@
 class User < ApplicationRecord
-    validates :name, presence: true
-    validates :email, presence: true, uniqueness: true 
-    validates :age, presence: true
-    validates :address, presence: true
+    validates :name, :age, :address, presence: true
+    validates :email, presence: true, uniqueness: true, format: {with: URI::MailTo::EMAIL_REGEXP} 
+
 end
