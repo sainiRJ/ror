@@ -1154,3 +1154,940 @@ Processing by UsersController#allUser as */*
 Completed 200 OK in 4ms (Views: 2.9ms | ActiveRecord: 0.1ms | Allocations: 1185)
 
 
+Started GET "/user/list/1" for 127.0.0.1 at 2023-08-17 10:41:35 +0530
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by UsersController#allUser as */*
+  Parameters: {"page"=>"1"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" LIMIT ? OFFSET ?[0m  [["LIMIT", 1], ["OFFSET", 0]]
+  ↳ app/controllers/users_controller.rb:18:in `allUser'
+Completed 200 OK in 87ms (Views: 67.5ms | ActiveRecord: 2.4ms | Allocations: 24398)
+
+
+Started GET "/user/get/1" for 127.0.0.1 at 2023-08-17 11:57:59 +0530
+  
+SyntaxError (/home/dev/Desktop/ror/proROR/app/controllers/users_controller.rb:46: syntax error, unexpected symbol literal
+    def :current_user
+        ^
+/home/dev/Desktop/ror/proROR/app/controllers/users_controller.rb:63: syntax error, unexpected `end', expecting end-of-input):
+  
+app/controllers/users_controller.rb:46: syntax error, unexpected symbol literal
+app/controllers/users_controller.rb:63: syntax error, unexpected `end', expecting end-of-input
+app/controllers/users_controller.rb:46: syntax error, unexpected symbol literal
+app/controllers/users_controller.rb:63: syntax error, unexpected `end', expecting end-of-input
+app/controllers/users_controller.rb:46: syntax error, unexpected symbol literal
+app/controllers/users_controller.rb:63: syntax error, unexpected `end', expecting end-of-input
+Started GET "/user/get/1" for 127.0.0.1 at 2023-08-17 11:59:12 +0530
+Processing by UsersController#get_user as */*
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:47:in `current_user'
+Completed 400 Bad Request in 60ms (Views: 0.4ms | ActiveRecord: 1.2ms | Allocations: 3212)
+
+
+Started GET "/user/get/1" for 127.0.0.1 at 2023-08-17 12:08:02 +0530
+Processing by UsersController#get_user as */*
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:47:in `current_user'
+Completed 400 Bad Request in 15ms (Views: 0.4ms | ActiveRecord: 1.3ms | Allocations: 1054)
+
+
+Started GET "/user/get/1" for 127.0.0.1 at 2023-08-17 12:08:44 +0530
+Processing by UsersController#get_user as */*
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:47:in `current_user'
+Completed 400 Bad Request in 5ms (Views: 0.5ms | ActiveRecord: 0.3ms | Allocations: 823)
+
+
+Started POST "/user/list/1" for 127.0.0.1 at 2023-08-17 12:14:22 +0530
+  
+ActionController::RoutingError (No route matches [POST] "/user/list/1"):
+  
+Started GET "/user/list/1" for 127.0.0.1 at 2023-08-17 12:15:43 +0530
+Processing by UsersController#allUser as */*
+  Parameters: {"page"=>"1"}
+  [1m[36mUser Load (32.0ms)[0m  [1m[34mSELECT "users".* FROM "users" LIMIT ? OFFSET ?[0m  [["LIMIT", 1], ["OFFSET", 0]]
+  ↳ app/controllers/users_controller.rb:19:in `allUser'
+Completed 200 OK in 45ms (Views: 11.2ms | ActiveRecord: 32.6ms | Allocations: 3625)
+
+
+Started GET "/" for ::1 at 2023-08-17 12:16:57 +0530
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /var/lib/gems/3.0.0/gems/railties-7.0.7/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /var/lib/gems/3.0.0/gems/railties-7.0.7/lib/rails/templates/rails/welcome/index.html.erb (Duration: 76.7ms | Allocations: 493)
+Completed 200 OK in 82ms (Views: 79.3ms | ActiveRecord: 0.0ms | Allocations: 1638)
+
+
+Started GET "/user/get/1" for 127.0.0.1 at 2023-08-17 12:18:14 +0530
+Processing by UsersController#get_user as */*
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:47:in `current_user'
+Completed 400 Bad Request in 5ms (Views: 0.4ms | ActiveRecord: 0.2ms | Allocations: 1043)
+
+
+Started GET "/user/get/1" for 127.0.0.1 at 2023-08-17 12:35:13 +0530
+Processing by UsersController#get_user as */*
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:47:in `current_user'
+Completed 400 Bad Request in 8ms (Views: 2.2ms | ActiveRecord: 1.7ms | Allocations: 1011)
+
+
+Started GET "/user/get/1" for 127.0.0.1 at 2023-08-17 12:35:36 +0530
+Processing by UsersController#get_user as */*
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:47:in `current_user'
+Completed 400 Bad Request in 8ms (Views: 0.3ms | ActiveRecord: 0.2ms | Allocations: 821)
+
+
+Started GET "/user/get/1" for 127.0.0.1 at 2023-08-17 12:35:55 +0530
+Processing by UsersController#get_user as */*
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:47:in `current_user'
+Completed 400 Bad Request in 12ms (Views: 0.4ms | ActiveRecord: 0.2ms | Allocations: 821)
+
+
+Started GET "/user/get/1" for 127.0.0.1 at 2023-08-17 12:36:28 +0530
+Processing by UsersController#get_user as */*
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:47:in `current_user'
+Completed 400 Bad Request in 6ms (Views: 0.4ms | ActiveRecord: 0.2ms | Allocations: 811)
+
+
+Started POST "/user/login" for 127.0.0.1 at 2023-08-17 12:40:09 +0530
+Processing by UsersController#login as */*
+  Parameters: {"username"=>"rajesh123", "password"=>"[FILTERED]", "user"=>{"username"=>"rajesh123", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."username" = ? LIMIT ?[0m  [["username", "rajesh123"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:34:in `login'
+Completed 200 OK in 438ms (Views: 0.2ms | ActiveRecord: 0.3ms | Allocations: 1414)
+
+
+Started GET "/user/get/1" for 127.0.0.1 at 2023-08-17 12:41:10 +0530
+Processing by UsersController#get_user as */*
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:47:in `current_user'
+Completed 400 Bad Request in 9ms (Views: 0.6ms | ActiveRecord: 0.4ms | Allocations: 1430)
+
+
+Started GET "/user/list/1" for 127.0.0.1 at 2023-08-17 12:41:39 +0530
+Processing by UsersController#allUser as */*
+  Parameters: {"page"=>"1"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" LIMIT ? OFFSET ?[0m  [["LIMIT", 1], ["OFFSET", 0]]
+  ↳ app/controllers/users_controller.rb:19:in `allUser'
+Completed 200 OK in 6ms (Views: 4.5ms | ActiveRecord: 0.3ms | Allocations: 1072)
+
+
+Started GET "/user/get/1" for 127.0.0.1 at 2023-08-17 12:41:57 +0530
+Processing by UsersController#get_user as */*
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:47:in `current_user'
+Completed 400 Bad Request in 6ms (Views: 0.5ms | ActiveRecord: 0.2ms | Allocations: 820)
+
+
+Started GET "/user/get/1" for 127.0.0.1 at 2023-08-17 12:42:35 +0530
+Processing by UsersController#get_user as */*
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:47:in `current_user'
+Completed 400 Bad Request in 4ms (Views: 0.4ms | ActiveRecord: 0.2ms | Allocations: 800)
+
+
+Started GET "/user/get/2" for 127.0.0.1 at 2023-08-17 12:42:41 +0530
+Processing by UsersController#get_user as */*
+  Parameters: {"id"=>"2"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:47:in `current_user'
+Completed 400 Bad Request in 3ms (Views: 0.5ms | ActiveRecord: 0.1ms | Allocations: 817)
+
+
+Started GET "/user/get/1" for 127.0.0.1 at 2023-08-17 12:45:07 +0530
+Processing by UsersController#get_user as */*
+  Parameters: {"id"=>"1"}
+Completed 400 Bad Request in 1ms (Views: 0.4ms | ActiveRecord: 0.0ms | Allocations: 324)
+
+
+Started GET "/user/get/1" for 127.0.0.1 at 2023-08-17 12:45:49 +0530
+Processing by UsersController#get_user as */*
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:47:in `get_user'
+Completed 400 Bad Request in 67ms (Views: 0.4ms | ActiveRecord: 1.5ms | Allocations: 5800)
+
+
+Started GET "/user/get/1" for 127.0.0.1 at 2023-08-17 12:48:01 +0530
+Processing by UsersController#get_user as */*
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:47:in `get_user'
+Completed 400 Bad Request in 4ms (Views: 0.6ms | ActiveRecord: 0.2ms | Allocations: 797)
+
+
+Started GET "/user/get/1" for 127.0.0.1 at 2023-08-17 12:50:45 +0530
+Processing by UsersController#get_user as */*
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:47:in `get_user'
+Completed 400 Bad Request in 14ms (Views: 0.2ms | ActiveRecord: 1.4ms | Allocations: 5723)
+
+
+Started GET "/user/get/1" for 127.0.0.1 at 2023-08-17 12:52:44 +0530
+Processing by UsersController#get_user as */*
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:47:in `get_user'
+Completed 400 Bad Request in 18ms (Views: 0.4ms | ActiveRecord: 1.7ms | Allocations: 5757)
+
+
+Started GET "/user/get/1" for 127.0.0.1 at 2023-08-17 12:57:55 +0530
+Processing by UsersController#get_user as */*
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:47:in `get_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:55:in `get_user'
+Completed 200 OK in 57ms (Views: 1.3ms | ActiveRecord: 1.9ms | Allocations: 6300)
+
+
+Started GET "/user/get/2" for 127.0.0.1 at 2023-08-17 12:58:07 +0530
+Processing by UsersController#get_user as */*
+  Parameters: {"id"=>"2"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:47:in `get_user'
+Completed 400 Bad Request in 4ms (Views: 0.8ms | ActiveRecord: 0.2ms | Allocations: 810)
+
+
+Started GET "/user/get/1" for 127.0.0.1 at 2023-08-17 12:58:20 +0530
+Processing by UsersController#get_user as */*
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:47:in `get_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:55:in `get_user'
+Completed 200 OK in 7ms (Views: 0.7ms | ActiveRecord: 0.2ms | Allocations: 1306)
+
+
+Started GET "/user/get/1" for 127.0.0.1 at 2023-08-17 12:58:34 +0530
+Processing by UsersController#get_user as */*
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:47:in `get_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:55:in `get_user'
+Completed 200 OK in 13ms (Views: 0.8ms | ActiveRecord: 0.2ms | Allocations: 1310)
+
+
+Started GET "/user/get/1" for 127.0.0.1 at 2023-08-17 12:58:44 +0530
+Processing by UsersController#get_user as */*
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:47:in `get_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:55:in `get_user'
+Completed 200 OK in 6ms (Views: 0.8ms | ActiveRecord: 0.2ms | Allocations: 1312)
+
+
+Started GET "/user/get/1" for 127.0.0.1 at 2023-08-17 12:58:54 +0530
+Processing by UsersController#get_user as */*
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:47:in `get_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:55:in `get_user'
+Completed 200 OK in 6ms (Views: 1.2ms | ActiveRecord: 0.3ms | Allocations: 1307)
+
+
+Started GET "/user/get/1" for 127.0.0.1 at 2023-08-17 12:59:11 +0530
+Processing by UsersController#get_user as */*
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:47:in `get_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:55:in `get_user'
+Completed 200 OK in 6ms (Views: 0.8ms | ActiveRecord: 0.2ms | Allocations: 1299)
+
+
+Started GET "/user/get/1" for 127.0.0.1 at 2023-08-17 12:59:14 +0530
+Processing by UsersController#get_user as */*
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:47:in `get_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:55:in `get_user'
+Completed 200 OK in 5ms (Views: 0.8ms | ActiveRecord: 0.2ms | Allocations: 1306)
+
+
+Started GET "/user/get/1" for 127.0.0.1 at 2023-08-17 12:59:15 +0530
+Processing by UsersController#get_user as */*
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:47:in `get_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:55:in `get_user'
+Completed 200 OK in 18ms (Views: 1.1ms | ActiveRecord: 0.2ms | Allocations: 1302)
+
+
+Started GET "/user/get/2" for 127.0.0.1 at 2023-08-17 12:59:24 +0530
+Processing by UsersController#get_user as */*
+  Parameters: {"id"=>"2"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:47:in `get_user'
+Completed 400 Bad Request in 16ms (Views: 2.2ms | ActiveRecord: 0.2ms | Allocations: 792)
+
+
+Started GET "/user/get/1" for 127.0.0.1 at 2023-08-17 12:59:54 +0530
+Processing by UsersController#get_user as */*
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:47:in `get_user'
+  [1m[36mCACHE User Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:55:in `get_user'
+Completed 200 OK in 10ms (Views: 0.8ms | ActiveRecord: 0.2ms | Allocations: 1310)
+
+
+Started GET "/user/list/2" for 127.0.0.1 at 2023-08-17 13:00:06 +0530
+Processing by UsersController#allUser as */*
+  Parameters: {"page"=>"2"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" LIMIT ? OFFSET ?[0m  [["LIMIT", 1], ["OFFSET", 1]]
+  ↳ app/controllers/users_controller.rb:19:in `allUser'
+Completed 200 OK in 5ms (Views: 3.9ms | ActiveRecord: 0.3ms | Allocations: 1059)
+
+
+Started POST "/user/login" for 127.0.0.1 at 2023-08-17 13:00:14 +0530
+Processing by UsersController#login as */*
+  Parameters: {"username"=>"rajesh1234", "password"=>"[FILTERED]", "user"=>{"username"=>"rajesh1234", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."username" = ? LIMIT ?[0m  [["username", "rajesh1234"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:34:in `login'
+Completed 200 OK in 432ms (Views: 0.2ms | ActiveRecord: 0.2ms | Allocations: 947)
+
+
+Started GET "/user/get/1" for 127.0.0.1 at 2023-08-17 13:00:30 +0530
+Processing by UsersController#get_user as */*
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:47:in `get_user'
+Completed 400 Bad Request in 9ms (Views: 0.3ms | ActiveRecord: 0.2ms | Allocations: 784)
+
+
+Started GET "/user/get/2" for 127.0.0.1 at 2023-08-17 13:00:43 +0530
+Processing by UsersController#get_user as */*
+  Parameters: {"id"=>"2"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:47:in `get_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:55:in `get_user'
+Completed 200 OK in 5ms (Views: 0.8ms | ActiveRecord: 0.2ms | Allocations: 1308)
+
+
+Started DELETE "/user/delete/2" for 127.0.0.1 at 2023-08-17 13:11:44 +0530
+Processing by UsersController#delete_user as */*
+  Parameters: {"username"=>"rajesh1234", "password"=>"[FILTERED]", "id"=>"2", "user"=>{"username"=>"rajesh1234", "password"=>"[FILTERED]"}}
+Can't verify CSRF token authenticity.
+Completed 422 Unprocessable Entity in 1ms (ActiveRecord: 0.5ms | Allocations: 542)
+
+
+  
+ActionController::InvalidAuthenticityToken (Can't verify CSRF token authenticity.):
+  
+actionpack (7.0.7) lib/action_controller/metal/request_forgery_protection.rb:253:in `handle_unverified_request'
+actionpack (7.0.7) lib/action_controller/metal/request_forgery_protection.rb:286:in `handle_unverified_request'
+actionpack (7.0.7) lib/action_controller/metal/request_forgery_protection.rb:275:in `verify_authenticity_token'
+activesupport (7.0.7) lib/active_support/callbacks.rb:400:in `block in make_lambda'
+activesupport (7.0.7) lib/active_support/callbacks.rb:180:in `block (2 levels) in halting_and_conditional'
+actionpack (7.0.7) lib/abstract_controller/callbacks.rb:34:in `block (2 levels) in <module:Callbacks>'
+activesupport (7.0.7) lib/active_support/callbacks.rb:181:in `block in halting_and_conditional'
+activesupport (7.0.7) lib/active_support/callbacks.rb:595:in `block in invoke_before'
+activesupport (7.0.7) lib/active_support/callbacks.rb:595:in `each'
+activesupport (7.0.7) lib/active_support/callbacks.rb:595:in `invoke_before'
+activesupport (7.0.7) lib/active_support/callbacks.rb:116:in `block in run_callbacks'
+activesupport (7.0.7) lib/active_support/callbacks.rb:138:in `run_callbacks'
+actionpack (7.0.7) lib/abstract_controller/callbacks.rb:233:in `process_action'
+actionpack (7.0.7) lib/action_controller/metal/rescue.rb:23:in `process_action'
+actionpack (7.0.7) lib/action_controller/metal/instrumentation.rb:67:in `block in process_action'
+activesupport (7.0.7) lib/active_support/notifications.rb:206:in `block in instrument'
+activesupport (7.0.7) lib/active_support/notifications/instrumenter.rb:24:in `instrument'
+activesupport (7.0.7) lib/active_support/notifications.rb:206:in `instrument'
+actionpack (7.0.7) lib/action_controller/metal/instrumentation.rb:66:in `process_action'
+actionpack (7.0.7) lib/action_controller/metal/params_wrapper.rb:259:in `process_action'
+activerecord (7.0.7) lib/active_record/railties/controller_runtime.rb:27:in `process_action'
+actionpack (7.0.7) lib/abstract_controller/base.rb:151:in `process'
+actionview (7.0.7) lib/action_view/rendering.rb:39:in `process'
+actionpack (7.0.7) lib/action_controller/metal.rb:188:in `dispatch'
+actionpack (7.0.7) lib/action_controller/metal.rb:251:in `dispatch'
+actionpack (7.0.7) lib/action_dispatch/routing/route_set.rb:49:in `dispatch'
+actionpack (7.0.7) lib/action_dispatch/routing/route_set.rb:32:in `serve'
+actionpack (7.0.7) lib/action_dispatch/journey/router.rb:50:in `block in serve'
+actionpack (7.0.7) lib/action_dispatch/journey/router.rb:32:in `each'
+actionpack (7.0.7) lib/action_dispatch/journey/router.rb:32:in `serve'
+actionpack (7.0.7) lib/action_dispatch/routing/route_set.rb:852:in `call'
+rack (2.2.8) lib/rack/tempfile_reaper.rb:15:in `call'
+rack (2.2.8) lib/rack/etag.rb:27:in `call'
+rack (2.2.8) lib/rack/conditional_get.rb:40:in `call'
+rack (2.2.8) lib/rack/head.rb:12:in `call'
+actionpack (7.0.7) lib/action_dispatch/http/permissions_policy.rb:38:in `call'
+actionpack (7.0.7) lib/action_dispatch/http/content_security_policy.rb:36:in `call'
+rack (2.2.8) lib/rack/session/abstract/id.rb:266:in `context'
+rack (2.2.8) lib/rack/session/abstract/id.rb:260:in `call'
+actionpack (7.0.7) lib/action_dispatch/middleware/cookies.rb:704:in `call'
+activerecord (7.0.7) lib/active_record/migration.rb:603:in `call'
+actionpack (7.0.7) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (7.0.7) lib/active_support/callbacks.rb:99:in `run_callbacks'
+actionpack (7.0.7) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (7.0.7) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.0.7) lib/action_dispatch/middleware/actionable_exceptions.rb:17:in `call'
+actionpack (7.0.7) lib/action_dispatch/middleware/debug_exceptions.rb:28:in `call'
+web-console (4.2.0) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.2.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.2.0) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.2.0) lib/web_console/middleware.rb:17:in `call'
+actionpack (7.0.7) lib/action_dispatch/middleware/show_exceptions.rb:29:in `call'
+railties (7.0.7) lib/rails/rack/logger.rb:40:in `call_app'
+railties (7.0.7) lib/rails/rack/logger.rb:25:in `block in call'
+activesupport (7.0.7) lib/active_support/tagged_logging.rb:99:in `block in tagged'
+activesupport (7.0.7) lib/active_support/tagged_logging.rb:37:in `tagged'
+activesupport (7.0.7) lib/active_support/tagged_logging.rb:99:in `tagged'
+railties (7.0.7) lib/rails/rack/logger.rb:25:in `call'
+sprockets-rails (3.4.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (7.0.7) lib/action_dispatch/middleware/remote_ip.rb:93:in `call'
+actionpack (7.0.7) lib/action_dispatch/middleware/request_id.rb:26:in `call'
+rack (2.2.8) lib/rack/method_override.rb:24:in `call'
+rack (2.2.8) lib/rack/runtime.rb:22:in `call'
+activesupport (7.0.7) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (7.0.7) lib/action_dispatch/middleware/server_timing.rb:61:in `block in call'
+actionpack (7.0.7) lib/action_dispatch/middleware/server_timing.rb:26:in `collect_events'
+actionpack (7.0.7) lib/action_dispatch/middleware/server_timing.rb:60:in `call'
+actionpack (7.0.7) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.0.7) lib/action_dispatch/middleware/static.rb:23:in `call'
+rack (2.2.8) lib/rack/sendfile.rb:110:in `call'
+actionpack (7.0.7) lib/action_dispatch/middleware/host_authorization.rb:137:in `call'
+railties (7.0.7) lib/rails/engine.rb:530:in `call'
+puma (5.6.6) lib/puma/configuration.rb:252:in `call'
+puma (5.6.6) lib/puma/request.rb:77:in `block in handle_request'
+puma (5.6.6) lib/puma/thread_pool.rb:340:in `with_force_shutdown'
+puma (5.6.6) lib/puma/request.rb:76:in `handle_request'
+puma (5.6.6) lib/puma/server.rb:443:in `process_client'
+puma (5.6.6) lib/puma/thread_pool.rb:147:in `block in spawn_thread'
+Started DELETE "/user/delete/2" for 127.0.0.1 at 2023-08-17 13:12:28 +0530
+Processing by UsersController#delete_user as */*
+  Parameters: {"username"=>"rajesh1234", "password"=>"[FILTERED]", "id"=>"2", "user"=>{"username"=>"rajesh1234", "password"=>"[FILTERED]"}}
+Completed 200 OK in 1ms (Views: 0.4ms | ActiveRecord: 1.0ms | Allocations: 283)
+
+
+Started DELETE "/user/delete/2" for 127.0.0.1 at 2023-08-17 13:12:36 +0530
+Processing by UsersController#delete_user as */*
+  Parameters: {"id"=>"2"}
+Completed 200 OK in 1ms (Views: 0.3ms | ActiveRecord: 0.0ms | Allocations: 157)
+
+
+Started POST "/user/login" for 127.0.0.1 at 2023-08-17 14:01:46 +0530
+Processing by UsersController#login as */*
+  Parameters: {"username"=>"rajesh123", "password"=>"[FILTERED]", "user"=>{"username"=>"rajesh123", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."username" = ? LIMIT ?[0m  [["username", "rajesh123"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:18:in `login'
+Completed 200 OK in 436ms (Views: 0.4ms | ActiveRecord: 1.5ms | Allocations: 3754)
+
+
+Started POST "/user/login" for 127.0.0.1 at 2023-08-17 14:01:57 +0530
+Processing by UsersController#login as */*
+  Parameters: {"username"=>"rajesh1234", "password"=>"[FILTERED]", "user"=>{"username"=>"rajesh1234", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."username" = ? LIMIT ?[0m  [["username", "rajesh1234"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:18:in `login'
+Completed 200 OK in 433ms (Views: 0.3ms | ActiveRecord: 0.2ms | Allocations: 785)
+
+
+Started DELETE "/user/delete/2" for 127.0.0.1 at 2023-08-17 14:02:08 +0530
+Processing by UsersController#delete_user as */*
+  Parameters: {"id"=>"2"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:49:in `delete_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:56:in `delete_user'
+Completed 500 Internal Server Error in 53ms (ActiveRecord: 0.4ms | Allocations: 4625)
+
+
+  
+NoMethodError (undefined method `delete_all' for #<User id: 2, username: "rajesh1234", password: nil, confirmPassword: nil, email: "rajesh01@gmail.com", firstname: "rajesh", lastname: "saini", created_at: "2023-08-16 12:25:30.811532000 +0000", updated_at: "2023-08-16 12:25:30.811532000 +0000", password_digest: [FILTERED]>
+Did you mean?  delete):
+  
+app/controllers/users_controller.rb:56:in `delete_user'
+Started DELETE "/user/delete/2" for 127.0.0.1 at 2023-08-17 14:04:40 +0530
+  
+SyntaxError (/home/dev/Desktop/ror/proROR/app/controllers/users_controller.rb:61: syntax error, unexpected `else', expecting `end'
+          else
+          ^~~~
+/home/dev/Desktop/ror/proROR/app/controllers/users_controller.rb:74: syntax error, unexpected `end', expecting end-of-input):
+  
+app/controllers/users_controller.rb:61: syntax error, unexpected `else', expecting `end'
+app/controllers/users_controller.rb:74: syntax error, unexpected `end', expecting end-of-input
+app/controllers/users_controller.rb:61: syntax error, unexpected `else', expecting `end'
+app/controllers/users_controller.rb:74: syntax error, unexpected `end', expecting end-of-input
+app/controllers/users_controller.rb:61: syntax error, unexpected `else', expecting `end'
+app/controllers/users_controller.rb:74: syntax error, unexpected `end', expecting end-of-input
+Started DELETE "/user/delete/2" for 127.0.0.1 at 2023-08-17 14:05:22 +0530
+Processing by UsersController#delete_user as */*
+  Parameters: {"id"=>"2"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:49:in `delete_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:56:in `delete_user'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/users_controller.rb:56:in `delete_user'
+  [1m[36mUser Destroy (57.5ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = ?[0m  [["id", 2]]
+  ↳ app/controllers/users_controller.rb:56:in `delete_user'
+  [1m[36mTRANSACTION (99.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/users_controller.rb:56:in `delete_user'
+Completed 500 Internal Server Error in 192ms (ActiveRecord: 158.4ms | Allocations: 10420)
+
+
+  
+NameError (undefined local variable or method `login_path' for #<UsersController:0x0000000003acc8>):
+  
+app/controllers/users_controller.rb:58:in `delete_user'
+Started DELETE "/user/delete/2" for 127.0.0.1 at 2023-08-17 14:06:03 +0530
+Processing by UsersController#delete_user as */*
+  Parameters: {"id"=>"2"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:49:in `delete_user'
+Completed 400 Bad Request in 9ms (Views: 0.4ms | ActiveRecord: 1.1ms | Allocations: 3290)
+
+
+Started POST "/user/login" for 127.0.0.1 at 2023-08-17 14:06:21 +0530
+Processing by UsersController#login as */*
+  Parameters: {"username"=>"rajesh1234", "password"=>"[FILTERED]", "user"=>{"username"=>"rajesh1234", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."username" = ? LIMIT ?[0m  [["username", "rajesh1234"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:18:in `login'
+Completed 400 Bad Request in 7ms (Views: 0.5ms | ActiveRecord: 0.5ms | Allocations: 738)
+
+
+Started GET "/user/list/2" for 127.0.0.1 at 2023-08-17 14:07:22 +0530
+Processing by UsersController#allUser as */*
+  Parameters: {"page"=>"2"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" LIMIT ? OFFSET ?[0m  [["LIMIT", 1], ["OFFSET", 1]]
+  ↳ app/controllers/users_controller.rb:69:in `allUser'
+Completed 200 OK in 3ms (Views: 2.2ms | ActiveRecord: 0.2ms | Allocations: 904)
+
+
+Started GET "/user/list/1" for 127.0.0.1 at 2023-08-17 14:07:27 +0530
+Processing by UsersController#allUser as */*
+  Parameters: {"page"=>"1"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" LIMIT ? OFFSET ?[0m  [["LIMIT", 1], ["OFFSET", 0]]
+  ↳ app/controllers/users_controller.rb:69:in `allUser'
+Completed 200 OK in 13ms (Views: 11.0ms | ActiveRecord: 0.8ms | Allocations: 3374)
+
+
+Started DELETE "/user/delete/1" for 127.0.0.1 at 2023-08-17 14:13:33 +0530
+Processing by UsersController#delete_user as */*
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:49:in `delete_user'
+Completed 400 Bad Request in 9ms (Views: 0.5ms | ActiveRecord: 0.7ms | Allocations: 2961)
+
+
+Started POST "/user/login" for 127.0.0.1 at 2023-08-17 14:13:51 +0530
+Processing by UsersController#login as */*
+  Parameters: {"username"=>"rajesh123", "password"=>"[FILTERED]", "user"=>{"username"=>"rajesh123", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."username" = ? LIMIT ?[0m  [["username", "rajesh123"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:18:in `login'
+Completed 200 OK in 450ms (Views: 0.3ms | ActiveRecord: 0.3ms | Allocations: 3146)
+
+
+Started DELETE "/user/delete/1" for 127.0.0.1 at 2023-08-17 14:13:57 +0530
+Processing by UsersController#delete_user as */*
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:49:in `delete_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:56:in `delete_user'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/users_controller.rb:56:in `delete_user'
+  [1m[36mUser Destroy (0.5ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = ?[0m  [["id", 1]]
+  ↳ app/controllers/users_controller.rb:56:in `delete_user'
+  [1m[36mTRANSACTION (101.9ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/users_controller.rb:56:in `delete_user'
+Completed 500 Internal Server Error in 123ms (ActiveRecord: 102.7ms | Allocations: 5443)
+
+
+  
+NameError (undefined local variable or method `login_path' for #<UsersController:0x00000000042f18>):
+  
+app/controllers/users_controller.rb:58:in `delete_user'
+Started DELETE "/user/delete/1" for 127.0.0.1 at 2023-08-17 14:14:31 +0530
+Processing by UsersController#delete_user as */*
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:49:in `delete_user'
+Completed 400 Bad Request in 8ms (Views: 0.4ms | ActiveRecord: 1.0ms | Allocations: 3288)
+
+
+Started POST "/user/login" for 127.0.0.1 at 2023-08-17 14:14:38 +0530
+Processing by UsersController#login as */*
+  Parameters: {"username"=>"rajesh123", "password"=>"[FILTERED]", "user"=>{"username"=>"rajesh123", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."username" = ? LIMIT ?[0m  [["username", "rajesh123"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:18:in `login'
+Completed 400 Bad Request in 4ms (Views: 0.5ms | ActiveRecord: 0.4ms | Allocations: 738)
+
+
+Started GET "/user/list/1" for 127.0.0.1 at 2023-08-17 14:14:42 +0530
+Processing by UsersController#allUser as */*
+  Parameters: {"page"=>"1"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" LIMIT ? OFFSET ?[0m  [["LIMIT", 1], ["OFFSET", 0]]
+  ↳ app/controllers/users_controller.rb:69:in `allUser'
+Completed 200 OK in 3ms (Views: 1.9ms | ActiveRecord: 0.2ms | Allocations: 904)
+
+
+Started POST "/user/register" for 127.0.0.1 at 2023-08-17 14:18:09 +0530
+Processing by UsersController#create as */*
+  Parameters: {"username"=>"rajesh123", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]", "email"=>"rajesh@gmail.com", "firstname"=>"rajesh", "lastname"=>"saini", "user"=>{"username"=>"rajesh123", "password"=>"[FILTERED]", "email"=>"rajesh@gmail.com", "firstname"=>"rajesh", "lastname"=>"saini"}}
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/users_controller.rb:7:in `create'
+  [1m[36mUser Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."username" = ? LIMIT ?[0m  [["username", "rajesh123"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:7:in `create'
+  [1m[36mUser Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "rajesh@gmail.com"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:7:in `create'
+  [1m[36mUser Create (0.4ms)[0m  [1m[32mINSERT INTO "users" ("username", "password", "confirmPassword", "email", "firstname", "lastname", "created_at", "updated_at", "password_digest") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["username", "rajesh123"], ["password", "[FILTERED]"], ["confirmPassword", "[FILTERED]"], ["email", "rajesh@gmail.com"], ["firstname", "rajesh"], ["lastname", "saini"], ["created_at", "2023-08-17 08:48:09.639672"], ["updated_at", "2023-08-17 08:48:09.639672"], ["password_digest", "[FILTERED]"]]
+  ↳ app/controllers/users_controller.rb:7:in `create'
+  [1m[36mTRANSACTION (110.3ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/users_controller.rb:7:in `create'
+Completed 200 OK in 561ms (Views: 0.4ms | ActiveRecord: 112.5ms | Allocations: 7810)
+
+
+Started POST "/user/register" for 127.0.0.1 at 2023-08-17 14:18:29 +0530
+Processing by UsersController#create as */*
+  Parameters: {"username"=>"rajesh124", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]", "email"=>"rajesh1@gmail.com", "firstname"=>"rajesh", "lastname"=>"saini", "user"=>{"username"=>"rajesh124", "password"=>"[FILTERED]", "email"=>"rajesh1@gmail.com", "firstname"=>"rajesh", "lastname"=>"saini"}}
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/users_controller.rb:7:in `create'
+  [1m[36mUser Exists? (0.3ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."username" = ? LIMIT ?[0m  [["username", "rajesh124"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:7:in `create'
+  [1m[36mUser Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "rajesh1@gmail.com"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:7:in `create'
+  [1m[36mUser Create (0.5ms)[0m  [1m[32mINSERT INTO "users" ("username", "password", "confirmPassword", "email", "firstname", "lastname", "created_at", "updated_at", "password_digest") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["username", "rajesh124"], ["password", "[FILTERED]"], ["confirmPassword", "[FILTERED]"], ["email", "rajesh1@gmail.com"], ["firstname", "rajesh"], ["lastname", "saini"], ["created_at", "2023-08-17 08:48:29.850252"], ["updated_at", "2023-08-17 08:48:29.850252"], ["password_digest", "[FILTERED]"]]
+  ↳ app/controllers/users_controller.rb:7:in `create'
+  [1m[36mTRANSACTION (81.4ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/users_controller.rb:7:in `create'
+Completed 200 OK in 537ms (Views: 0.3ms | ActiveRecord: 82.6ms | Allocations: 3444)
+
+
+Started POST "/user/register" for 127.0.0.1 at 2023-08-17 14:18:39 +0530
+Processing by UsersController#create as */*
+  Parameters: {"username"=>"rajesh125", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]", "email"=>"rajesh2@gmail.com", "firstname"=>"rajesh", "lastname"=>"saini", "user"=>{"username"=>"rajesh125", "password"=>"[FILTERED]", "email"=>"rajesh2@gmail.com", "firstname"=>"rajesh", "lastname"=>"saini"}}
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/users_controller.rb:7:in `create'
+  [1m[36mUser Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."username" = ? LIMIT ?[0m  [["username", "rajesh125"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:7:in `create'
+  [1m[36mUser Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "rajesh2@gmail.com"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:7:in `create'
+  [1m[36mUser Create (0.7ms)[0m  [1m[32mINSERT INTO "users" ("username", "password", "confirmPassword", "email", "firstname", "lastname", "created_at", "updated_at", "password_digest") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["username", "rajesh125"], ["password", "[FILTERED]"], ["confirmPassword", "[FILTERED]"], ["email", "rajesh2@gmail.com"], ["firstname", "rajesh"], ["lastname", "saini"], ["created_at", "2023-08-17 08:48:40.107764"], ["updated_at", "2023-08-17 08:48:40.107764"], ["password_digest", "[FILTERED]"]]
+  ↳ app/controllers/users_controller.rb:7:in `create'
+  [1m[36mTRANSACTION (85.9ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/users_controller.rb:7:in `create'
+Completed 200 OK in 582ms (Views: 0.3ms | ActiveRecord: 87.1ms | Allocations: 3445)
+
+
+Started POST "/user/register" for 127.0.0.1 at 2023-08-17 14:18:55 +0530
+Processing by UsersController#create as */*
+  Parameters: {"username"=>"rajesh126", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]", "email"=>"rajesh4@gmail.com", "firstname"=>"rajesh", "lastname"=>"saini", "user"=>{"username"=>"rajesh126", "password"=>"[FILTERED]", "email"=>"rajesh4@gmail.com", "firstname"=>"rajesh", "lastname"=>"saini"}}
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/users_controller.rb:7:in `create'
+  [1m[36mUser Exists? (0.3ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."username" = ? LIMIT ?[0m  [["username", "rajesh126"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:7:in `create'
+  [1m[36mUser Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "rajesh4@gmail.com"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:7:in `create'
+  [1m[36mUser Create (0.5ms)[0m  [1m[32mINSERT INTO "users" ("username", "password", "confirmPassword", "email", "firstname", "lastname", "created_at", "updated_at", "password_digest") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["username", "rajesh126"], ["password", "[FILTERED]"], ["confirmPassword", "[FILTERED]"], ["email", "rajesh4@gmail.com"], ["firstname", "rajesh"], ["lastname", "saini"], ["created_at", "2023-08-17 08:48:56.264935"], ["updated_at", "2023-08-17 08:48:56.264935"], ["password_digest", "[FILTERED]"]]
+  ↳ app/controllers/users_controller.rb:7:in `create'
+  [1m[36mTRANSACTION (102.8ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/users_controller.rb:7:in `create'
+Completed 200 OK in 576ms (Views: 0.4ms | ActiveRecord: 103.8ms | Allocations: 3442)
+
+
+Started POST "/user/register" for 127.0.0.1 at 2023-08-17 14:19:09 +0530
+Processing by UsersController#create as */*
+  Parameters: {"username"=>"rajesh127", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]", "email"=>"rajesh5@gmail.com", "firstname"=>"rajesh", "lastname"=>"saini", "user"=>{"username"=>"rajesh127", "password"=>"[FILTERED]", "email"=>"rajesh5@gmail.com", "firstname"=>"rajesh", "lastname"=>"saini"}}
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/users_controller.rb:7:in `create'
+  [1m[36mUser Exists? (0.3ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."username" = ? LIMIT ?[0m  [["username", "rajesh127"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:7:in `create'
+  [1m[36mUser Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "rajesh5@gmail.com"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:7:in `create'
+  [1m[36mUser Create (0.4ms)[0m  [1m[32mINSERT INTO "users" ("username", "password", "confirmPassword", "email", "firstname", "lastname", "created_at", "updated_at", "password_digest") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["username", "rajesh127"], ["password", "[FILTERED]"], ["confirmPassword", "[FILTERED]"], ["email", "rajesh5@gmail.com"], ["firstname", "rajesh"], ["lastname", "saini"], ["created_at", "2023-08-17 08:49:09.466531"], ["updated_at", "2023-08-17 08:49:09.466531"], ["password_digest", "[FILTERED]"]]
+  ↳ app/controllers/users_controller.rb:7:in `create'
+  [1m[36mTRANSACTION (97.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/users_controller.rb:7:in `create'
+Completed 200 OK in 556ms (Views: 0.4ms | ActiveRecord: 98.0ms | Allocations: 3442)
+
+
+Started POST "/user/register" for 127.0.0.1 at 2023-08-17 14:19:21 +0530
+Processing by UsersController#create as */*
+  Parameters: {"username"=>"rajesh128", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]", "email"=>"rajesh6@gmail.com", "firstname"=>"rajesh", "lastname"=>"saini", "user"=>{"username"=>"rajesh128", "password"=>"[FILTERED]", "email"=>"rajesh6@gmail.com", "firstname"=>"rajesh", "lastname"=>"saini"}}
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/users_controller.rb:7:in `create'
+  [1m[36mUser Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."username" = ? LIMIT ?[0m  [["username", "rajesh128"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:7:in `create'
+  [1m[36mUser Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "rajesh6@gmail.com"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:7:in `create'
+  [1m[36mUser Create (0.3ms)[0m  [1m[32mINSERT INTO "users" ("username", "password", "confirmPassword", "email", "firstname", "lastname", "created_at", "updated_at", "password_digest") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["username", "rajesh128"], ["password", "[FILTERED]"], ["confirmPassword", "[FILTERED]"], ["email", "rajesh6@gmail.com"], ["firstname", "rajesh"], ["lastname", "saini"], ["created_at", "2023-08-17 08:49:22.287476"], ["updated_at", "2023-08-17 08:49:22.287476"], ["password_digest", "[FILTERED]"]]
+  ↳ app/controllers/users_controller.rb:7:in `create'
+  [1m[36mTRANSACTION (106.5ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/users_controller.rb:7:in `create'
+Completed 200 OK in 553ms (Views: 0.4ms | ActiveRecord: 107.3ms | Allocations: 3437)
+
+
+Started POST "/user/register" for 127.0.0.1 at 2023-08-17 14:19:32 +0530
+Processing by UsersController#create as */*
+  Parameters: {"username"=>"rajesh129", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]", "email"=>"rajesh7@gmail.com", "firstname"=>"rajesh", "lastname"=>"saini", "user"=>{"username"=>"rajesh129", "password"=>"[FILTERED]", "email"=>"rajesh7@gmail.com", "firstname"=>"rajesh", "lastname"=>"saini"}}
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/users_controller.rb:7:in `create'
+  [1m[36mUser Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."username" = ? LIMIT ?[0m  [["username", "rajesh129"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:7:in `create'
+  [1m[36mUser Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "rajesh7@gmail.com"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:7:in `create'
+  [1m[36mUser Create (0.4ms)[0m  [1m[32mINSERT INTO "users" ("username", "password", "confirmPassword", "email", "firstname", "lastname", "created_at", "updated_at", "password_digest") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["username", "rajesh129"], ["password", "[FILTERED]"], ["confirmPassword", "[FILTERED]"], ["email", "rajesh7@gmail.com"], ["firstname", "rajesh"], ["lastname", "saini"], ["created_at", "2023-08-17 08:49:32.550299"], ["updated_at", "2023-08-17 08:49:32.550299"], ["password_digest", "[FILTERED]"]]
+  ↳ app/controllers/users_controller.rb:7:in `create'
+  [1m[36mTRANSACTION (72.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/users_controller.rb:7:in `create'
+Completed 200 OK in 516ms (Views: 0.4ms | ActiveRecord: 73.0ms | Allocations: 3436)
+
+
+Started GET "/user/list/1" for 127.0.0.1 at 2023-08-17 14:20:01 +0530
+Processing by UsersController#allUser as */*
+  Parameters: {"page"=>"1"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" LIMIT ? OFFSET ?[0m  [["LIMIT", 3], ["OFFSET", 0]]
+  ↳ app/controllers/users_controller.rb:69:in `allUser'
+Completed 200 OK in 14ms (Views: 8.8ms | ActiveRecord: 1.4ms | Allocations: 5681)
+
+
+Started GET "/user/list/2" for 127.0.0.1 at 2023-08-17 14:20:08 +0530
+Processing by UsersController#allUser as */*
+  Parameters: {"page"=>"2"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" LIMIT ? OFFSET ?[0m  [["LIMIT", 3], ["OFFSET", 3]]
+  ↳ app/controllers/users_controller.rb:69:in `allUser'
+Completed 200 OK in 6ms (Views: 5.0ms | ActiveRecord: 0.2ms | Allocations: 1313)
+
+
+Started POST "/user/login" for 127.0.0.1 at 2023-08-17 14:22:04 +0530
+Processing by UsersController#login as */*
+  Parameters: {"username"=>"rajesh128", "password"=>"[FILTERED]", "user"=>{"username"=>"rajesh128", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."username" = ? LIMIT ?[0m  [["username", "rajesh128"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:18:in `login'
+Completed 200 OK in 431ms (Views: 0.3ms | ActiveRecord: 0.2ms | Allocations: 1071)
+
+
+Started DELETE "/user/delete/1" for 127.0.0.1 at 2023-08-17 14:22:20 +0530
+Processing by UsersController#delete_user as */*
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:49:in `delete_user'
+Completed 400 Bad Request in 11ms (Views: 0.3ms | ActiveRecord: 1.1ms | Allocations: 1367)
+
+
+Started DELETE "/user/delete/6" for 127.0.0.1 at 2023-08-17 14:24:04 +0530
+Processing by UsersController#delete_user as */*
+  Parameters: {"id"=>"6"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:49:in `delete_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:56:in `delete_user'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/users_controller.rb:56:in `delete_user'
+  [1m[36mUser Destroy (0.5ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = ?[0m  [["id", 6]]
+  ↳ app/controllers/users_controller.rb:56:in `delete_user'
+  [1m[36mTRANSACTION (359.4ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/users_controller.rb:56:in `delete_user'
+Redirected to 
+Completed 500 Internal Server Error in 385ms (ActiveRecord: 361.8ms | Allocations: 8181)
+
+
+  
+ActionController::Redirecting::UnsafeRedirectError (Unsafe redirect to "http://127.0.0.1:3000user/login", pass allow_other_host: true to redirect anyway.):
+  
+app/controllers/users_controller.rb:58:in `delete_user'
+Started POST "/user/login" for 127.0.0.1 at 2023-08-17 14:24:50 +0530
+Processing by UsersController#login as */*
+  Parameters: {"username"=>"rajesh128", "password"=>"[FILTERED]", "user"=>{"username"=>"rajesh128", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."username" = ? LIMIT ?[0m  [["username", "rajesh128"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:18:in `login'
+Completed 400 Bad Request in 4ms (Views: 0.4ms | ActiveRecord: 0.3ms | Allocations: 785)
+
+
+Started POST "/user/login" for 127.0.0.1 at 2023-08-17 14:27:54 +0530
+Processing by UsersController#login as */*
+  Parameters: {"username"=>"rajesh127", "password"=>"[FILTERED]", "user"=>{"username"=>"rajesh127", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."username" = ? LIMIT ?[0m  [["username", "rajesh127"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:18:in `login'
+Completed 200 OK in 438ms (Views: 0.3ms | ActiveRecord: 1.6ms | Allocations: 3675)
+
+
+Started DELETE "/user/delete/5" for 127.0.0.1 at 2023-08-17 14:28:03 +0530
+Processing by UsersController#delete_user as */*
+  Parameters: {"id"=>"5"}
+  [1m[36mUser Load (0.9ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:49:in `delete_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:56:in `delete_user'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/users_controller.rb:56:in `delete_user'
+  [1m[36mUser Destroy (6.0ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = ?[0m  [["id", 5]]
+  ↳ app/controllers/users_controller.rb:56:in `delete_user'
+  [1m[36mTRANSACTION (90.9ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/users_controller.rb:56:in `delete_user'
+Redirected to http://127.0.0.1:3000/user/login
+Completed 500 Internal Server Error in 125ms (ActiveRecord: 98.0ms | Allocations: 3595)
+
+
+  
+AbstractController::DoubleRenderError (Render and/or redirect were called multiple times in this action. Please note that you may only call render OR redirect, and at most once per action. Also note that neither redirect nor render terminate execution of the action, so if you want to exit an action after redirecting, you need to do something like "redirect_to(...) and return".):
+  
+app/controllers/users_controller.rb:58:in `delete_user'
+Started POST "/user/login" for 127.0.0.1 at 2023-08-17 14:32:08 +0530
+  
+SyntaxError (/home/dev/Desktop/ror/proROR/app/controllers/users_controller.rb:59: syntax error, unexpected ':', expecting `end'
+          renderjson: {message: "your data delete ...
+                    ^
+):
+  
+app/controllers/users_controller.rb:59: syntax error, unexpected ':', expecting `end'
+app/controllers/users_controller.rb:59: syntax error, unexpected ':', expecting `end'
+app/controllers/users_controller.rb:59: syntax error, unexpected ':', expecting `end'
+Started POST "/user/login" for 127.0.0.1 at 2023-08-17 14:32:25 +0530
+Processing by UsersController#login as */*
+  Parameters: {"username"=>"rajesh127", "password"=>"[FILTERED]", "user"=>{"username"=>"rajesh127", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."username" = ? LIMIT ?[0m  [["username", "rajesh127"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:18:in `login'
+Completed 400 Bad Request in 4ms (Views: 0.6ms | ActiveRecord: 1.0ms | Allocations: 1100)
+
+
+Started POST "/user/login" for 127.0.0.1 at 2023-08-17 14:32:34 +0530
+Processing by UsersController#login as */*
+  Parameters: {"username"=>"rajesh126", "password"=>"[FILTERED]", "user"=>{"username"=>"rajesh126", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."username" = ? LIMIT ?[0m  [["username", "rajesh126"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:18:in `login'
+Completed 200 OK in 472ms (Views: 0.2ms | ActiveRecord: 0.7ms | Allocations: 3226)
+
+
+Started DELETE "/user/delete/4" for 127.0.0.1 at 2023-08-17 14:32:43 +0530
+Processing by UsersController#delete_user as */*
+  Parameters: {"id"=>"4"}
+  [1m[36mUser Load (3.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:49:in `delete_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:56:in `delete_user'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/users_controller.rb:56:in `delete_user'
+  [1m[36mUser Destroy (0.4ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = ?[0m  [["id", 4]]
+  ↳ app/controllers/users_controller.rb:56:in `delete_user'
+  [1m[36mTRANSACTION (92.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/users_controller.rb:56:in `delete_user'
+Redirected to http://127.0.0.1:3000/user/login
+Completed 500 Internal Server Error in 109ms (ActiveRecord: 95.8ms | Allocations: 3548)
+
+
+  
+AbstractController::DoubleRenderError (Render and/or redirect were called multiple times in this action. Please note that you may only call render OR redirect, and at most once per action. Also note that neither redirect nor render terminate execution of the action, so if you want to exit an action after redirecting, you need to do something like "redirect_to(...) and return".):
+  
+app/controllers/users_controller.rb:59:in `delete_user'
+Started POST "/user/login" for 127.0.0.1 at 2023-08-17 14:34:10 +0530
+  
+SyntaxError (/home/dev/Desktop/ror/proROR/app/controllers/users_controller.rb:59: syntax error, unexpected ':', expecting `end'
+          return json: {message: "your data delete ...
+                     ^
+):
+  
+app/controllers/users_controller.rb:59: syntax error, unexpected ':', expecting `end'
+app/controllers/users_controller.rb:59: syntax error, unexpected ':', expecting `end'
+app/controllers/users_controller.rb:59: syntax error, unexpected ':', expecting `end'
+Started POST "/user/login" for 127.0.0.1 at 2023-08-17 14:38:31 +0530
+Processing by UsersController#login as */*
+  Parameters: {"username"=>"rajesh126", "password"=>"[FILTERED]", "user"=>{"username"=>"rajesh126", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."username" = ? LIMIT ?[0m  [["username", "rajesh126"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:18:in `login'
+Completed 400 Bad Request in 4ms (Views: 0.7ms | ActiveRecord: 1.4ms | Allocations: 1101)
+
+
+Started POST "/user/login" for 127.0.0.1 at 2023-08-17 14:38:40 +0530
+Processing by UsersController#login as */*
+  Parameters: {"username"=>"rajesh125", "password"=>"[FILTERED]", "user"=>{"username"=>"rajesh125", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."username" = ? LIMIT ?[0m  [["username", "rajesh125"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:18:in `login'
+Completed 200 OK in 441ms (Views: 0.3ms | ActiveRecord: 0.8ms | Allocations: 3176)
+
+
+Started DELETE "/user/delete/3" for 127.0.0.1 at 2023-08-17 14:38:49 +0530
+Processing by UsersController#delete_user as */*
+  Parameters: {"id"=>"3"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:49:in `delete_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:56:in `delete_user'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/users_controller.rb:56:in `delete_user'
+  [1m[36mUser Destroy (0.4ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = ?[0m  [["id", 3]]
+  ↳ app/controllers/users_controller.rb:56:in `delete_user'
+  [1m[36mTRANSACTION (125.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/users_controller.rb:56:in `delete_user'
+Redirected to http://127.0.0.1:3000/user/login
+Completed 500 Internal Server Error in 137ms (ActiveRecord: 126.5ms | Allocations: 3556)
+
+
+  
+AbstractController::DoubleRenderError (Render and/or redirect were called multiple times in this action. Please note that you may only call render OR redirect, and at most once per action. Also note that neither redirect nor render terminate execution of the action, so if you want to exit an action after redirecting, you need to do something like "redirect_to(...) and return".):
+  
+app/controllers/users_controller.rb:59:in `delete_user'
+Started POST "/user/login" for 127.0.0.1 at 2023-08-17 14:41:32 +0530
+Processing by UsersController#login as */*
+  Parameters: {"username"=>"rajesh124", "password"=>"[FILTERED]", "user"=>{"username"=>"rajesh124", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."username" = ? LIMIT ?[0m  [["username", "rajesh124"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:18:in `login'
+Completed 200 OK in 438ms (Views: 0.3ms | ActiveRecord: 1.5ms | Allocations: 3697)
+
+
+Started DELETE "/user/delete/2" for 127.0.0.1 at 2023-08-17 14:41:40 +0530
+Processing by UsersController#delete_user as */*
+  Parameters: {"id"=>"2"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:49:in `delete_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:56:in `delete_user'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/users_controller.rb:56:in `delete_user'
+  [1m[36mUser Destroy (0.5ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = ?[0m  [["id", 2]]
+  ↳ app/controllers/users_controller.rb:56:in `delete_user'
+  [1m[36mTRANSACTION (136.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/users_controller.rb:56:in `delete_user'
+Redirected to http://127.0.0.1:3000/user/login
+Completed 302 Found in 148ms (ActiveRecord: 137.5ms | Allocations: 3171)
+
+
+Started GET "/user/login" for 127.0.0.1 at 2023-08-17 14:41:40 +0530
+  
+ActionController::RoutingError (No route matches [GET] "/user/login"):
+  
+Started POST "/user/login" for 127.0.0.1 at 2023-08-17 14:42:42 +0530
+Processing by UsersController#login as */*
+  Parameters: {"username"=>"rajesh123", "password"=>"[FILTERED]", "user"=>{"username"=>"rajesh123", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."username" = ? LIMIT ?[0m  [["username", "rajesh123"], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:18:in `login'
+Completed 200 OK in 442ms (Views: 0.3ms | ActiveRecord: 1.6ms | Allocations: 3682)
+
+
+Started DELETE "/user/delete/1" for 127.0.0.1 at 2023-08-17 14:42:48 +0530
+Processing by UsersController#delete_user as */*
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:49:in `delete_user'
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:56:in `delete_user'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/users_controller.rb:56:in `delete_user'
+  [1m[36mUser Destroy (1.6ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = ?[0m  [["id", 1]]
+  ↳ app/controllers/users_controller.rb:56:in `delete_user'
+  [1m[36mTRANSACTION (96.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/users_controller.rb:56:in `delete_user'
+No template found for UsersController#delete_user, rendering head :no_content
+Completed 204 No Content in 125ms (ActiveRecord: 98.1ms | Allocations: 3410)
+
+

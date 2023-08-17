@@ -12,9 +12,11 @@ Rails.application.routes.draw do
 
   post 'user/login', to: 'users#login'
 
-  post 'user/deleteAll', to: 'users#deletAll'
-
   get 'user/get/:id', to: 'users#get_user'
+
+  delete '/user/delete/:id', to: 'users#delete_user'
+
+
 
 
 end
